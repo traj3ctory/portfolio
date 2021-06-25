@@ -285,7 +285,7 @@ const data =
       "image": "../images/portfolio/portfolio.png",
       "description": "lorem ipsum",
       "link": "hello",
-      "category": "web-design"
+      "category": "Web-design"
     },
     {
       "name": "Todo Application",
@@ -295,11 +295,39 @@ const data =
       "category": "React"
     },
     {
-      "name": "Global Sports Fans Association",
-      "image": "../images/portfolio/gsfa.png",
+      "name": "Accsiss eBs",
+      "image": "../images/portfolio/ebs.png",
       "description": "lorem ipsum",
       "link": "hello",
-      "category": "React"
+      "category": "Web-application"
+    },
+     {
+      "name": "Sysbanker EE",
+      "image": "../images/portfolio/sys.png",
+      "description": "lorem ipsum",
+      "link": "hello",
+      "category": "Web-application"
+    },
+     {
+      "name": "Utali Igbo",
+      "image": "../images/portfolio/uifww.png",
+      "description": "lorem ipsum",
+      "link": "hello",
+      "category": "Wordpress"
+    },
+     {
+      "name": "Johanan Blog",
+      "image": "../images/portfolio/jwlblog.png",
+      "description": "lorem ipsum",
+      "link": "hello",
+      "category": "Wordpress"
+    },
+     {
+      "name": "Johanan World",
+      "image": "../images/portfolio/jwl.png",
+      "description": "lorem ipsum",
+      "link": "hello",
+      "category": "Opencart"
     }
   ]
 }
