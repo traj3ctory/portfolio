@@ -8,94 +8,6 @@ window.addEventListener("load", function () {
   }, 1000);
 });
 
-// Portfolio Item Filter
-const filterContainer = document.querySelector(".portfolio-filter");
-(filterBtns = filterContainer.children),
-  (totalFilterBtn = filterBtns.length),
-  (portfolioItems = document.querySelectorAll(".portfolio-item")),
-  (totalPortfolioItem = portfolioItems.length);
-
-for (let i = 0; i < totalFilterBtn; i++) {
-  filterBtns[i].addEventListener("click", function () {
-    filterContainer.querySelector(".active").classList.remove("active");
-    this.classList.add("active");
-
-    const filterValue = this.getAttribute("data-filter");
-
-    for (let k = 0; k < totalPortfolioItem; k++) {
-      if (filterValue === portfolioItems[k].getAttribute("data-category")) {
-        portfolioItems[k].classList.remove("hide");
-        portfolioItems[k].classList.add("show");
-      } else {
-        portfolioItems[k].classList.remove("show");
-        portfolioItems[k].classList.add("hide");
-      }
-      if (filterValue === "all") {
-        portfolioItems[k].classList.remove("hide");
-        portfolioItems[k].classList.add("show");
-      }
-    }
-  });
-}
-
-// Portfolio Lightbox
-
-const lightbox = document.querySelector(".lightbox"),
-  lightboxImg = lightbox.querySelector(".lightbox-img"),
-  lightboxText = lightbox.querySelector(".caption-text"),
-  lightboxClose = lightbox.querySelector(".lightbox-close"),
-  lightboxCounter = lightbox.querySelector(".caption-count");
-
-let itemIndex = 0;
-
-for (let i = 0; i < totalPortfolioItem; i++) {
-  portfolioItems[i].addEventListener("click", function () {
-    itemIndex = i;
-    changeItem();
-    toggleLightbox();
-  });
-}
-
-function nextItem() {
-  if (itemIndex === totalPortfolioItem - 1) {
-    itemIndex = 0;
-  } else {
-    itemIndex++;
-  }
-  changeItem();
-}
-
-function prevItem() {
-  if (itemIndex == 0) {
-    itemIndex = totalPortfolioItem - 1;
-  } else {
-    itemIndex--;
-  }
-  changeItem();
-}
-
-function toggleLightbox() {
-  lightbox.classList.toggle("open");
-}
-
-function changeItem() {
-  imgSrc = portfolioItems[itemIndex]
-    .querySelector(".portfolio-img img")
-    .getAttribute("src");
-  lightboxImg.src = imgSrc;
-  lightboxText.innerHTML = portfolioItems[itemIndex].querySelector(
-    "h4"
-  ).innerHTML;
-  lightboxCounter.innerHTML = itemIndex + 1 + " of " + totalPortfolioItem;
-}
-
-// close Lightbox
-
-lightbox.addEventListener("click", function (event) {
-  if (event.target === lightboxClose || event.target === lightbox) {
-    toggleLightbox();
-  }
-});
 
 // Aside Navication
 
@@ -278,56 +190,56 @@ const data =
       "image": "../images/portfolio/leerix.png",
       "description": "lorem ipsum",
       "link": "hello",
-      "category": "React"
+      "category": "react"
     },
     {
       "name": "Portfolio Site",
       "image": "../images/portfolio/portfolio.png",
       "description": "lorem ipsum",
       "link": "hello",
-      "category": "Web-design"
+      "category": "web"
     },
     {
       "name": "Todo Application",
       "image": "../images/portfolio/todo.png",
       "description": "lorem ipsum",
       "link": "hello",
-      "category": "React"
-    },
-    {
-      "name": "Accsiss eBs",
-      "image": "../images/portfolio/ebs.png",
-      "description": "lorem ipsum",
-      "link": "hello",
-      "category": "Web-application"
+      "category": "react"
     },
      {
       "name": "Sysbanker EE",
-      "image": "../images/portfolio/sys.png",
+      "image": "../images/portfolio/sys.jpg",
       "description": "lorem ipsum",
       "link": "hello",
-      "category": "Web-application"
+      "category": "web"
     },
      {
       "name": "Utali Igbo",
       "image": "../images/portfolio/uifww.png",
       "description": "lorem ipsum",
       "link": "hello",
-      "category": "Wordpress"
+      "category": "wordpress"
     },
      {
       "name": "Johanan Blog",
       "image": "../images/portfolio/jwlblog.png",
       "description": "lorem ipsum",
-      "link": "hello",
-      "category": "Wordpress"
+      "link": "www.hello.com",
+      "category": "wordpress"
     },
      {
       "name": "Johanan World",
       "image": "../images/portfolio/jwl.png",
       "description": "lorem ipsum",
       "link": "hello",
-      "category": "Opencart"
+      "category": "opencart"
+    },
+    {
+      "name": "Accsiss eBs",
+      "image": "../images/portfolio/ebs.png",
+      "description": "lorem ipsum",
+      "link": "hello",
+      "category": "web"
     }
   ]
 }
@@ -395,21 +307,109 @@ data.workXp.forEach(data => {
 
 });
 
-// data.portfolio.forEach(data => {
-//   portfolioData.insertAdjacentHTML('beforeend', `<div class="portfolio-item pad-15" data-category="${data.category}">
-//   <div class="portfolio-item-inner shadow-dark">
-//     <div class="portfolio-img">
-//       <img src="${data.image}" alt="${data.name}" />
-//     </div>
-//     <div class="portfolio-info">
-//       <h4>${data.name}</h4>
-//       <div class="icon">
-//         <i class="fa fa-search" aria-hidden="true"></i>
-//       </div>
-//     </div>
-//   </div>
-// </div>`)
+data.portfolio.forEach(data => {
+  portfolioData.insertAdjacentHTML('beforeend', `<div class="portfolio-item pad-15" data-category="${data.category}">
+  <div class="portfolio-item-inner shadow-dark">
+    <div class="portfolio-img">
+      <img src="${data.image}" alt="${data.name}" />
+    </div>
+    <div class="portfolio-info">
+      <a href="${data.link}" target="_blank" noopener noreferrer><h4>${data.name}</h4></a>
+      <div class="icon">
+        <i class="fa fa-search" aria-hidden="true"></i>
+      </div>
+    </div>
+  </div>
+</div>`)
 
-// });
+});
 
 
+// Portfolio Item Filter
+const filterContainer = document.querySelector(".portfolio-filter");
+(filterBtns = filterContainer.children),
+  (totalFilterBtn = filterBtns.length),
+  (portfolioItems = document.querySelectorAll(".portfolio-item")),
+  (totalPortfolioItem = portfolioItems.length);
+
+for (let i = 0; i < totalFilterBtn; i++) {
+  filterBtns[i].addEventListener("click", function () {
+    filterContainer.querySelector(".active").classList.remove("active");
+    this.classList.add("active");
+
+    const filterValue = this.getAttribute("data-filter");
+
+    for (let k = 0; k < totalPortfolioItem; k++) {
+      if (filterValue === portfolioItems[k].getAttribute("data-category")) {
+        portfolioItems[k].classList.remove("hide");
+        portfolioItems[k].classList.add("show");
+      } else {
+        portfolioItems[k].classList.remove("show");
+        portfolioItems[k].classList.add("hide");
+      }
+      if (filterValue === "all") {
+        portfolioItems[k].classList.remove("hide");
+        portfolioItems[k].classList.add("show");
+      }
+    }
+  });
+}
+
+// Portfolio Lightbox
+
+const lightbox = document.querySelector(".lightbox"),
+  lightboxImg = lightbox.querySelector(".lightbox-img"),
+  lightboxText = lightbox.querySelector(".caption-text"),
+  lightboxClose = lightbox.querySelector(".lightbox-close"),
+  lightboxCounter = lightbox.querySelector(".caption-count");
+
+let itemIndex = 0;
+
+for (let i = 0; i < totalPortfolioItem; i++) {
+  portfolioItems[i].addEventListener("click", function () {
+    itemIndex = i;
+    changeItem();
+    toggleLightbox();
+  });
+}
+
+function nextItem() {
+  if (itemIndex === totalPortfolioItem - 1) {
+    itemIndex = 0;
+  } else {
+    itemIndex++;
+  }
+  changeItem();
+}
+
+function prevItem() {
+  if (itemIndex == 0) {
+    itemIndex = totalPortfolioItem - 1;
+  } else {
+    itemIndex--;
+  }
+  changeItem();
+}
+
+function toggleLightbox() {
+  lightbox.classList.toggle("open");
+}
+
+function changeItem() {
+  imgSrc = portfolioItems[itemIndex]
+    .querySelector(".portfolio-img img")
+    .getAttribute("src");
+  lightboxImg.src = imgSrc;
+  lightboxText.innerHTML = portfolioItems[itemIndex].querySelector(
+    "h4"
+  ).innerHTML;
+  lightboxCounter.innerHTML = itemIndex + 1 + " of " + totalPortfolioItem;
+}
+
+// close Lightbox
+
+lightbox.addEventListener("click", function (event) {
+  if (event.target === lightboxClose || event.target === lightbox) {
+    toggleLightbox();
+  }
+});
