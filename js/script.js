@@ -149,7 +149,11 @@ const data =
   ],
   "workXp": [
     {
-      "date": "2020-Present",
+      "date": "2021-Present",
+      "role": "Frontend Web Developer at eHealth4Everyone"
+    },
+    {
+      "date": "2020-2021",
       "role": "Frontend Web Developer at Mira Technologies"
     },
     {
@@ -159,11 +163,14 @@ const data =
     {
       "date": "(April)2018-2019",
       "role": "Frontend Tutor at Center4Tech"
+    },
+    {
+      "date": "(April)2015-2016",
+      "role": "University of Benin(Uniben) work study programme"
     }
   ],
   "detail": {
     "website": "http://davidbd.netlify.app",
-    "websitename": "www.traj3ctory.com",
     "email": "davidbenard.bd@gmail.com",
     "degree": "Bsc. Computer Science",
     "phone": "+2349059892959",
@@ -181,7 +188,7 @@ const data =
     },
     {
       "date": "2000 - 2008",
-      "name": "New Life Nursey and Primary School, Okerube, Ikotun, Lagos State."
+      "name": "New Life Nursery and Primary School, Okerube, Ikotun, Lagos State."
     }
   ],
   "portfolio": [
@@ -259,7 +266,7 @@ const workXp = document.querySelector('#workexp');
 
 const portfolioData = document.querySelector('#portfolioData');
 
-website.innerHTML = `</span><a href="${data.detail.website}" target="_blank" rel="noopener noreferrer">${data.detail.websitename}</a>`
+website.innerHTML = `</span><a href="${data.detail.website}" target="_blank" rel="noopener noreferrer">${data.detail.website}</a>`
 email.innerHTML = `<a href="mailto:${data.detail.email}">${data.detail.email}</a>`
 degree.innerHTML = `${data.detail.degree}`
 phoneNumber.innerHTML = `<a href="tel:${data.detail.phone}">${data.detail.phone}</a>`
