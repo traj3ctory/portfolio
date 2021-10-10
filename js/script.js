@@ -173,7 +173,7 @@ const data =
     "website": "http://davidbd.netlify.app",
     "email": "davidbenard.bd@gmail.com",
     "degree": "Bsc. Computer Science",
-    "phone": "+2349059892959",
+    "phone": "+2349038660972",
     "city": "Lagos",
     "freelance": "Available"
   },
