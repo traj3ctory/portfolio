@@ -1,4 +1,4 @@
-// Perloader
+// Preloader
 
 window.addEventListener("load", function () {
   document.querySelector(".preloader").classList.add("opacity-0");
@@ -9,7 +9,7 @@ window.addEventListener("load", function () {
 });
 
 
-// Aside Navication
+// Aside Navigation
 
 const nav = document.querySelector(".nav"),
   navList = nav.querySelectorAll("li"),
@@ -34,7 +34,7 @@ for (let i = 0; i < totalNavList; i++) {
     showSection(this);
 
     if (window.innerWidth < 1200) {
-      asideSectionTooglerBtn();
+      asideSectionTogglerBtn();
     }
   });
 }
@@ -81,16 +81,16 @@ document.querySelector(".hire-me").addEventListener("click", function () {
   addBackSectionClass(sectionIndex);
 });
 
-// Nav toogle
+// Nav toggle
 
-const navToogleBtn = document.querySelector(".nav-toggle"),
+const navToggleBtn = document.querySelector(".nav-toggle"),
   aside = document.querySelector(".aside");
 
-navToogleBtn.addEventListener("click", asideSectionTooglerBtn);
+navToggleBtn.addEventListener("click", asideSectionTogglerBtn);
 
-function asideSectionTooglerBtn() {
+function asideSectionTogglerBtn() {
   aside.classList.toggle("open");
-  navToogleBtn.classList.toggle("open");
+  navToggleBtn.classList.toggle("open");
   for (let i = 0; i < totalSection; i++) {
     allSection[i].classList.toggle("open");
   }
@@ -165,7 +165,7 @@ const data =
       "role": "Frontend Tutor at Center4Tech"
     },
     {
-      "date": "(April)2015-2016",
+      "date": "2015-2016",
       "role": "University of Benin(Uniben) work study programme"
     }
   ],
@@ -278,7 +278,7 @@ data.stack.forEach(data => {
 <h5>${data.name}</h5>
 <div class="progress">
   <div class="progress-in" style="width: ${data.progress};"></div>
-    <div class="skill-persent">
+    <div class="skill-percent">
       ${data.progress}
     </div>
   </div>

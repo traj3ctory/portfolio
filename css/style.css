@@ -554,6 +554,7 @@ input , textarea , select
     /* -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%; */
+    color:inherit
 }
 
 .about .about-content .personal-info .info-item p 
@@ -641,7 +642,7 @@ input , textarea , select
     border-radius: 4px;
 }
 
-.about .about-content .skills .skill-item .skill-persent
+.about .about-content .skills .skill-item .skill-percent
 {
     /* display: none; */
     line-height: 40px;
@@ -1392,7 +1393,7 @@ body.dark .blog .blog-item .blog-item-inner .blog-info .blog-description,
 body.dark .services .service-item .service-item-inner p,
 body.dark .about .about-content .time-line .time-line-text,
 body.dark .about .about-content .time-line .time-line-date,
-body.dark .about .about-content .skills .skill-item .skill-persent,
+body.dark .about .about-content .skills .skill-item .skill-percent,
 body.dark .about .about-content .personal-info .info-item p span,
 body.dark .about .about-content .about-text p,
 body.dark .home .intro p

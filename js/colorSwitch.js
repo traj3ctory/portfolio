@@ -1,4 +1,4 @@
-const links = document.querySelectorAll(".altarnet-style"),
+const links = document.querySelectorAll(".alternate-style"),
   totalLinks = links.length;
 
 function setActiveStyle(color) {
@@ -30,7 +30,7 @@ const bodySkin = document.querySelectorAll(".body-skin"),
           })
       }
 
-  document.querySelector(".toogle-style-switcher")
+  document.querySelector(".toggle-style-switcher")
   .addEventListener("click", () => {
     document.querySelector(".style-switcher").classList.toggle("open");
   });
