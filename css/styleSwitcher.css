@@ -1,7 +1,7 @@
 .style-switcher
 {
     position: fixed;
-    top: 20px;
+    bottom: 1vh;
     right: 0;
     z-index: 100;
     background: #ffffff;
