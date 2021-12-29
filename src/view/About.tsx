@@ -31,10 +31,6 @@ const customizedContent2 = (item: any) => (
   </Card>
 );
 
-const handleHire = () => {
-
-};
-
 function About({ stack, workXp, school, title, subtitle, description, detail }: any) {
   return (
     <section id="about_page">
@@ -52,7 +48,7 @@ function About({ stack, workXp, school, title, subtitle, description, detail }: 
             </h4>
           </div>
           <p>{description}</p>
-          <Link to="/CV.pdf" target="_blank" className="p-button p-button-text p-button-small p-button-raised" download >DownLoad CV<i className="mx-2 pi pi-check"/></Link>
+          <Link to="/CV.pdf" target="_blank" className="p-button p-button-text p-button-small p-button-raised" download >Download CV<i className="mx-2 pi pi-check"/></Link>
           <a href="#contact" className="p-button p-button-small p-button-raised mx-2" >Hire Me<i className="mx-2 pi pi-check"/></a>
         </Card>
       </main>
@@ -65,7 +61,6 @@ function About({ stack, workXp, school, title, subtitle, description, detail }: 
                     <Link to="/">{ detail.website }</Link>
                 </Panel>
                 <Panel header={Object.keys(detail)[1].toUpperCase()} toggleable collapsed={true}>
-                    <p>{ detail.email }</p>
                     <a href={`mailto:${detail.email}`}>{ detail.email }</a>
                 </Panel>
                 <Panel header={Object.keys(detail)[2].toUpperCase()} toggleable collapsed={true}>

@@ -1,30 +1,33 @@
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
 import { Fade } from "react-awesome-reveal";
-import Shapes from "../components/Shape";
+import Shimmer from "../components/Particle";
 import Header from "../components/Header";
-import Loader from "../components/Loader";
+// import Loader from "../components/Loader";
 import Home from "./Home";
 
 function Homepage() {
-  const [loading, setLoading] = useState(false);
+  // const [loading, setLoading] = useState(false);
 
-  const timeout = () => {
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-    }, 5000);
-  };
+  // const timeout = () => {
+  //   setLoading(true);
+  //   setTimeout(() => {
+  //     setLoading(false);
+  //   }, 5000);
+  // };
 
-  useEffect(() => {
-    timeout();
-  }, []);
+  // useEffect(() => {
+  //   timeout();
+  // }, []);
 
   return (
     <Fade duration={4000}>
       <section className="home_container">
-        <Shapes />
+        <div className="d-none">
+        <Shimmer />
+        </div>
         <Header />
-        {loading ? <Loader /> : <Home />}
+        {/* {loading ? <Loader /> : <Home />} */}
+        <Home />
       </section>
     </Fade>
   );
