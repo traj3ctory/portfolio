@@ -1,0 +1,166 @@
+{
+  "title": "Benard Z. David",
+  "subtitle": ["`${ Frontend }`", "<Web />", "{{ Developer }}"],
+  "description": "Hi! My name is Benard Z. David. I am a Web Developer, and I'm very passionate and dedicated to my work. With 3 years experience as a professional Frontend Web developer, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the design process, from discussion and collaboration.",
+  "name": {
+    "lastName": "Benard",
+    "middleName": "Zibiri",
+    "firstName": "David",
+    "nameAbbrv": "BZ David",
+    "job": "Frontend Web Developer",
+    "linkedin": "https://www.linkedin.com/in/david-benard-196961121/",
+    "twitter": "https://twitter.com/dav3ly",
+    "whatsapp": "https://api.whatsapp.com/send?phone=09038660972&text=Hi%20There!",
+    "profile": "../images/me.jpeg"
+  },
+  "birthday": {
+    "day": 29,
+    "month": "April",
+    "year": "1997"
+  },
+  "stack": [
+    {
+      "name": "html",
+      "progress": 90
+    },
+    {
+      "name": "css",
+      "progress": 80
+    },
+    {
+      "name": "sass/scss",
+      "progress": 70
+    },
+    {
+      "name": "bootstrap",
+      "progress": 90
+    },
+    {
+      "name": "javascript",
+      "progress": 60
+    },
+    {
+      "name": "react",
+      "progress": 55
+    },
+    {
+      "name": "vue",
+      "progress": 50
+    },
+    {
+      "name": "wordpress",
+      "progress": 70
+    }
+  ],
+  "workXp": [
+    {
+      "icon": "pi pi-slack",
+      "date": "2021-Present",
+      "role": "Frontend Web Developer at Ehealth4Everyone"
+    },
+    {
+      "icon": "pi pi-folder-open",
+      "date": "2020-2021",
+      "role": "Frontend Web Developer at Mira Technologies"
+    },
+    {
+      "icon": "pi pi-money-bill",
+      "date": "2018-2019",
+      "role": "IT Student at GTBank"
+    },
+    {
+      "icon": "pi pi-tablet",
+      "date": "2018-2019",
+      "role": "Frontend Tutor at Center4Tech"
+    }
+  ],
+  "detail": {
+    "website": "http://davidbd.netlify.app",
+    "email": "davidbenard.bd@gmail.com",
+    "degree": "Bsc. Computer Science",
+    "phone": "+2349038660972",
+    "city": "Abuja",
+    "contract": "Available",
+    "freelance": "Available",
+    "fulltime": "Available"
+    
+  },
+  "school": [
+    {
+      "icon": "pi pi-calendar",
+      "title": "University",
+      "date": "2015 - 2019",
+      "name": "University of Benin, Benin-City, Edo State."
+    },
+    {
+      "icon": "pi pi-calendar",
+      "title": "Secondary",
+      "date": "2009 - 2014",
+      "name": "Command Day Secondary School, Kaduna."
+    },
+    {
+      "icon": "pi pi-calendar",
+      "title": "Primary",
+      "date": "2000 - 2008",
+      "name": "New Life Nursery and Primary School, Okerube, Ikotun, Lagos State."
+    }
+  ],
+  "portfolio": [
+    {
+      "name": "Leerix Application",
+      "image": "../images/portfolio/leerix.png",
+      "description": "lorem ipsum",
+      "link": "hello",
+      "category": "React"
+    },
+    {
+      "name": "Portfolio Site",
+      "image": "../images/portfolio/portfolio.png",
+      "description": "lorem ipsum",
+      "link": "hello",
+      "category": "Web-design"
+    },
+    {
+      "name": "Todo Application",
+      "image": "../images/portfolio/todo.png",
+      "description": "lorem ipsum",
+      "link": "hello",
+      "category": "React"
+    },
+    {
+      "name": "Accsiss eBs",
+      "image": "../images/portfolio/ebs.png",
+      "description": "lorem ipsum",
+      "link": "hello",
+      "category": "Web-application"
+    },
+     {
+      "name": "Sysbanker EE",
+      "image": "../images/portfolio/sys.png",
+      "description": "lorem ipsum",
+      "link": "hello",
+      "category": "Web-application"
+    },
+     {
+      "name": "Utali Igbo",
+      "image": "../images/portfolio/uifww.png",
+      "description": "lorem ipsum",
+      "link": "hello",
+      "category": "Wordpress"
+    },
+     {
+      "name": "Johanan Blog",
+      "image": "../images/portfolio/jwlblog.png",
+      "description": "lorem ipsum",
+      "link": "hello",
+      "category": "Wordpress"
+    },
+     {
+      "name": "Johanan World",
+      "image": "../images/portfolio/jwl.png",
+      "description": "lorem ipsum",
+      "link": "hello",
+      "category": "Opencart"
+    }
+  ]
+}
