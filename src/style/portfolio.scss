@@ -1,77 +1,57 @@
-section#portfolio{
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding-top: 5rem;
-    margin-top: 3rem;
-    img{
-        width: 100%;
+section#portfolio {
+  padding-top: 5rem;
+  img {
+    width: 100%;
+  }
+  div.portfolio-info {
+    h4 {
+      font-size: 0.85rem;
+      text-align: right;
+      margin-top: 1rem;
     }
-    div.portfolio-info{
-        h4{
-            font-size: 0.85rem;
-            text-align: right;
-            margin-top: 1rem;
-        }
-    }
-    /*  Needed for filters */
+  }
+  /*  Needed for filters */
 
-.hide { /* You can play with the seconds to change the "animation" */
-    animation: hide .5s ease 0s 1 normal forwards;
+  .hide {
+    /* You can play with the seconds to change the "animation" */
+    animation: hide 0.5s ease 0s 1 normal forwards;
     transform-origin: center;
+    display: none;
   }
-  .show { /* You can play with the seconds to change the "animation" */
-      animation: show .5s ease 0s 1 normal forwards;    
-      transform-origin: center;
+  .show {
+    /* You can play with the seconds to change the "animation" */
+    animation: show 0.5s ease 0s 1 normal forwards;
+    transform-origin: center;
+    display: block;
   }
-  
+
   @keyframes hide {
-    0%{
-      transform: scale(1);        
+    0% {
+      transform: scale(1);
     }
     100% {
-      transform: scale(0);        
+      transform: scale(0);
       width: 0;
       height: 0;
       margin: 0;
     }
   }
   @keyframes show {
-    0%{
-      transform: scale(0);     
+    0% {
+      transform: scale(0);
       width: 0;
       height: 0;
-      margin: 0;   
+      margin: 0;
     }
     100% {
-      transform: scale(1);    
+      transform: scale(1);
     }
   }
   /*  // Needed for filters */
-  
+
   /* For decoration only */
   body {
     font-family: sans-serif;
-  }
-  .projects {
-    display: flex;
-    background: gray;
-    justify-content: center;
-    align-items: center;
-    min-height: 200px;
-  }
-  .project {
-    background: rebeccapurple;
-    width: 230px;
-    height: 100px;
-    margin: 20px;
-    padding-top: 20px;
-    text-align: center;  
-  }
-  .project:nth-child(odd) {
-    background: greenyellow;
   }
   .filters {
     margin: 20px;
@@ -84,6 +64,6 @@ section#portfolio{
   .filter:hover {
     cursor: pointer;
   }
-  
+
   /* // For decoration only */
 }

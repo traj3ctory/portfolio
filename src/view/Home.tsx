@@ -16,12 +16,24 @@ function Home() {
   }, []);
   return (
     <div className="container content">
-   {
-    value && (
-    <><Main /><About school={value.school} workXp={value.workXp} description={value.description} subtitle={value.subtitle} title={value.title} stack={value.stack} detail={value.detail} /><Portfolio /><Contact /></>
-    )
-   }
-   </div>
+      {value && (
+        <>
+          <Main />
+          <About
+            school={value.school}
+            workXp={value.workXp}
+            description={value.description}
+            subtitle={value.subtitle}
+            title={value.title}
+            stack={value.stack}
+            detail={value.detail}
+          />
+          {/* <div className="py-5" /> */}
+          <Portfolio />
+          <Contact />
+        </>
+      )}
+    </div>
   );
 }
 
