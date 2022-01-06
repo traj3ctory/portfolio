@@ -8,7 +8,6 @@ const Header = (props: any) => {
   // const currentUrl = window.location.pathname
   useEffect(() => {
     (async () => {
-      console.log(currentUrl.hash);
       setUrl(currentUrl.hash);
     })();
     return () => {
