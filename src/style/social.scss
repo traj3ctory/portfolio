@@ -1,5 +1,6 @@
 div.social {
-  span {
+  margin-top: 1rem;
+  span.find_me {
     display: block;
     font-size: 30px;
     color: white;
@@ -31,25 +32,34 @@ div.social {
       &:first-child {
         a {
           color: #fff;
-          background-color: #1da1f2;
-          border-color: #1da1f2;
+          background-color: #00acee;
+          border-color: #00acee;
         }
       }
       &:nth-of-type(2) {
         a {
-          background-color: #3b5999;
-          border-color: #3b5999;
+          color: #fff;
+          background-color: #0077b5;
+          border-color: #0077b5;
         }
       }
       &:nth-of-type(3) {
         a {
-          background-color: #222;
-          border-color: #222;
+          color: #fff;
+          background-color: #128c7e;
+          border-color: #128c7e;
+        }
+      }
+      &:nth-of-type(4) {
+        a {
+          color: #fff;
+          background-color: #171515;
+          border-color: #171515;
         }
       }
       &:hover {
         box-shadow: 0 7px 14px rgb(50 50 93 / 10%), 0 3px 6px rgb(0 0 0 / 8%);
-        transform: translateY(-1px);
+        transform: translateY(-5px);
       }
     }
   }

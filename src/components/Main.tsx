@@ -11,7 +11,8 @@ const Main = () => (
           <div style={{ width: "100%" }}>
             <h4>Hello there. I'm</h4>
             <h1>Benard Z David</h1>
-            <p>I'm a Frontend Web Developer.</p>
+            <p className="mb-0">I'm a Frontend Web Developer.</p>
+            <small>...and an aspiring full stack developer</small>
             <SocialMedia />
           </div>
         </Card>
