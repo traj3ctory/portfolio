@@ -1,5 +1,11 @@
 section#portfolio {
   padding-top: 5rem;
+  div.btn_container{
+    width: inherit;
+    overflow-x: auto;
+    margin-bottom: 1rem;
+    padding-left: 4rem;
+  }
   img {
     width: 100%;
   }
@@ -65,5 +71,11 @@ section#portfolio {
     cursor: pointer;
   }
 
+  button.p-button {
+    // font-size: 0.875rem;
+    // padding: 0.62475rem 0.875rem;
+    overflow: hidden;
+    min-width: fit-content;
+}
   /* // For decoration only */
 }

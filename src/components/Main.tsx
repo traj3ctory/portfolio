@@ -6,10 +6,10 @@ import { Card } from "primereact/card";
 const Main = () => (
   <main className="main_content" id="home_page">
     <div style={{ width: "100%" }} className="p-grid">
-      <div className="p-col-6 p-d-flex p-ai-stretch p-ai-center">
+      <div className="p-col-12 p-md-6 p-d-flex p-ai-stretch p-ai-center">
         <Card className="p-d-flex p-ai-center p-jc-center">
           <div style={{ width: "100%" }}>
-            <h4>Hello there. I'm</h4>
+            <h4>Hello there, I'm</h4>
             <h1>Benard Z David</h1>
             <p className="mb-0">I'm a Frontend Web Developer.</p>
             <small>...and an aspiring full stack developer</small>
@@ -17,7 +17,7 @@ const Main = () => (
           </div>
         </Card>
       </div>
-      <div className="p-col-6">
+      <div className="p-col-12 p-md-6">
         <div className="animation_container">
           <div className="animation">
             <DisplayLottie animationData={Coding} />

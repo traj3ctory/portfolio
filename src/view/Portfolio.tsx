@@ -38,37 +38,37 @@ function Portfolio() {
   return (
     <section className="section" id="portfolio">
       <Card title="Portfolio">
-        <div id="filter" className="d-flex w-100 justify-content-center">
+        <div id="filter" className="d-flex w-100 justify-content-center btn_container">
           <button
-            className="p-button mx-1 filter"
+            className="p-button filter p-button-sm mx-1"
             onClick={handleFilter}
             data-filter="all"
           >
             All
           </button>
           <button
-            className="p-button mx-1 filter"
+            className="p-button filter p-button-sm mx-1"
             onClick={handleFilter}
             data-filter="react"
           >
             react
           </button>
           <button
-            className="p-button mx-1 filter"
+            className="p-button filter p-button-sm mx-1"
             onClick={handleFilter}
             data-filter="web"
           >
             web
           </button>
           <button
-            className="p-button mx-1 filter"
+            className="p-button filter p-button-sm mx-1"
             onClick={handleFilter}
             data-filter="wordpress"
           >
             wordpress
           </button>
           <button
-            className="p-button mx-1 filter"
+            className="p-button filter p-button-sm mx-1"
             onClick={handleFilter}
             data-filter="opencart"
           >

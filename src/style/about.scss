@@ -1,7 +1,7 @@
-section#about_page {
+section#about {
   min-height: 100vh;
   padding-top: 5rem;
-  main.about_content{
+  main.about_content {
     height: 100%;
     z-index: 6;
     .custom-marker {
@@ -14,12 +14,12 @@ section#about_page {
       border-radius: 50%;
       z-index: 1;
     }
-  
+
     .p-timeline-event-content,
     .p-timeline-event-opposite {
       line-height: 1;
     }
-  
+
     @media screen and (max-width: 960px) {
       .customized-timeline .p-timeline-event:nth-child(even) {
         flex-direction: row !important;
@@ -37,12 +37,18 @@ section#about_page {
       }
     }
   }
-  .p-panel{
-    .p-panel-title{
+  .p-panel {
+    .p-panel-title {
       font-size: 0.95rem;
     }
-    .p-panel-content{
-      font-size: 0.9rem
+    .p-panel-content {
+      font-size: 0.9rem;
+    }
+  }
+  div.p-timeline-event-separator {
+    span.custom-marker {
+      background-color: #000000 !important;
+      color: #bbbbbb;
     }
   }
 }

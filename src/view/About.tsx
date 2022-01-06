@@ -54,7 +54,7 @@ function About({ stack, workXp, school, title, subtitle, description, detail }: 
       </main>
       <main className="about_content mb-3">
         <div className="p-grid">
-          <div className="p-col">
+          <div className="p-col-12 p-md-6">
             <Card className="h-100" title="Details">
               <Panel header={Object.keys(detail)[0].toUpperCase()} toggleable>
                     <Link to="/">{ detail.website }</Link>
@@ -83,7 +83,7 @@ function About({ stack, workXp, school, title, subtitle, description, detail }: 
                 
             </Card>
           </div>
-          <div className="p-col">
+          <div className="p-col-12 p-md-6">
             <Card className="h-100" title="Stack">
               {stack.map((el: stackData, i: string) => (
                 <div key={i}><span>{el.name}</span><ProgressBar className="mb-3" value={el.progress} style={{ height: '0.5rem' }} /></div>
@@ -94,7 +94,7 @@ function About({ stack, workXp, school, title, subtitle, description, detail }: 
       </main>
       <main className="about_content">
         <div className="p-grid">
-          <div className="p-col">
+          <div className="p-col-12 p-md-6">
           <Card className="h-100" title="Education">
               <Timeline
                 value={school}
@@ -105,7 +105,7 @@ function About({ stack, workXp, school, title, subtitle, description, detail }: 
               />
             </Card>
           </div>
-          <div className="p-col">
+          <div className="p-col-12 p-md-6">
           <Card className="h-100" title="Experience">
               <Timeline
                 value={workXp}
