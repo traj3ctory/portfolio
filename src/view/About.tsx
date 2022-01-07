@@ -84,7 +84,7 @@ function About({ stack, workXp, school, title, subtitle, description, detail }: 
           <div className="p-col-12 p-md-6">
             <Card className="h-100" title="Stack">
               {stack.map((el: stackData, i: string) => (
-                <div key={i}><span>{el.name}</span><ProgressBar className="mb-3" value={el.progress} style={{ height: '0.5rem' }} /></div>
+                <div key={i}><span>{el.name}</span><ProgressBar className="mb-3" value={el.progress} style={{ height: '.7rem' }} /></div>
               ))}
             </Card>
           </div>
