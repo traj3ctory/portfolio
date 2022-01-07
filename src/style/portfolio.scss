@@ -4,8 +4,8 @@ section#portfolio {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding-top: 5rem;
-  margin-top: 3rem;
+  // padding-top: 5rem;
+  // margin-top: 3rem;
   img {
     width: 100%;
   }
@@ -22,11 +22,13 @@ section#portfolio {
     /* You can play with the seconds to change the "animation" */
     animation: hide 0.5s ease 0s 1 normal forwards;
     transform-origin: center;
+    display: none;
   }
   .show {
     /* You can play with the seconds to change the "animation" */
     animation: show 0.5s ease 0s 1 normal forwards;
     transform-origin: center;
+    display: block;
   }
 
   @keyframes hide {

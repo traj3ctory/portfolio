@@ -35,8 +35,8 @@ function Portfolio() {
   return (
     <section id="portfolio">
       <Card title="Portfolio">
-        <section className="portfolio section" id="portfolio">
-          <div id="filter">
+        <section className="portfolio section">
+          <div id="filter" className="d-flex justify-content-center">
             <button
               className="p-button mx-1 filter"
               onClick={handleFilter}
