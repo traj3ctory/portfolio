@@ -4,7 +4,7 @@ nav.header_container {
   left: 0;
   right: 0;
   z-index: 4;
-  background: linear-gradient(35deg,#100f0f,#131b22) !important;
+  background: linear-gradient(35deg, #100f0f, #131b22) !important;
   main.header_content {
     display: flex;
     align-items: center;
@@ -21,7 +21,11 @@ nav.header_container {
       text-decoration: none;
     }
   }
-  li.nav-item{
+  li.nav-item {
     z-index: 6;
+    a.active {
+      transition: all 1s ease;
+      border-bottom: 2px solid white;
+    }
   }
 }

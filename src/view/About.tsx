@@ -3,7 +3,7 @@ import { Timeline } from "primereact/timeline";
 import { ProgressBar } from "primereact/progressbar";
 import { stackData } from "../data/dataType";
 import { Panel } from 'primereact/panel';
-import { Button } from 'primereact/button';
+// import { Button } from 'primereact/button';
 import { Link } from "react-router-dom";
 // import CV from '../asset/doc/CV';
 
@@ -33,7 +33,7 @@ const customizedContent2 = (item: any) => (
 
 function About({ stack, workXp, school, title, subtitle, description, detail }: any) {
   return (
-    <section id="about_page">
+    <section id="about">
       <main className="about_content mb-3">
         <Card title="About">
           <div className="mb-3">
@@ -52,11 +52,10 @@ function About({ stack, workXp, school, title, subtitle, description, detail }: 
           <a href="#contact" className="p-button p-button-small p-button-raised mx-2" >Hire Me<i className="mx-2 pi pi-check"/></a>
         </Card>
       </main>
-      <main className="about_content">
+      <main className="about_content mb-3">
         <div className="p-grid">
-          <div className="p-col">
-            <Card>
-              <h4>Details</h4>
+          <div className="p-col-12 p-md-6">
+            <Card className="h-100" title="Details">
               <Panel header={Object.keys(detail)[0].toUpperCase()} toggleable>
                     <Link to="/">{ detail.website }</Link>
                 </Panel>
@@ -84,9 +83,8 @@ function About({ stack, workXp, school, title, subtitle, description, detail }: 
                 
             </Card>
           </div>
-          <div className="p-col">
-            <Card>
-              <h4>Stack</h4>
+          <div className="p-col-12 p-md-6">
+            <Card className="h-100" title="Stack">
               {stack.map((el: stackData, i: string) => (
                 <div key={i}><span>{el.name}</span><ProgressBar className="mb-3" value={el.progress} style={{ height: '0.5rem' }} /></div>
               ))}
@@ -96,9 +94,8 @@ function About({ stack, workXp, school, title, subtitle, description, detail }: 
       </main>
       <main className="about_content">
         <div className="p-grid">
-          <div className="p-col">
-            <Card>
-              <h4>Education</h4>
+          <div className="p-col-12 p-md-6">
+          <Card className="h-100" title="Education">
               <Timeline
                 value={school}
                 align="alternate"
@@ -108,9 +105,8 @@ function About({ stack, workXp, school, title, subtitle, description, detail }: 
               />
             </Card>
           </div>
-          <div className="p-col">
-            <Card>
-              <h4>Experience</h4>
+          <div className="p-col-12 p-md-6">
+          <Card className="h-100" title="Experience">
               <Timeline
                 value={workXp}
                 align="alternate"

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>HelloWorld</h1>
+    <h4 id="value"></h4>
+
+    <script>
+        // The function twoSum should return indices of the two numbers such that they add up to the target, where index1 must be less than index2. Please note that your returned answers (both index1 and index2) are not zero-based.
+
+        const arr = [2, 7, 11, 15];
+        const target = 9;
+
+
+        // const twoSum = (arr, target) => {
+        //     for (let i = 0; i <= arr.length; i++) {
+        //         for (let j = 0; j <= arr.length; j++) {
+        //             if (arr[i] + arr[j] === target) {
+        //                 return [i, j]
+        //             }
+        //         }
+        //     }
+        // };
+
+        const twoSum = (nums, target) => {
+            for (let index = 0; index < nums.length; index++) {
+                const diff = target - nums[index];
+                const diffIndex = nums.indexOf(diff);
+                // "diffIndex !== index" takes care of same index not being reused
+                if (diffIndex !== -1 && diffIndex !== index) {
+                    return [index, diffIndex];
+                }
+            }
+        };
+
+        // console.log(twoSum(arr, target));
+        document.getElementById('value').innerHTML = twoSum(arr, target);
+    </script>
+</body>
+
+</html>

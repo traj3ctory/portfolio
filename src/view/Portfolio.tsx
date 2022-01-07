@@ -31,124 +31,125 @@ const handleFilter = (e: any) => {
     el.classList.add("show");
   });
 };
+
+// https://wakatime.com/a-look-back-at-2021/93064689-92b4-4ad3-953b-0ec932fdf216/iheypubrrv
+
 function Portfolio() {
   return (
-    <section id="portfolio">
+    <section className="section" id="portfolio">
       <Card title="Portfolio">
-        <section className="portfolio section">
-          <div id="filter" className="d-flex justify-content-center">
-            <button
-              className="p-button mx-1 filter"
-              onClick={handleFilter}
-              data-filter="all"
-            >
-              all
-            </button>
-            <button
-              className="p-button mx-1 filter"
-              onClick={handleFilter}
-              data-filter="react"
-            >
-              react
-            </button>
-            <button
-              className="p-button mx-1 filter"
-              onClick={handleFilter}
-              data-filter="web"
-            >
-              web
-            </button>
-            <button
-              className="p-button mx-1 filter"
-              onClick={handleFilter}
-              data-filter="wordpress"
-            >
-              wordpress
-            </button>
-            <button
-              className="p-button mx-1 filter"
-              onClick={handleFilter}
-              data-filter="opencart"
-            >
-              opencart
-            </button>
-          </div>
+        <div id="filter" className="d-flex w-100 justify-content-center btn_container">
+          <button
+            className="p-button filter p-button-sm mx-1"
+            onClick={handleFilter}
+            data-filter="all"
+          >
+            All
+          </button>
+          <button
+            className="p-button filter p-button-sm mx-1"
+            onClick={handleFilter}
+            data-filter="react"
+          >
+            react
+          </button>
+          <button
+            className="p-button filter p-button-sm mx-1"
+            onClick={handleFilter}
+            data-filter="web"
+          >
+            web
+          </button>
+          <button
+            className="p-button filter p-button-sm mx-1"
+            onClick={handleFilter}
+            data-filter="wordpress"
+          >
+            wordpress
+          </button>
+          <button
+            className="p-button filter p-button-sm mx-1"
+            onClick={handleFilter}
+            data-filter="opencart"
+          >
+            opencart
+          </button>
+        </div>
 
-          <div className="p-grid" id="portfolioItem">
-            <div className="p-col-12 p-md-4 project react" data-filter="react">
-              <img src={leerix} alt="leerix application" />
-              <div className="portfolio-info">
-                <h4>Lyrics Finder</h4>
-                <div className="icon">
-                  <i className="fa fa-search" aria-hidden="true"></i>
-                </div>
-              </div>
-            </div>
-            <div className="p-col-12 p-md-4 project web" data-filter="web">
-              <img src={portfolio} alt="portfolio site" />
-              <div className="portfolio-info">
-                <h4>Portfolio</h4>
-                <div className="icon">
-                  <i className="fa fa-search" aria-hidden="true"></i>
-                </div>
-              </div>
-            </div>
-            <div className="p-col-12 p-md-4 project web" data-filter="web">
-              <img src={sys} alt="Sysbanker EE" />
-              <div className="portfolio-info">
-                <h4>Sysanker EE</h4>
-                <div className="icon">
-                  <i className="fa fa-search" aria-hidden="true"></i>
-                </div>
-              </div>
-            </div>
-            <div
-              className="p-col-12 p-md-4 project wordpress"
-              data-filter="wordpress"
-            >
-              <img src={uifww} alt="Utali Igbo" />
-              <div className="portfolio-info">
-                <h4>Utali Igbo</h4>
-                <div className="icon">
-                  <i className="fa fa-search" aria-hidden="true"></i>
-                </div>
-              </div>
-            </div>
-            <div
-              className="p-col-12 p-md-4 project wordpress"
-              data-filter="wordpress"
-            >
-              <img src={johanan} alt="Johanan World Blog" />
-              <div className="portfolio-info">
-                <h4>Johanan World Blog</h4>
-                <div className="icon">
-                  <i className="fa fa-search" aria-hidden="true"></i>
-                </div>
-              </div>
-            </div>
-            <div
-              className="p-col-12 p-md-4 project opencart"
-              data-filter="opencart"
-            >
-              <img src={jwl} alt="Johanan World" />
-              <div className="portfolio-info">
-                <h4>Johanan World</h4>
-                <div className="icon">
-                  <i className="fa fa-search" aria-hidden="true"></i>
-                </div>
-              </div>
-            </div>
-            <div className="p-col-12 p-md-4 project web" data-filter="web">
-              <img src={ebs} alt="Accsiss eBs" />
-              <div className="portfolio-info">
-                <h4>Accsiss eBs</h4>
-                <div className="icon">
-                  <i className="fa fa-search" aria-hidden="true"></i>
-                </div>
+        <div className="p-grid" id="portfolioItem">
+          <div className="p-col-12 p-md-4 project react" data-filter="react">
+            <img src={leerix} alt="leerix application" />
+            <div className="portfolio-info">
+              <h4>Lyrics Finder</h4>
+              <div className="icon">
+                <i className="fa fa-search" aria-hidden="true"></i>
               </div>
             </div>
           </div>
-        </section>
+          <div className="p-col-12 p-md-4 project web" data-filter="web">
+            <img src={portfolio} alt="portfolio site" />
+            <div className="portfolio-info">
+              <h4>Portfolio</h4>
+              <div className="icon">
+                <i className="fa fa-search" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+          <div className="p-col-12 p-md-4 project web" data-filter="web">
+            <img src={sys} alt="Sysbanker EE" />
+            <div className="portfolio-info">
+              <h4>Sysanker EE</h4>
+              <div className="icon">
+                <i className="fa fa-search" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+          <div
+            className="p-col-12 p-md-4 project wordpress"
+            data-filter="wordpress"
+          >
+            <img src={uifww} alt="Utali Igbo" />
+            <div className="portfolio-info">
+              <h4>Utali Igbo</h4>
+              <div className="icon">
+                <i className="fa fa-search" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+          <div
+            className="p-col-12 p-md-4 project wordpress"
+            data-filter="wordpress"
+          >
+            <img src={johanan} alt="Johanan World Blog" />
+            <div className="portfolio-info">
+              <h4>Johanan World Blog</h4>
+              <div className="icon">
+                <i className="fa fa-search" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+          <div
+            className="p-col-12 p-md-4 project opencart"
+            data-filter="opencart"
+          >
+            <img src={jwl} alt="Johanan World" />
+            <div className="portfolio-info">
+              <h4>Johanan World</h4>
+              <div className="icon">
+                <i className="fa fa-search" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+          <div className="p-col-12 p-md-4 project web" data-filter="web">
+            <img src={ebs} alt="Accsiss eBs" />
+            <div className="portfolio-info">
+              <h4>Accsiss eBs</h4>
+              <div className="icon">
+                <i className="fa fa-search" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </div>
       </Card>
     </section>
   );
