@@ -3,9 +3,7 @@ import { Timeline } from "primereact/timeline";
 import { ProgressBar } from "primereact/progressbar";
 import { stackData } from "../data/dataType";
 import { Panel } from 'primereact/panel';
-// import { Button } from 'primereact/button';
 import { Link } from "react-router-dom";
-// import CV from '../asset/doc/CV';
 
 const customizedMarker = (item: any) => (
   <span
@@ -48,7 +46,7 @@ function About({ stack, workXp, school, title, subtitle, description, detail }: 
             </h4>
           </div>
           <p>{description}</p>
-          <Link to="/CV.pdf" target="_blank" className="p-button p-button-text p-button-small p-button-raised" download >Download CV<i className="mx-2 pi pi-check"/></Link>
+          <Link to="/asset/CV.pdf" target="_blank" className="p-button p-button-text p-button-small p-button-raised" download >Download CV<i className="mx-2 pi pi-check"/></Link>
           <a href="#contact" className="p-button p-button-small p-button-raised mx-2" >Hire Me<i className="mx-2 pi pi-check"/></a>
         </Card>
       </main>

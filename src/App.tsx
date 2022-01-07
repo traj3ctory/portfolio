@@ -7,13 +7,10 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 function App() {
   return (
     <BrowserRouter>
-      {/* <Layout> */}
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/product" element={<Product />} /> */}
         <Route path="*" element={<NotFound />} />
       </Routes>
-      {/* </Layout> */}
     </BrowserRouter>
   );
 }

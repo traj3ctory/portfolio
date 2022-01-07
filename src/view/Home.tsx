@@ -28,7 +28,6 @@ function Home() {
             stack={value.stack}
             detail={value.detail}
           />
-          {/* <div className="py-5" /> */}
           <Portfolio />
           <Contact />
         </>
