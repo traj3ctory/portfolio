@@ -5,7 +5,7 @@ import { InputText } from "primereact/inputtext";
 import { InputTextarea } from "primereact/inputtextarea";
 import { Dropdown } from "primereact/dropdown";
 import { Toast } from "primereact/toast";
-import emailjs from "@emailjs/browser";
+// import emailjs from "@emailjs/browser";
 
 function Contact() {
   const form = useRef();
