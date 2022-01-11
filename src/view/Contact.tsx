@@ -43,36 +43,62 @@ function Contact() {
     { name: "Other", value: "New_Idea" },
   ];
 
-  const handleContact = (evt: any) => {
+  const encode = (data) => {
+    return Object.keys(data)
+      .map(
+        (key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
+      )
+      .join("&");
+  };
+
+  const handleContact = async (evt: any) => {
+    // evt.preventDefault();
+    // setLoading(true);
+    // const { name, email, subject, message } = data;
+    // if (name !== "" && email !== "" && subject !== "" && message !== "") {
+    //   emailjs
+    //     .sendForm(
+    //       process.env.REACT_APP_SERVICE_ID,
+    //       process.env.REACT_APP_TEMPLATE_ID,
+    //       form.current,
+    //       process.env.REACT_APP_USER_ID
+    //     )
+    //     .then(
+    //       (result) => {
+    //         showInfo();
+    //         setData({
+    //           name: "",
+    //           email: "",
+    //           subject: "",
+    //           message: "",
+    //         });
+    //         setLoading(false);
+    //       },
+    //       (error) => {
+    //         showError(error.text);
+    //         setLoading(false);
+    //       }
+    //     );
+    // } else {
+    //   showError("Please fill all the fields");
+    //   setTimeout(() => {
+    //     setLoading(false);
+    //   }, 4000);
+    // }
     evt.preventDefault();
-    setLoading(true);
-    const { name, email, subject, message } = data;
-    if (name !== "" && email !== "" && subject !== "" && message !== "") {
-      emailjs
-        .sendForm(
-          process.env.REACT_APP_SERVICE_ID,
-          process.env.REACT_APP_TEMPLATE_ID,
-          form.current,
-          process.env.REACT_APP_USER_ID
-        )
-        .then(
-          (result) => {
-            showInfo();
-            setData({
-              name: "",
-              email: "",
-              subject: "",
-              message: "",
-            });
-            setLoading(false);
-          },
-          (error) => {
-            showError(error.text);
-            setLoading(false);
-          }
-        );
-    } else {
-      showError("Please fill all the fields");
+
+    try {
+      const resp = await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: encode({ "form-name": "contact", ...data }),
+      });
+      if(resp){
+      showInfo();
+      };
+    } catch (error) {
+      showError(error.message);
+    } finally {
       setTimeout(() => {
         setLoading(false);
       }, 4000);
@@ -82,7 +108,8 @@ function Contact() {
   return (
     <section id="contact">
       <Card title="Contact">
-        <form onSubmit={handleContact} ref={form}>
+        <form onSubmit={handleContact} ref={form} name="contact">
+          <input type="hidden" name="form-name" value="contact" />
           <div className="p-grid p-fluid">
             <div className="p-col-12 p-md-6">
               <span className="p-float-label p-input-icon-left">
@@ -108,9 +135,9 @@ function Contact() {
                   name="email"
                   value={data.email}
                   onChange={(e) => setData({ ...data, email: e.target.value })}
-                  autoComplete="name"
+                  autoComplete="email"
                 />
-                <label htmlFor="lastname">Email</label>
+                <label htmlFor="email">Email</label>
               </span>
             </div>
             <div className="p-col-12">

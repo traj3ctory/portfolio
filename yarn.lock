@@ -1065,9 +1065,9 @@
   integrity sha512-M0qqxAcwCsIVfpFQSlGN5XjXWu8l5JDZN+fPt1LeW5SZexQTgnaEvgXAY+CeygRw0EeppWHi12JxESWiWrB0Sg==
 
 "@emailjs/browser@^3.3.1":
-  version "3.3.1"
-  resolved "https://registry.yarnpkg.com/@emailjs/browser/-/browser-3.3.1.tgz#573ed344933edf79790522f8f3ca31077f4e5926"
-  integrity sha512-hFoz5GHlaR7Wh/C6XaoZflX3UH3/Evev3y00S3jgLROMwKV+/Yu41muIpB5f755XGDnK7LT++KdMO6MOa2cAOQ==
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/@emailjs/browser/-/browser-3.4.0.tgz#47e9bf7b52a45ec416a6c82b89876316e32053aa"
+  integrity sha512-pTR9wEj0KLrJBVWFfB6IFEwmGIod/6cfN541Y0TVN2+9Bbn+R9a8gq6GeJZ6ggbYs36J3gCTXDyVKhtxjRsjtw==
 
 "@emotion/cache@^11.7.1":
   version "11.7.1"
