@@ -16,6 +16,7 @@
     "node-sass": "^7.0.1",
     "primeflex": "2.0.0",
     "primeicons": "^5.0.0",
+    "css-loader": "^1.0.0",
     "primereact": "^7.1.0",
     "react": "^17.0.2",
     "react-awesome-reveal": "^3.8.1",
