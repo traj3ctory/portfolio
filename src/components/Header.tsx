@@ -59,7 +59,7 @@ const Header = (props: any) => {
                 Contact
               </a>
             </li>
-            <li className="nav-item">
+            <li className="nav-item d-none">
               <ToggleMode />
             </li>
           </ul>
