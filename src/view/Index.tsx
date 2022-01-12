@@ -22,7 +22,7 @@ function Homepage() {
   return (
     <Fade duration={4000}>
       <section className="home_container">
-        <div className="d-none">
+        <div className="d-noe">
         <Shimmer />
         </div>
         <Header />

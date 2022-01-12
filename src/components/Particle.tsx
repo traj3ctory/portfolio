@@ -37,16 +37,16 @@ const Shimmer = () => {
           },
           modes: {
             push: { quantity: 4 },
-            attract: { distance: 200, duration: 0.4, factor: 5 },
+            attract: { distance: 200, duration: 1.5, factor: 1 },
           },
         },
         particles: {
           color: {
-            value: "#ffffff",
+            value: "#bbbbbb",
           },
           links: {
-            color: "#ffffff",
-            distance: 150,
+            color: "#bbbbbb",
+            distance: 50,
             enable: true,
             opacity: 0.5,
             width: 1,
