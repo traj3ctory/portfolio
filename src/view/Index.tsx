@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Fade } from "react-awesome-reveal";
 import { Sidebar } from "primereact/sidebar";
-import { Button } from "primereact/button";
 import Shimmer from "../components/Particle";
 import Header from "../components/Header";
 // import Loader from "../components/Loader";
