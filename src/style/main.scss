@@ -64,3 +64,26 @@ section.home_container{
 h1, h2, h3, h4, h5, h6, p, span, small{
   font-family: 'Roboto Slab', serif;
 }
+
+ul.sideBar_link{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  li{
+    margin: 0;
+    padding: 0;
+    a{
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      padding: 1rem;
+      font-size: 2rem;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      &:hover{
+        background: #101011f4;
+        color: #fff;
+      }
+    }
+  }
+}

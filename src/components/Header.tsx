@@ -24,11 +24,7 @@ const Header = (props: any) => {
         <button
           className="navbar-toggler"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarText"
-          aria-controls="navbarText"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+          onClick={props.sidebarToggle}
         >
           <span className="navbar-toggler-icon" />
         </button>
