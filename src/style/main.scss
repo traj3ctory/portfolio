@@ -1,7 +1,7 @@
 main.main_content{
   width: 100%;
   position: relative;
-  height: 100vh;
+  height: 92vh;
   display: flex;
   align-items: center;
   z-index: 1;
@@ -9,6 +9,9 @@ main.main_content{
     background-color: inherit;
     box-shadow: none;
     width: 100%;
+    h1{
+      font-size: 2rem;
+    }
   }
   div.animation_container{
     display: flex;
@@ -16,7 +19,7 @@ main.main_content{
     align-items: center;
     width: 100%;
     div.animation{
-      width: 60%;
+      width: 70%;
     }
   }
 }
@@ -42,11 +45,12 @@ div.content{
 }
 
 body {
+  font-family: 'Roboto Slab', serif !important;
   width: 100%;
   margin: 0;
   a{
     text-decoration: none;
-    color: inhrit;
+    color: inherit;
   }
 }
 
@@ -57,3 +61,6 @@ section.home_container{
   background: linear-gradient(35deg,#101011f4,#101011) !important;
 }
 
+h1, h2, h3, h4, h5, h6, p, span, small{
+  font-family: 'Roboto Slab', serif;
+}

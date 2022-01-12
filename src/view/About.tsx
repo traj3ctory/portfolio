@@ -37,13 +37,12 @@ function About({ stack, workXp, school, title, subtitle, description, detail }: 
           <div className="mb-3">
             <h4 className="ml-3">
               {title}
-              <span className="mx-2" />
+              </h4>
               {subtitle.map((el: string, i: string) => (
-                <span className="mx-1 fs-5 text-primary" key={i}>
+                <span className="fs-5 text-primary" key={i}>
                   {el}
                 </span>
               ))}
-            </h4>
           </div>
           <p>{description}</p>
           <Link to="/asset/CV.pdf" target="_blank" className="p-button p-button-text p-button-small p-button-raised" download >Download CV<i className="mx-2 pi pi-check"/></Link>

@@ -1,9 +1,0 @@
- [context.production.environment]
-  HUGO_ENV = "production"
-  HUGO_ENABLEGITINFO = "false"
-  HUGO_VERSION = "0.89.4"
- 
- [build.environment]
-  HUGO_VERSION = "0.89.4"
-  NODE_VERSION = "16.9.0"
-  NPM_VERSION = "7.11.1"

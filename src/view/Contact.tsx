@@ -5,7 +5,7 @@ import { InputText } from "primereact/inputtext";
 import { InputTextarea } from "primereact/inputtextarea";
 import { Dropdown } from "primereact/dropdown";
 import { Toast } from "primereact/toast";
-// import emailjs from "@emailjs/browser";
+import emailjs from "@emailjs/browser";
 
 function Contact() {
   const form = useRef();
@@ -43,62 +43,36 @@ function Contact() {
     { name: "Other", value: "New_Idea" },
   ];
 
-  const encode = (data) => {
-    return Object.keys(data)
-      .map(
-        (key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
-      )
-      .join("&");
-  };
-
   const handleContact = async (evt: any) => {
-    // evt.preventDefault();
-    // setLoading(true);
-    // const { name, email, subject, message } = data;
-    // if (name !== "" && email !== "" && subject !== "" && message !== "") {
-    //   emailjs
-    //     .sendForm(
-    //       process.env.REACT_APP_SERVICE_ID,
-    //       process.env.REACT_APP_TEMPLATE_ID,
-    //       form.current,
-    //       process.env.REACT_APP_USER_ID
-    //     )
-    //     .then(
-    //       (result) => {
-    //         showInfo();
-    //         setData({
-    //           name: "",
-    //           email: "",
-    //           subject: "",
-    //           message: "",
-    //         });
-    //         setLoading(false);
-    //       },
-    //       (error) => {
-    //         showError(error.text);
-    //         setLoading(false);
-    //       }
-    //     );
-    // } else {
-    //   showError("Please fill all the fields");
-    //   setTimeout(() => {
-    //     setLoading(false);
-    //   }, 4000);
-    // }
     evt.preventDefault();
-
-    try {
-      const resp = await fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: encode({ "form-name": "contact", ...data }),
-      });
-      if(resp){
-      showInfo();
-      };
-    } catch (error) {
-      showError(error.message);
-    } finally {
+    setLoading(true);
+    const { name, email, subject, message } = data;
+    if (name !== "" && email !== "" && subject !== "" && message !== "") {
+      emailjs
+        .sendForm(
+          process.env.REACT_APP_SERVICE_ID,
+          process.env.REACT_APP_TEMPLATE_ID,
+          form.current,
+          process.env.REACT_APP_USER_ID
+        )
+        .then(
+          (result) => {
+            showInfo();
+            setData({
+              name: "",
+              email: "",
+              subject: "",
+              message: "",
+            });
+            setLoading(false);
+          },
+          (error) => {
+            showError(error.text);
+            setLoading(false);
+          }
+        );
+    } else {
+      showError("Please fill all the fields");
       setTimeout(() => {
         setLoading(false);
       }, 4000);
@@ -108,8 +82,7 @@ function Contact() {
   return (
     <section id="contact">
       <Card title="Contact">
-        <form onSubmit={handleContact} ref={form} name="contact">
-          <input type="hidden" name="form-name" value="contact" />
+        <form onSubmit={handleContact} ref={form}>
           <div className="p-grid p-fluid">
             <div className="p-col-12 p-md-6">
               <span className="p-float-label p-input-icon-left">

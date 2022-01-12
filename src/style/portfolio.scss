@@ -1,5 +1,8 @@
 section#portfolio {
   padding-top: 5rem;
+  div.p-card-body{
+    min-height: 30rem;
+  }
   div.btn_container{
     width: inherit;
     overflow-x: auto;
