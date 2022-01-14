@@ -21,7 +21,7 @@ const Shimmer = () => {
             value: "inherit",
           },
         },
-        fpsLimit: 60,
+        fpsLimit: 10,
         interactivity: {
           events: {
             onClick: {

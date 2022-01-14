@@ -1,7 +1,7 @@
 {
   "title": "Benard Z. David",
   "subtitle": ["`${ Frontend }`", "<Web />", "{{ Developer }}"],
-  "description": "Hi! My name is Benard Z. David. I am a Web Developer, and I'm very passionate and dedicated to my work. With 3 years experience as a professional Frontend Web developer, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the design process, from discussion and collaboration.",
+  "description": "Hi! My name is Benard Z. David. I am a Web Developer, and I'm very passionate and dedicated to my work. With 3 years experience as a professional Frontend Web developer, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the design process including, discussion to collaborations.",
   "name": {
     "lastName": "Benard",
     "middleName": "Zibiri",
@@ -20,35 +20,43 @@
   },
   "stack": [
     {
-      "name": "html",
+      "name": "Html5",
       "progress": 90
     },
     {
-      "name": "css",
+      "name": "CSS",
       "progress": 80
     },
     {
-      "name": "sass/scss",
-      "progress": 70
+      "name": "Sass/Scss",
+      "progress": 75
     },
     {
-      "name": "bootstrap",
+      "name": "Bootstrap",
       "progress": 90
     },
     {
-      "name": "javascript",
+      "name": "JavaScript",
       "progress": 60
     },
     {
-      "name": "react",
-      "progress": 55
+      "name": "TypeScript",
+      "progress": 60
     },
     {
-      "name": "vue",
-      "progress": 50
+      "name": "React",
+      "progress": 65
     },
     {
-      "name": "wordpress",
+      "name": "Vue",
+      "progress": 70
+    },
+    {
+      "name": "Node.js",
+      "progress": 20
+    },
+    {
+      "name": "Wordpress",
       "progress": 70
     }
   ],
@@ -88,21 +96,17 @@
   "school": [
     {
       "icon": "pi pi-calendar",
+      "title": "Certification",
+      "date": "2020",
+      "name": "Responsive web design(Free Code Camp).",
+      "link": "https://www.freecodecamp.org/certification/traj3ctory/responsive-web-design"
+    },
+    {
+      "icon": "pi pi-calendar",
       "title": "University",
       "date": "2015 - 2019",
-      "name": "University of Benin, Benin-City, Edo State."
-    },
-    {
-      "icon": "pi pi-calendar",
-      "title": "Secondary",
-      "date": "2009 - 2014",
-      "name": "Command Day Secondary School, Kaduna."
-    },
-    {
-      "icon": "pi pi-calendar",
-      "title": "Primary",
-      "date": "2000 - 2008",
-      "name": "New Life Nursery and Primary School, Okerube, Ikotun, Lagos State."
+      "name": "University of Benin, Benin-City, Edo State.",
+      "link": ""
     }
   ],
   "portfolio": [
