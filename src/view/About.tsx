@@ -5,6 +5,10 @@ import { stackData } from "../data/dataType";
 import { Panel } from "primereact/panel";
 import { Button } from "primereact/button";
 import { Link } from "react-router-dom";
+// import cert1 from "../asset/img/cert1.png";
+// import cert2 from "../asset/img/cert2.png";
+
+// const image = [cert1, cert2];
 
 const customizedMarker = (item: any) => (
   <span
@@ -17,8 +21,10 @@ const customizedMarker = (item: any) => (
 
 const customizedContent = (item: any) => (
   <Card title={item.title}>
-    <img src={item.image} alt={item.title} width="50" />
-    <br />
+    {/* {item.image && image.map((itemSrc: any) => (
+      <img src={itemSrc} alt={item.title} width="50" />
+    ))}
+    <br /> */}
     <small>{item.date}</small>
     <br />
     <h6>{item.name}</h6>

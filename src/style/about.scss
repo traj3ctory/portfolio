@@ -1,6 +1,9 @@
 section#about {
   min-height: 100vh;
   padding-top: 5rem;
+  .p-card-content {
+    padding-top: 0.2rem;
+  }
   main.about_content {
     height: 100%;
     z-index: 6;

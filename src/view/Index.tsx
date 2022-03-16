@@ -27,7 +27,7 @@ function Homepage() {
   return (
     <Fade duration={4000}>
       <section className="home_container">
-        <div className="d-noe">
+        <div className="d-one">
           <Shimmer />
         </div>
         <Header sidebarToggle={toggler} />
