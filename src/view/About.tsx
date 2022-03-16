@@ -17,13 +17,20 @@ const customizedMarker = (item: any) => (
 
 const customizedContent = (item: any) => (
   <Card title={item.title}>
+    <img src={item.image} alt={item.title} width="50" />
+    <br />
     <small>{item.date}</small>
     <br />
     <h6>{item.name}</h6>
     {item.link && (
       <small>
         <a href={`${item.link}`} target="_blank" rel="noopener noreferrer">
-        <Button label="Verify" className="p-button p-button-sm" icon="pi pi-angle-double-right" iconPos="right" />
+          <Button
+            label="Verify"
+            className="p-button p-button-sm"
+            icon="pi pi-angle-double-right"
+            iconPos="right"
+          />
         </a>
       </small>
     )}

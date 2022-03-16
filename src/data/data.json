@@ -97,16 +97,26 @@
     {
       "icon": "pi pi-calendar",
       "title": "Certification",
+      "date": "2022",
+      "name": "Web Development Node.js(Progate).",
+      "link": "",
+      "image": "../asset/img/cert1.png"
+    },
+    {
+      "icon": "pi pi-calendar",
+      "title": "Certification",
       "date": "2020",
       "name": "Responsive web design(Free Code Camp).",
-      "link": "https://www.freecodecamp.org/certification/traj3ctory/responsive-web-design"
+      "link": "https://www.freecodecamp.org/certification/traj3ctory/responsive-web-design",
+      "image": "../asset/img/cert2.png"
     },
     {
       "icon": "pi pi-calendar",
       "title": "University",
       "date": "2015 - 2019",
       "name": "University of Benin, Benin-City, Edo State.",
-      "link": ""
+      "link": "",
+      "image": ""
     }
   ],
   "portfolio": [

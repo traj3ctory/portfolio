@@ -4,7 +4,7 @@ import portfolio from "../asset/img/portfolio.png";
 import sys from "../asset/img/sys.jpg";
 import uifww from "../asset/img/uifww.png";
 import johanan from "../asset/img/jwlblog.png";
-import jwl from "../asset/img//jwl.png";
+import jwl from "../asset/img/jwl.png";
 import ebs from "../asset/img/ebs.png";
 
 const handleFilter = (e: any) => {
@@ -84,7 +84,6 @@ function Portfolio() {
             opencart
           </button>
         </div>
-
         <div className="p-grid" id="portfolioItem">
           <div className="p-col-12 p-md-4 project react" data-filter="react">
             <img src={leerix} alt="leerix application" />
@@ -100,7 +99,7 @@ function Portfolio() {
             <div className="portfolio-info">
               <h4>Portfolio</h4>
               <div className="icon">
-                <i className="fa fa-search" aria-hidden="true"></i>
+                <i className="fa fa-search" aria-hidden="true" />
               </div>
             </div>
           </div>
@@ -109,7 +108,7 @@ function Portfolio() {
             <div className="portfolio-info">
               <h4>Sysanker EE</h4>
               <div className="icon">
-                <i className="fa fa-search" aria-hidden="true"></i>
+                <i className="fa fa-search" aria-hidden="true" />
               </div>
             </div>
           </div>
@@ -121,7 +120,7 @@ function Portfolio() {
             <div className="portfolio-info">
               <h4>Utali Igbo</h4>
               <div className="icon">
-                <i className="fa fa-search" aria-hidden="true"></i>
+                <i className="fa fa-search" aria-hidden="true" />
               </div>
             </div>
           </div>
@@ -133,7 +132,7 @@ function Portfolio() {
             <div className="portfolio-info">
               <h4>Johanan World Blog</h4>
               <div className="icon">
-                <i className="fa fa-search" aria-hidden="true"></i>
+                <i className="fa fa-search" aria-hidden="true" />
               </div>
             </div>
           </div>
@@ -145,7 +144,7 @@ function Portfolio() {
             <div className="portfolio-info">
               <h4>Johanan World</h4>
               <div className="icon">
-                <i className="fa fa-search" aria-hidden="true"></i>
+                <i className="fa fa-search" aria-hidden="true" />
               </div>
             </div>
           </div>
@@ -154,7 +153,7 @@ function Portfolio() {
             <div className="portfolio-info">
               <h4>Accsiss eBs</h4>
               <div className="icon">
-                <i className="fa fa-search" aria-hidden="true"></i>
+                <i className="fa fa-search" aria-hidden="true" />
               </div>
             </div>
           </div>
