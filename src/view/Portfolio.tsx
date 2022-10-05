@@ -36,7 +36,7 @@ const handleFilter = (e: any) => {
 
 function Portfolio() {
   return (
-    <section className="section" id="portfolio">
+    <section className="section d-none" id="portfolio">
      {/* <div className="p-grid">
        <div className="p-col-12 p-md-6">
        <Card>
