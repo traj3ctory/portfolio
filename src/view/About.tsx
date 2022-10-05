@@ -73,7 +73,7 @@ function About({
           </div>
           <p>{description}</p>
           <Link
-            to="/asset/CV.pdf"
+            to="/asset/DAVID_BENARD_CV.pdf"
             target="_blank"
             className="p-button p-button-text p-button-small p-button-raised"
             download
