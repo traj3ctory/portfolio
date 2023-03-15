@@ -10,9 +10,9 @@ const Main = () => (
         <Card className="p-d-flex p-ai-center p-jc-center">
           <div style={{ width: "100%" }}>
             <h4>Hello there, I'm</h4>
-            <h1>Benard Z David</h1>
+            <h1>Benard Zibiri David</h1>
             <p className="mb-0">I'm a Software Engineer.</p>
-            <small>Very intrested in everything JavaScript😍/👀TypeScript...Lazy python[django] developer</small>
+            <small>Very interested in everything JavaScript😍/👀TypeScript...<br />...Lazy python[django] developer</small>
             <SocialMedia />
           </div>
         </Card>

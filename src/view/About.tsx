@@ -5,10 +5,6 @@ import { stackData } from "../data/dataType";
 import { Panel } from "primereact/panel";
 import { Button } from "primereact/button";
 import { Link } from "react-router-dom";
-// import cert1 from "../asset/img/cert1.png";
-// import cert2 from "../asset/img/cert2.png";
-
-// const image = [cert1, cert2];
 
 const customizedMarker = (item: any) => (
   <span
@@ -21,10 +17,6 @@ const customizedMarker = (item: any) => (
 
 const customizedContent = (item: any) => (
   <Card title={item.title}>
-    {/* {item.image && image.map((itemSrc: any) => (
-      <img src={itemSrc} alt={item.title} width="50" />
-    ))}
-    <br /> */}
     <small>{item.date}</small>
     <br />
     <h6>{item.name}</h6>
@@ -57,6 +49,8 @@ function About({
   title,
   subtitle,
   description,
+  desc2,
+  desc3,
   detail,
 }: any) {
   return (
@@ -72,6 +66,8 @@ function About({
             ))}
           </div>
           <p>{description}</p>
+          <p>{desc2}</p>
+          <p>{desc3}</p>
           <Link
             to="/asset/DAVID_BENARD_CV.pdf"
             target="_blank"

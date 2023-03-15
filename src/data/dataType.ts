@@ -2,6 +2,8 @@ interface dataType {
     title: string;
     subtitle: Array<string>;
     description: string;
+    desc2: string;
+    desc3: string;
     name: object;
     birthday: object;
     stack: Array<stackData>;

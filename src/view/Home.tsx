@@ -23,6 +23,8 @@ function Home() {
             school={value.school}
             workXp={value.workXp}
             description={value.description}
+            desc2={value.desc2}
+            desc3={value.desc3}
             subtitle={value.subtitle}
             title={value.title}
             stack={value.stack}
