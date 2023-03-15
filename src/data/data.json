@@ -1,13 +1,13 @@
 {
   "title": "Benard Z. David",
-  "subtitle": ["`${ Frontend }`", "<Web />", "{{ Developer }}"],
-  "description": "Hi! My name is Benard Z. David. I am a Web Developer, and I'm very passionate and dedicated to my work. With 3 years experience as a professional Frontend Web developer, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the design process including, discussion to collaborations.",
+  "subtitle": ["`${ Software }`", "< Engineer />"],
+  "description": "Hello, my name is Benard Z. David, and I am a highly skilled and experienced Software Engineer. With over three years of professional experience, I am confident in my ability to help make your project a resounding success. I am a dedicated and passionate individual who takes great pride in my work and always strives for excellence.",
   "name": {
     "lastName": "Benard",
     "middleName": "Zibiri",
     "firstName": "David",
     "nameAbbrv": "BZ David",
-    "job": "Frontend Web Developer",
+    "job": "Software Engineer",
     "linkedin": "https://www.linkedin.com/in/david-benard-196961121/",
     "twitter": "https://twitter.com/dav3ly",
     "whatsapp": "https://api.whatsapp.com/send?phone=09038660972&text=Hi%20There!",
@@ -53,11 +53,19 @@
     },
     {
       "name": "Node.js",
-      "progress": 20
+      "progress": 50
     },
     {
       "name": "Wordpress",
       "progress": 70
+    },
+    {
+      "name": "Python",
+      "progress": 50
+    },
+     {
+      "name": "Postgres",
+      "progress": 60
     }
   ],
   "workXp": [
