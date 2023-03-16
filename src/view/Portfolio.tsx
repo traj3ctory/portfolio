@@ -1,11 +1,8 @@
+import { useState } from "react";
 import { Card } from "primereact/card";
-import leerix from "../asset/img//leerix.png";
-import portfolio from "../asset/img/portfolio.png";
-import sys from "../asset/img/sys.jpg";
-import uifww from "../asset/img/uifww.png";
-import johanan from "../asset/img/jwlblog.png";
-import jwl from "../asset/img/jwl.png";
-import ebs from "../asset/img/ebs.png";
+import { Button } from "primereact/button";
+import { Dialog } from "primereact/dialog";
+import { portfolioData } from "../data/dataType";
 
 const handleFilter = (e: any) => {
   const selectedFilter = e.target.attributes[1].nodeValue;
@@ -34,20 +31,59 @@ const handleFilter = (e: any) => {
 
 // https://wakatime.com/a-look-back-at-2021/93064689-92b4-4ad3-953b-0ec932fdf216/iheypubrrv
 
-function Portfolio() {
+type PortfolioProps = {
+  portfolio: portfolioData[];
+};
+
+const Portfolio: React.FC<PortfolioProps> = ({ portfolio }) => {
+  const [visible, setVisible] = useState<portfolioData>(null);
   return (
-    <section className="section d-none" id="portfolio">
-     {/* <div className="p-grid">
-       <div className="p-col-12 p-md-6">
-       <Card>
-        <h4>HelloWorld</h4>
-        <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eaque atque cumque fuga officiis at debitis aliquam laboriosam quaerat sint aspernatur nobis fugiat, neque, sequi explicabo quibusdam odit distinctio similique!</small>
-        <h6 className="mt-2"><span>code</span><span className="mx-2" /><span>link</span></h6>
-      </Card>
-       </div>
-     </div> */}
+    <section className="section" id="portfolio">
+      <div className="card flex justify-content-center">
+        <Dialog
+          header={visible?.name}
+          visible={visible !== null}
+          style={{ width: "50vw" }}
+          onHide={() => setVisible(null)}
+        >
+          {visible && (
+            <div className="row">
+              <div className="col-md-6 mb-3">
+                <img
+                  width={300}
+                  src={visible.image}
+                  alt={`${visible.name}`}
+                />
+              </div>
+              <div className="col-md-6 mb-3">
+                <p className="mb-3">{visible.description}</p>
+                <small>...{visible.description}</small>
+                <hr />
+                <Button
+                  label=" "
+                  iconPos="right"
+                  icon="pi pi-external-link"
+                  className="shadow"
+                >
+                  <a
+                    href={visible.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ textDecoration: "none", color: "inherit" }}
+                  >
+                    {visible.name}
+                  </a>
+                </Button>
+              </div>
+            </div>
+          )}
+        </Dialog>
+      </div>
       <Card title="Portfolio">
-        <div id="filter" className="d-flex w-100 justify-content-center btn_container">
+        <div
+          id="filter"
+          className="d-flex w-100 justify-content-center btn_container"
+        >
           <button
             className="p-button filter p-button-sm mx-1"
             onClick={handleFilter}
@@ -58,109 +94,40 @@ function Portfolio() {
           <button
             className="p-button filter p-button-sm mx-1"
             onClick={handleFilter}
-            data-filter="react"
+            data-filter="hobby"
           >
-            react
+            Hobby
           </button>
           <button
             className="p-button filter p-button-sm mx-1"
             onClick={handleFilter}
             data-filter="web"
           >
-            web
-          </button>
-          <button
-            className="p-button filter p-button-sm mx-1"
-            onClick={handleFilter}
-            data-filter="wordpress"
-          >
-            wordpress
-          </button>
-          <button
-            className="p-button filter p-button-sm mx-1"
-            onClick={handleFilter}
-            data-filter="opencart"
-          >
-            opencart
+            Web-Apps
           </button>
         </div>
-        <div className="p-grid" id="portfolioItem">
-          <div className="p-col-12 p-md-4 project react" data-filter="react">
-            <img src={leerix} alt="leerix application" />
-            <div className="portfolio-info">
-              <h4>Lyrics Finder</h4>
-              <div className="icon">
-                <i className="fa fa-search" aria-hidden="true"></i>
+        <div className="p-grid" id="portfolioItem" style={{ cursor: "pointer"}}>
+          {portfolio.map((item: portfolioData, i: number) => (
+            <div
+              key={i}
+              className={`p-col-12 p-md-4 project ${item.category}`}
+              data-filter={`${item.category}`}
+              onClick={() => setVisible(item)}
+            >
+              <img src={item.image} alt={`${item.name}`} />
+              <div className="portfolio-info">
+                <h4>{item.name}</h4>
+                <div className="icon">
+                  <i className="fa fa-search" aria-hidden="true" />
+                </div>
               </div>
             </div>
-          </div>
-          <div className="p-col-12 p-md-4 project web" data-filter="web">
-            <img src={portfolio} alt="portfolio site" />
-            <div className="portfolio-info">
-              <h4>Portfolio</h4>
-              <div className="icon">
-                <i className="fa fa-search" aria-hidden="true" />
-              </div>
-            </div>
-          </div>
-          <div className="p-col-12 p-md-4 project web" data-filter="web">
-            <img src={sys} alt="Sysbanker EE" />
-            <div className="portfolio-info">
-              <h4>Sysanker EE</h4>
-              <div className="icon">
-                <i className="fa fa-search" aria-hidden="true" />
-              </div>
-            </div>
-          </div>
-          <div
-            className="p-col-12 p-md-4 project wordpress"
-            data-filter="wordpress"
-          >
-            <img src={uifww} alt="Utali Igbo" />
-            <div className="portfolio-info">
-              <h4>Utali Igbo</h4>
-              <div className="icon">
-                <i className="fa fa-search" aria-hidden="true" />
-              </div>
-            </div>
-          </div>
-          <div
-            className="p-col-12 p-md-4 project wordpress"
-            data-filter="wordpress"
-          >
-            <img src={johanan} alt="Johanan World Blog" />
-            <div className="portfolio-info">
-              <h4>Johanan World Blog</h4>
-              <div className="icon">
-                <i className="fa fa-search" aria-hidden="true" />
-              </div>
-            </div>
-          </div>
-          <div
-            className="p-col-12 p-md-4 project opencart"
-            data-filter="opencart"
-          >
-            <img src={jwl} alt="Johanan World" />
-            <div className="portfolio-info">
-              <h4>Johanan World</h4>
-              <div className="icon">
-                <i className="fa fa-search" aria-hidden="true" />
-              </div>
-            </div>
-          </div>
-          <div className="p-col-12 p-md-4 project web" data-filter="web">
-            <img src={ebs} alt="Accsiss eBs" />
-            <div className="portfolio-info">
-              <h4>Accsiss eBs</h4>
-              <div className="icon">
-                <i className="fa fa-search" aria-hidden="true" />
-              </div>
-            </div>
-          </div>
+          ))}
+
         </div>
       </Card>
     </section>
   );
-}
+};
 
 export default Portfolio;

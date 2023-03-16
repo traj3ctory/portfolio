@@ -12,7 +12,7 @@ const Main = () => (
             <h4>Hello there, I'm</h4>
             <h1>Benard Zibiri David</h1>
             <p className="mb-0">I'm a Software Engineer.</p>
-            <small>Very interested in everything JavaScript😍/👀TypeScript...<br />...Lazy python[django] developer</small>
+            <small>Very interested in everything JavaScript😍/👀TypeScript...<br />...Lazy😒python[django] developer</small>
             <SocialMedia />
           </div>
         </Card>

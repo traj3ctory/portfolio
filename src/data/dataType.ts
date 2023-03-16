@@ -1,41 +1,41 @@
 interface dataType {
-    title: string;
-    subtitle: Array<string>;
-    description: string;
-    desc2: string;
-    desc3: string;
-    name: object;
-    birthday: object;
-    stack: Array<stackData>;
-    workXp: Array<workData>;
-    detail: object;
-    school: Array<schoolData>;
-    portfolio: Array<portfolioData>;
+  title: string;
+  subtitle: Array<string>;
+  description: string;
+  desc2: string;
+  desc3: string;
+  name: object;
+  birthday: object;
+  stack: Array<stackData>;
+  workXp: Array<workData>;
+  detail: object;
+  school: Array<schoolData>;
+  portfolio: Array<portfolioData>;
 }
 
-interface stackData{
-    name: string;
-    progress: number;
+interface stackData {
+  name: string;
+  progress: number;
 }
 
-interface workData{
-    icon: string;
-    date: string;
-    role: string;
+interface workData {
+  icon: string;
+  date: string;
+  role: string;
 }
 
-interface schoolData{
-    icon: string;
-    title: string;
-    date: string;
-    name: string;
+interface schoolData {
+  icon: string;
+  title: string;
+  date: string;
+  name: string;
 }
-interface portfolioData{
-    name: string;
-    image: string;
-    description?: string;
-    link?: string;
-    category?: string;
+interface portfolioData {
+  name: string;
+  image: string;
+  description: string;
+  link: string;
+  category: string;
 }
 
-export type { dataType, stackData};
+export type { dataType, stackData, portfolioData };

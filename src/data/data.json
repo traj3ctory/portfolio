@@ -1,6 +1,9 @@
 {
   "title": "Benard Z. David",
-  "subtitle": ["`${ Software }`", "< Engineer />"],
+  "subtitle": [
+    "`${ Software }`",
+    " <Engineer />"
+  ],
   "description": "Hello, my name is Benard Z. David, and I am a highly skilled and experienced Software Engineer. With over three (3) years of professional experience, I am confident in my ability to help make your project a resounding success. I am a dedicated and passionate individual who takes great pride in my work and always strives for excellence.",
   "desc2": "Throughout my career, I have demonstrated a keen ability to work collaboratively with others, from discussing project requirements to providing technical guidance and support. I approach every project with a sharp analytical mind and a passion for problem-solving, ensuring that I deliver the best possible results for my clients.",
   "desc3": "I am committed to staying up-to-date with the latest developments in my field, and I am always eager to learn new skills and technologies to enhance my expertise. If you are looking for a skilled and reliable Software Engineer to help bring your project to life, then I would be honored to work with you.",
@@ -65,16 +68,21 @@
       "name": "Python",
       "progress": 50
     },
-     {
+    {
       "name": "Postgres",
       "progress": 60
     }
   ],
   "workXp": [
     {
-      "icon": "pi pi-slack",
+      "icon": "pi pi-file-excel",
       "date": "2021-Present",
-      "role": "Frontend Web Developer at Ehealth4Everyone"
+      "role": "Frontend Engineer at Ehealth4Everyone"
+    },
+    {
+      "icon": "pi pi-bookmark-fill",
+      "date": "2022(May - Sept)",
+      "role": "Frontend Engineer at Savannah Innovations (Contract)"
     },
     {
       "icon": "pi pi-folder-open",
@@ -101,7 +109,6 @@
     "contract": "Available",
     "freelance": "Available",
     "fulltime": "Available"
-    
   },
   "school": [
     {
@@ -132,59 +139,80 @@
   "portfolio": [
     {
       "name": "Leerix Application",
-      "image": "../images/portfolio/leerix.png",
-      "description": "lorem ipsum",
-      "link": "hello",
-      "category": "React"
+      "image": "/asset/img/leerix.png",
+      "description": "Music match api",
+      "link": "https://github.com/traj3ctory/lyricsApp",
+      "category": "hobby"
     },
     {
       "name": "Portfolio Site",
-      "image": "../images/portfolio/portfolio.png",
-      "description": "lorem ipsum",
-      "link": "hello",
-      "category": "Web-design"
+      "image": "/asset/img/portfolio.png",
+      "description": "About Benard Zibiri David, software engineer",
+      "link": "https://bzdavid.netlify.app/",
+      "category": "hobby"
     },
     {
       "name": "Todo Application",
-      "image": "../images/portfolio/todo.png",
-      "description": "lorem ipsum",
-      "link": "hello",
-      "category": "React"
+      "image": "/asset/img/todo.png",
+      "description": "Mini Todo Application",
+      "link": "https://digitodo.netlify.app/",
+      "category": "hobby"
+    },
+    {
+      "name": "Msdat",
+      "image": "/asset/img/msdat.png",
+      "description": "This platform is developed and managed by the Department of Health, Planning and Research Statistics (DHPRS)",
+      "link": "https://www.beta.msdat.fmohconnect.gov.ng/",
+      "category": "web"
+    },
+    {
+      "name": "MedInstance",
+      "image": "/asset/img/medInstance.png",
+      "description": "Medinstance is the world's first fully automated OpenMRS hosting and server management service.",
+      "link": "https://medinstance.com/",
+      "category": "web"
+    },
+    {
+      "name": "Dhistance",
+      "image": "/asset/img/dhistance.png",
+      "description": "Dhistance is the world's first fully automated DHIS2 hosting and server management service.",
+      "link": "https://dhistance.com/",
+      "category": "web"
+    },
+    {
+      "name": "OneWellness",
+      "image": "/asset/img/onewell.png",
+      "description": "Manage chronic disease like diabetes & hypertension the best way. Access 24/7 personalized care with the help of a dedicated healthcare partner just for you and your family members.",
+      "link": "https://onewellapp.com/",
+      "category": "web"
+    },
+    {
+      "name": "PillMova",
+      "image": "/asset/img/pillmova.png",
+      "description": "PillMova is a logistics company specialized in the safe and quick delivery of Pharma products.",
+      "link": "https://develop.pillmova.co/",
+      "category": "web"
+    },
+    {
+      "name": "OneHealthNg",
+      "image": "/asset/img/oneHealth.png",
+      "description": "Pharmacy and Medical Store Management System",
+      "link": "https://onehealthng.com/pharmacy",
+      "category": "web"
     },
     {
       "name": "Accsiss eBs",
-      "image": "../images/portfolio/ebs.png",
+      "image": "/asset/img/ebs.png",
       "description": "lorem ipsum",
-      "link": "hello",
-      "category": "Web-application"
+      "link": "https://miratechnologiesng.com/products/accsissebs/",
+      "category": "web"
     },
-     {
+    {
       "name": "Sysbanker EE",
-      "image": "../images/portfolio/sys.png",
-      "description": "lorem ipsum",
+      "image": "/asset/img/sys.png",
+      "description": "https://miratechnologiesng.com/products/sysbankeree/",
       "link": "hello",
-      "category": "Web-application"
-    },
-     {
-      "name": "Utali Igbo",
-      "image": "../images/portfolio/uifww.png",
-      "description": "lorem ipsum",
-      "link": "hello",
-      "category": "Wordpress"
-    },
-     {
-      "name": "Johanan Blog",
-      "image": "../images/portfolio/jwlblog.png",
-      "description": "lorem ipsum",
-      "link": "hello",
-      "category": "Wordpress"
-    },
-     {
-      "name": "Johanan World",
-      "image": "../images/portfolio/jwl.png",
-      "description": "lorem ipsum",
-      "link": "hello",
-      "category": "Opencart"
+      "category": "web"
     }
   ]
 }

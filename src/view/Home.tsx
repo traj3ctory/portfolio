@@ -30,7 +30,7 @@ function Home() {
             stack={value.stack}
             detail={value.detail}
           />
-          <Portfolio />
+          <Portfolio portfolio={value.portfolio} />
           <Contact />
         </>
       )}
