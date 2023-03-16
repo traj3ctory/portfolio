@@ -7,33 +7,45 @@ import data from "../data/data.json";
 import { dataType } from "../data/dataType";
 
 function Home() {
-  const [value, setValue] = useState<dataType | undefined>(undefined);
+  const [value, setValue] = useState<dataType | undefined>();
 
   useEffect(() => {
-    (async () => {
-      setValue(data);
-    })();
+    setValue(data);
   }, []);
+
+  if (!value) {
+    return null;
+  }
+
+  const {
+    school,
+    workXp,
+    description,
+    desc2,
+    desc3,
+    subtitle,
+    title,
+    stack,
+    detail,
+    portfolio,
+  } = value;
+
   return (
     <div className="container content">
-      {value && (
-        <>
-          <Main />
-          <About
-            school={value.school}
-            workXp={value.workXp}
-            description={value.description}
-            desc2={value.desc2}
-            desc3={value.desc3}
-            subtitle={value.subtitle}
-            title={value.title}
-            stack={value.stack}
-            detail={value.detail}
-          />
-          <Portfolio portfolio={value.portfolio} />
-          <Contact />
-        </>
-      )}
+      <Main />
+      <About
+        school={school}
+        workXp={workXp}
+        description={description}
+        desc2={desc2}
+        desc3={desc3}
+        subtitle={subtitle}
+        title={title}
+        stack={stack}
+        detail={detail}
+      />
+      <Portfolio portfolio={portfolio} />
+      <Contact />
     </div>
   );
 }
