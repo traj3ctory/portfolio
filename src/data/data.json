@@ -142,91 +142,117 @@
       "image": "/asset/img/bhmis.png",
       "description": "The Ministry of Health (MoH) aims to maximize the impact of innovation through deliberate collaboration and co-creation opportunities to ensure efficiency, availability and sustainability in meeting specific health innovation needs.",
       "link": "http://104.225.220.124:3838/",
-      "category": "web"
+      "category": "web",
+      "role": "Frontend Engineer",
+      "tech": "Vue3, Vuex, TypeScript, Postgres, Python, Docker"
     },
     {
       "name": "Msdat",
       "image": "/asset/img/msdat.png",
       "description": "This platform is developed and managed by the Department of Health, Planning and Research Statistics (DHPRS)",
       "link": "https://www.beta.msdat.fmohconnect.gov.ng/",
-      "category": "web"
+      "category": "web",
+      "role": "Frontend Engineer",
+      "tech": "Vue2, TypeScript, JavaScript, Postgres, Python, Docker"
     },
     {
       "name": "Treaty",
       "image": "/asset/img/treaty.png",
       "description": "The National Depository of Treaties under the Federal Ministry of Justice in Nigeria is responsible for the safekeeping and management of international agreements, conventions, and treaties entered into by the Nigerian government with other countries and international organizations",
       "link": "http://fmojtreaties.org.ng/",
-      "category": "web"
+      "category": "web",
+      "role": "Software Engineer",
+      "tech": "Html, JavaScript, MySqli, PHP"
     },
     {
       "name": "MedInstance",
       "image": "/asset/img/medInstance.png",
       "description": "Medinstance is the world's first fully automated OpenMRS hosting and server management service.",
       "link": "https://medinstance.com/",
-      "category": "web"
+      "category": "web",
+      "role": "Frontend Engineer",
+      "tech": "Nuxt, JavaScript, Postgres, Python, Docker"
     },
     {
       "name": "Dhistance",
       "image": "/asset/img/dhistance.png",
       "description": "Dhistance is the world's first fully automated DHIS2 hosting and server management service.",
       "link": "https://dhistance.com/",
-      "category": "web"
+      "category": "web",
+      "role": "Frontend Engineer",
+      "tech": "Nuxt, JavaScript, Postgres, Python, Docker"
     },
     {
       "name": "OneWellness",
       "image": "/asset/img/onewell.png",
       "description": "Manage chronic disease like diabetes & hypertension the best way. Access 24/7 personalized care with the help of a dedicated healthcare partner just for you and your family members.",
       "link": "https://onewellapp.com/",
-      "category": "web"
+      "category": "web",
+      "role": "Frontend Engineer",
+      "tech": "React, JavaScript, Laravel, MySqli, AWS"
     },
     {
       "name": "PillMova",
       "image": "/asset/img/pillmova.png",
       "description": "PillMova is a logistics company specialized in the safe and quick delivery of Pharma products.",
       "link": "https://develop.pillmova.co/",
-      "category": "web"
+      "category": "web",
+      "role": "Frontend Engineer",
+      "tech": "NextJs, TypeScript, Laravel, MySqli, AWS"
     },
     {
       "name": "OneHealthNg",
       "image": "/asset/img/oneHealth.png",
       "description": "Pharmacy and Medical Store Management System",
       "link": "https://onehealthng.com/pharmacy",
-      "category": "web"
+      "category": "web",
+      "role": "Frontend Engineer",
+      "tech": "Blade, JavaScript, Laravel, MySqli, AWS"
     },
     {
       "name": "Leerix Application",
       "image": "/asset/img/leerix.png",
       "description": "Music match api",
       "link": "https://github.com/traj3ctory/lyricsApp",
-      "category": "hobby"
+      "category": "hobby",
+      "role": "Frontend Engineer",
+      "tech": "React, JavaScript"
     },
     {
       "name": "Portfolio Site",
       "image": "/asset/img/portfolio.png",
       "description": "About Benard Zibiri David, software engineer",
       "link": "https://bzdavid.netlify.app/",
-      "category": "hobby"
+      "category": "hobby",
+      "role": "Frontend Engineer",
+      "tech": "React, JavaScript"
     },
     {
       "name": "Todo Application",
       "image": "/asset/img/todo.png",
       "description": "Mini Todo Application",
       "link": "https://digitodo.netlify.app/",
-      "category": "hobby"
+      "category": "hobby",
+      "role": "Frontend Engineer",
+      "tech": "React, JavaScript"
     },
     {
       "name": "Accsiss eBs",
       "image": "/asset/img/ebs.png",
       "description": "lorem ipsum",
       "link": "https://miratechnologiesng.com/products/accsissebs/",
-      "category": "web"
+      "category": "web",
+      "role": "Frontend Engineer",
+      "tech": "Html, PHP, JavaScript, MySqli"
     },
     {
       "name": "Sysbanker EE",
       "image": "/asset/img/sys.png",
       "description": "https://miratechnologiesng.com/products/sysbankeree/",
       "link": "hello",
-      "category": "web"
+      "category": "web",
+      "role": "Frontend Engineer",
+      "tech": "Html, PHP, JavaScript, MySqli"
     }
   ]
 }

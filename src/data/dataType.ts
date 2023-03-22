@@ -36,6 +36,8 @@ interface portfolioData {
   description: string;
   link: string;
   category: string;
+  role: string;
+  tech: string;
 }
 
 export type { dataType, stackData, portfolioData };
