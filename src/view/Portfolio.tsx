@@ -43,7 +43,7 @@ const Portfolio: React.FC<PortfolioProps> = ({ portfolio }) => {
         <Dialog
           header={visible?.name}
           visible={visible !== null}
-          style={{ width: "50vw" }}
+          style={{ width: "50rem" }}
           onHide={() => setVisible(null)}
         >
           {visible && (

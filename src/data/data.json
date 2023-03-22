@@ -138,31 +138,24 @@
   ],
   "portfolio": [
     {
-      "name": "Leerix Application",
-      "image": "/asset/img/leerix.png",
-      "description": "Music match api",
-      "link": "https://github.com/traj3ctory/lyricsApp",
-      "category": "hobby"
-    },
-    {
-      "name": "Portfolio Site",
-      "image": "/asset/img/portfolio.png",
-      "description": "About Benard Zibiri David, software engineer",
-      "link": "https://bzdavid.netlify.app/",
-      "category": "hobby"
-    },
-    {
-      "name": "Todo Application",
-      "image": "/asset/img/todo.png",
-      "description": "Mini Todo Application",
-      "link": "https://digitodo.netlify.app/",
-      "category": "hobby"
+      "name": "Bhmis",
+      "image": "/asset/img/bhmis.png",
+      "description": "The Ministry of Health (MoH) aims to maximize the impact of innovation through deliberate collaboration and co-creation opportunities to ensure efficiency, availability and sustainability in meeting specific health innovation needs.",
+      "link": "http://104.225.220.124:3838/",
+      "category": "web"
     },
     {
       "name": "Msdat",
       "image": "/asset/img/msdat.png",
       "description": "This platform is developed and managed by the Department of Health, Planning and Research Statistics (DHPRS)",
       "link": "https://www.beta.msdat.fmohconnect.gov.ng/",
+      "category": "web"
+    },
+    {
+      "name": "Treaty",
+      "image": "/asset/img/treaty.png",
+      "description": "The National Depository of Treaties under the Federal Ministry of Justice in Nigeria is responsible for the safekeeping and management of international agreements, conventions, and treaties entered into by the Nigerian government with other countries and international organizations",
+      "link": "http://fmojtreaties.org.ng/",
       "category": "web"
     },
     {
@@ -199,6 +192,27 @@
       "description": "Pharmacy and Medical Store Management System",
       "link": "https://onehealthng.com/pharmacy",
       "category": "web"
+    },
+    {
+      "name": "Leerix Application",
+      "image": "/asset/img/leerix.png",
+      "description": "Music match api",
+      "link": "https://github.com/traj3ctory/lyricsApp",
+      "category": "hobby"
+    },
+    {
+      "name": "Portfolio Site",
+      "image": "/asset/img/portfolio.png",
+      "description": "About Benard Zibiri David, software engineer",
+      "link": "https://bzdavid.netlify.app/",
+      "category": "hobby"
+    },
+    {
+      "name": "Todo Application",
+      "image": "/asset/img/todo.png",
+      "description": "Mini Todo Application",
+      "link": "https://digitodo.netlify.app/",
+      "category": "hobby"
     },
     {
       "name": "Accsiss eBs",
