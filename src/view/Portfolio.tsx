@@ -57,8 +57,8 @@ const Portfolio: React.FC<PortfolioProps> = ({ portfolio }) => {
               </div>
               <div className="col-md-6 mb-3">
                 <h4 className="mb-3">{visible.name}</h4>
-                <small className="mb-2">...{visible.description}</small>
-                <small className="mb-2"><strong>{visible.role}</strong></small>
+                <small className="mb-2">...{visible.description}</small><hr />
+                <small className="mb-2"><strong>{visible.role}</strong></small><br />
                 <small className="mb-2">{visible.tech}</small>
                 <hr />
                 <Button
