@@ -239,7 +239,7 @@
     {
       "name": "Accsiss eBs",
       "image": "/asset/img/ebs.png",
-      "description": "lorem ipsum",
+      "description": "An enterprise business solution",
       "link": "https://miratechnologiesng.com/products/accsissebs/",
       "category": "web",
       "role": "Frontend Engineer",
@@ -248,8 +248,8 @@
     {
       "name": "Sysbanker EE",
       "image": "/asset/img/sys.png",
-      "description": "https://miratechnologiesng.com/products/sysbankeree/",
-      "link": "hello",
+      "description": "A microfinance bank application",
+      "link": "https://miratechnologiesng.com/products/sysbankeree/",
       "category": "web",
       "role": "Frontend Engineer",
       "tech": "Html, PHP, JavaScript, MySqli"
