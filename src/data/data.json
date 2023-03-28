@@ -144,7 +144,7 @@
       "link": "http://104.225.220.124:3838/",
       "category": "web",
       "role": "Frontend Engineer",
-      "tech": "Vue3, Vuex, TypeScript, Postgres, Python, Docker"
+      "tech": "Vue3, Vuex, TypeScript, Chartjs, Postgres, Python, Docker"
     },
     {
       "name": "Msdat",
@@ -153,16 +153,16 @@
       "link": "https://www.beta.msdat.fmohconnect.gov.ng/",
       "category": "web",
       "role": "Frontend Engineer",
-      "tech": "Vue2, TypeScript, JavaScript, Postgres, Python, Docker"
+      "tech": "Vue2, Vuex, TypeScript, JavaScript, HighChart Postgres, Python, Docker"
     },
     {
       "name": "Treaty",
       "image": "/asset/img/treaty.png",
       "description": "The National Depository of Treaties under the Federal Ministry of Justice in Nigeria is responsible for the safekeeping and management of international agreements, conventions, and treaties entered into by the Nigerian government with other countries and international organizations",
-      "link": "http://fmojtreaties.org.ng/",
+      "link": "https://treaties.justice.gov.ng/",
       "category": "web",
       "role": "Software Engineer",
-      "tech": "Html, JavaScript, MySqli, PHP"
+      "tech": "Html, Css, JavaScript, MySqli, PHP"
     },
     {
       "name": "MedInstance",
