@@ -69,7 +69,7 @@ function About({
           <p>{desc2}</p>
           <p>{desc3}</p>
           <Link
-            to="/asset/DavidBenardCV.pdf"
+            to="/asset/DAVID_BENARD_CV.pdf"
             target="_blank"
             className="p-button p-button-text p-button-small p-button-raised"
             download

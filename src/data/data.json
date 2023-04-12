@@ -219,6 +219,15 @@
       "tech": "React, JavaScript"
     },
     {
+      "name": "Imdb Movie List",
+      "image": "/asset/img/imdb.png",
+      "description": "Using imdb api to perform some functionalities in vue3",
+      "link": "https://github.com/traj3ctory/movies",
+      "category": "hobby",
+      "role": "Frontend Engineer",
+      "tech": "Vue3, TypeScript"
+    },
+    {
       "name": "Portfolio Site",
       "image": "/asset/img/portfolio.png",
       "description": "About Benard Zibiri David, software engineer",
