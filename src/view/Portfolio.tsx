@@ -127,11 +127,11 @@ const Portfolio: React.FC<PortfolioProps> = ({ portfolio }) => {
               data-filter={`${item.category}`}
               onClick={() => setVisible(item)}
             >
-              {!loaded && <Skeleton width="10rem" height="4rem" />}
+              {!loaded && <Skeleton width="20rem" height="4rem" />}
               <img
                 src={item.image}
                 alt={`${item.name}`}
-                onLoad={handleLoad}
+                onLoad={() => setLoaded(true)}
                 style={{ display: loaded ? "block" : "none" }}
               />
               <div className="portfolio-info">
