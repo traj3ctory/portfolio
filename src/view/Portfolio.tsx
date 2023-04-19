@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Card } from "primereact/card";
 import { Button } from "primereact/button";
 import { Dialog } from "primereact/dialog";
+import { Skeleton } from "primereact/skeleton";
 import { portfolioData } from "../data/dataType";
 
 const handleFilter = (e: any) => {
@@ -37,6 +38,12 @@ type PortfolioProps = {
 
 const Portfolio: React.FC<PortfolioProps> = ({ portfolio }) => {
   const [visible, setVisible] = useState<portfolioData>(null);
+  const [loaded, setLoaded] = useState(false);
+
+  const handleLoad = () => {
+    setLoaded(true);
+  };
+
   return (
     <section className="section" id="portfolio">
       <div className="card flex justify-content-center">
@@ -49,16 +56,16 @@ const Portfolio: React.FC<PortfolioProps> = ({ portfolio }) => {
           {visible && (
             <div className="row">
               <div className="col-md-6 mb-3">
-                <img
-                  width={300}
-                  src={visible.image}
-                  alt={`${visible.name}`}
-                />
+                <img width={300} src={visible.image} alt={`${visible.name}`} />
               </div>
               <div className="col-md-6 mb-3">
                 <h4 className="mb-3">{visible.name}</h4>
-                <small className="mb-2">...{visible.description}</small><hr />
-                <small className="mb-2"><strong>{visible.role}</strong></small><br />
+                <small className="mb-2">...{visible.description}</small>
+                <hr />
+                <small className="mb-2">
+                  <strong>{visible.role}</strong>
+                </small>
+                <br />
                 <small className="mb-2">{visible.tech}</small>
                 <hr />
                 <Button
@@ -108,7 +115,11 @@ const Portfolio: React.FC<PortfolioProps> = ({ portfolio }) => {
             Web-Apps
           </button>
         </div>
-        <div className="p-grid" id="portfolioItem" style={{ cursor: "pointer"}}>
+        <div
+          className="p-grid"
+          id="portfolioItem"
+          style={{ cursor: "pointer" }}
+        >
           {portfolio.map((item: portfolioData, i: number) => (
             <div
               key={i}
@@ -116,7 +127,13 @@ const Portfolio: React.FC<PortfolioProps> = ({ portfolio }) => {
               data-filter={`${item.category}`}
               onClick={() => setVisible(item)}
             >
-              <img src={item.image} alt={`${item.name}`} />
+              {!loaded && <Skeleton width="10rem" height="4rem" />}
+              <img
+                src={item.image}
+                alt={`${item.name}`}
+                onLoad={handleLoad}
+                style={{ display: loaded ? "block" : "none" }}
+              />
               <div className="portfolio-info">
                 <h4>{item.name}</h4>
                 <div className="icon">
@@ -125,7 +142,6 @@ const Portfolio: React.FC<PortfolioProps> = ({ portfolio }) => {
               </div>
             </div>
           ))}
-
         </div>
       </Card>
     </section>
