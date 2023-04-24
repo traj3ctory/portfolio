@@ -38,6 +38,8 @@ interface portfolioData {
   category: string;
   role: string;
   tech: string;
+  other_img?: string[];
+  button?: boolean;
 }
 
 export type { dataType, stackData, portfolioData };

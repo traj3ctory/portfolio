@@ -40,9 +40,7 @@ const Portfolio: React.FC<PortfolioProps> = ({ portfolio }) => {
   const [visible, setVisible] = useState<portfolioData>(null);
   const [loaded, setLoaded] = useState(false);
 
-  const handleLoad = () => {
-    setLoaded(true);
-  };
+
 
   return (
     <section className="section" id="portfolio">
@@ -54,37 +52,60 @@ const Portfolio: React.FC<PortfolioProps> = ({ portfolio }) => {
           onHide={() => setVisible(null)}
         >
           {visible && (
-            <div className="row">
-              <div className="col-md-6 mb-3">
-                <img width={300} src={visible.image} alt={`${visible.name}`} />
+            <>
+              <div className="row">
+                <div className="col-md-6 mb-3">
+                  <img
+                    width={300}
+                    src={visible.image}
+                    alt={`${visible.name}`}
+                  />
+                </div>
+                <div className="col-md-6 mb-3">
+                  <h4 className="mb-3">{visible.name}</h4>
+                  <small className="mb-2">...{visible.description}</small>
+                  <hr />
+                  <small className="mb-2">
+                    <strong>{visible.role}</strong>
+                  </small>
+                  <br />
+                  <small className="mb-2">{visible.tech}</small>
+                  <hr />
+                  {visible.button !== false && (
+                    <Button
+                      label=" "
+                      iconPos="right"
+                      icon="pi pi-external-link"
+                      className="shadow"
+                    >
+                      <a
+                        href={visible.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ textDecoration: "none", color: "inherit" }}
+                      >
+                        {visible.name}
+                      </a>
+                    </Button>
+                  )}
+                </div>
               </div>
-              <div className="col-md-6 mb-3">
-                <h4 className="mb-3">{visible.name}</h4>
-                <small className="mb-2">...{visible.description}</small>
-                <hr />
-                <small className="mb-2">
-                  <strong>{visible.role}</strong>
-                </small>
-                <br />
-                <small className="mb-2">{visible.tech}</small>
-                <hr />
-                <Button
-                  label=" "
-                  iconPos="right"
-                  icon="pi pi-external-link"
-                  className="shadow"
-                >
-                  <a
-                    href={visible.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ textDecoration: "none", color: "inherit" }}
-                  >
-                    {visible.name}
-                  </a>
-                </Button>
-              </div>
-            </div>
+              {visible?.other_img?.length > 0 && (
+                <div className="row my-3">
+                  {visible?.other_img.map((el, i) => {
+                    return (
+                      <div className="col-md-6 col-12 mb-3" key={i}>
+                        <img
+                          src={el}
+                          alt={`${visible.name}-${i}`}
+                          className="img-fluid"
+                        />
+                      </div>
+                    );
+                  })}
+                </div>
+              )}
+            </>
           )}
         </Dialog>
       </div>

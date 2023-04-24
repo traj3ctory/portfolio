@@ -142,9 +142,21 @@
       "image": "/asset/img/bhmis.png",
       "description": "The Ministry of Health (MoH) aims to maximize the impact of innovation through deliberate collaboration and co-creation opportunities to ensure efficiency, availability and sustainability in meeting specific health innovation needs.",
       "link": "http://104.225.220.124:3838/",
+      "button": false,
       "category": "web",
       "role": "Frontend Engineer",
       "tech": "Vue3, Vuex, TypeScript, Chartjs, Postgres, Python, Docker"
+    },
+    {
+      "name": "Aphrc",
+      "image": "/asset/img/aphrc.png",
+      "description": "Welcome to the African Population and Health Research Center Monitoring, Evaluation and Learning Platform APHRC - MEL. A locally served analytics platform having various data visualizations, pulling data from an ERP system as well as other sources to give a visual representation of these data",
+      "link": "#",
+      "button": false,
+      "category": "web",
+      "role": "Software Engineer",
+      "tech": "Vue3, Vuex, TypeScript, HighChart, Postgres, Python",
+      "other_img": ["/asset/img/map-1.png", "/asset/img/trend.png", "/asset/img/expanded-map.png", "/asset/img/map-2.png"]
     },
     {
       "name": "Msdat",
