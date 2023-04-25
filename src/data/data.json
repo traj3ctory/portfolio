@@ -161,8 +161,8 @@
     {
       "name": "Msdat",
       "image": "/asset/img/msdat.png",
-      "description": "This platform is developed and managed by the Department of Health, Planning and Research Statistics (DHPRS)",
-      "link": "https://www.beta.msdat.fmohconnect.gov.ng/dashboard/Health_Outcomes_and_Service_Coverage",
+      "description": "Developed a browser-compatible web application for the Federal Ministry of Health using Highcharts for data visualization, conducted UI audits, implemented stakeholder feedback, and integrated Restful APIs to enhance data visualization and management capabilities for the Multi-Source Data Analytic and Triangulation Resource project.",
+      "link": "https://www.beta.msdat.fmohconnect.gov.ng/",
       "category": "web",
       "role": "Frontend Engineer",
       "tech": "Vue2, Vuex, TypeScript, JavaScript, HighChart Postgres, Python, Docker"
