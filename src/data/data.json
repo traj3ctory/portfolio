@@ -138,25 +138,22 @@
   ],
   "portfolio": [
     {
-      "name": "Bhmis",
-      "image": "/asset/img/bhmis.png",
-      "description": "The Ministry of Health (MoH) aims to maximize the impact of innovation through deliberate collaboration and co-creation opportunities to ensure efficiency, availability and sustainability in meeting specific health innovation needs.",
-      "link": "http://104.225.220.124:3838/",
-      "button": false,
+      "name": "OneWellness",
+      "image": "/asset/img/onewell.png",
+      "description": "Manage chronic disease like diabetes & hypertension the best way. Access 24/7 personalized care with the help of a dedicated healthcare partner just for you and your family members.",
+      "link": "https://onewellapp.com/",
       "category": "web",
       "role": "Frontend Engineer",
-      "tech": "Vue3, Vuex, TypeScript, Chartjs, Postgres, Python, Docker"
+      "tech": "React, JavaScript, Laravel, MySqli, AWS"
     },
     {
-      "name": "Aphrc",
-      "image": "/asset/img/aphrc.png",
-      "description": "Welcome to the African Population and Health Research Center Monitoring, Evaluation and Learning Platform APHRC - MEL. A locally served analytics platform having various data visualizations, pulling data from an ERP system as well as other sources to give a visual representation of these data",
-      "link": "#",
-      "button": false,
+      "name": "PillMova",
+      "image": "/asset/img/pillmova.png",
+      "description": "PillMova is a logistics company specialized in the safe and quick delivery of Pharma products.",
+      "link": "https://develop.pillmova.co/",
       "category": "web",
-      "role": "Software Engineer",
-      "tech": "Vue3, Vuex, TypeScript, HighChart, Postgres, Python",
-      "other_img": ["/asset/img/map-1.png", "/asset/img/trend.png", "/asset/img/expanded-map.png", "/asset/img/map-2.png"]
+      "role": "Frontend Engineer",
+      "tech": "NextJs, TypeScript, Laravel, MySqli, AWS"
     },
     {
       "name": "Msdat",
@@ -177,6 +174,17 @@
       "tech": "Html, Css, JavaScript, MySqli, PHP"
     },
     {
+      "name": "Aphrc",
+      "image": "/asset/img/aphrc.png",
+      "description": "Welcome to the African Population and Health Research Center Monitoring, Evaluation and Learning Platform APHRC - MEL. A locally served analytics platform having various data visualizations, pulling data from an ERP system as well as other sources to give a visual representation of these data",
+      "link": "#",
+      "button": false,
+      "category": "web",
+      "role": "Software Engineer",
+      "tech": "Vue3, Vuex, TypeScript, HighChart, Postgres, Python",
+      "other_img": ["/asset/img/map-1.png", "/asset/img/trend.png", "/asset/img/expanded-map.png", "/asset/img/map-2.png"]
+    },
+    {
       "name": "MedInstance",
       "image": "/asset/img/medInstance.png",
       "description": "Medinstance is the world's first fully automated OpenMRS hosting and server management service.",
@@ -195,22 +203,14 @@
       "tech": "Nuxt, JavaScript, Postgres, Python, Docker"
     },
     {
-      "name": "OneWellness",
-      "image": "/asset/img/onewell.png",
-      "description": "Manage chronic disease like diabetes & hypertension the best way. Access 24/7 personalized care with the help of a dedicated healthcare partner just for you and your family members.",
-      "link": "https://onewellapp.com/",
+      "name": "Bhmis",
+      "image": "/asset/img/bhmis.png",
+      "description": "The Ministry of Health (MoH) aims to maximize the impact of innovation through deliberate collaboration and co-creation opportunities to ensure efficiency, availability and sustainability in meeting specific health innovation needs.",
+      "link": "http://104.225.220.124:3838/",
+      "button": false,
       "category": "web",
       "role": "Frontend Engineer",
-      "tech": "React, JavaScript, Laravel, MySqli, AWS"
-    },
-    {
-      "name": "PillMova",
-      "image": "/asset/img/pillmova.png",
-      "description": "PillMova is a logistics company specialized in the safe and quick delivery of Pharma products.",
-      "link": "https://develop.pillmova.co/",
-      "category": "web",
-      "role": "Frontend Engineer",
-      "tech": "NextJs, TypeScript, Laravel, MySqli, AWS"
+      "tech": "Vue3, Vuex, TypeScript, Chartjs, Postgres, Python, Docker"
     },
     {
       "name": "OneHealthNg",
