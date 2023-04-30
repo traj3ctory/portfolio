@@ -75,29 +75,29 @@
   ],
   "workXp": [
     {
+      "icon": "pi pi-bookmark-fill",
+      "date": "June 2022 - Till Date",
+      "role": "Frontend Engineer at oneHealth (Remote)"
+    },
+    {
       "icon": "pi pi-file-excel",
-      "date": "2021-Present",
+      "date": "June 2021 - June 2022",
       "role": "Frontend Engineer at Ehealth4Everyone"
     },
     {
-      "icon": "pi pi-bookmark-fill",
-      "date": "2022(May - Sept)",
-      "role": "Frontend Engineer at Savannah Innovations (Contract)"
-    },
-    {
       "icon": "pi pi-folder-open",
-      "date": "2020-2021",
+      "date": "January 2020 - May 2021",
       "role": "Frontend Web Developer at Mira Technologies"
     },
     {
       "icon": "pi pi-money-bill",
-      "date": "2018-2019",
+      "date": "September 2018 - February 2019",
       "role": "IT Student at GTBank"
     },
     {
       "icon": "pi pi-tablet",
-      "date": "2018-2019",
-      "role": "Frontend Tutor at Center4Tech"
+      "date": "April 2018 - December 2019",
+      "role": "Frontend Developer at Center4Tech"
     }
   ],
   "detail": {
