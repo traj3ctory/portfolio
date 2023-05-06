@@ -185,6 +185,15 @@
       "other_img": ["/asset/img/map-1.png", "/asset/img/trend.png", "/asset/img/expanded-map.png", "/asset/img/map-2.png"]
     },
     {
+      "name": "Product (IN-PROGRESS)",
+      "image": "/asset/img/product.png",
+      "description": "An e-commerce site with the web-service, Admin-dashboard and Client site, client:https://product-client.vercel.app/, admin:https://product-admin.vercel.app/, service:https://pheret-service.onrender.com/",
+      "link": "https://product-admin.vercel.app",
+      "category": "hobby",
+      "role": "JavaScript Engineer",
+      "tech": "NextJs, TypeScript, Express, Node, Postgres"
+    },
+    {
       "name": "MedInstance",
       "image": "/asset/img/medInstance.png",
       "description": "Medinstance is the world's first fully automated OpenMRS hosting and server management service.",
@@ -229,16 +238,6 @@
       "category": "hobby",
       "role": "Frontend Engineer",
       "tech": "React, JavaScript"
-    },
-
-    {
-      "name": "Product",
-      "image": "/asset/img/product.png",
-      "description": "(IN-PROGRESS) An e-commerce site with the web-service, Admin-dashboard and Client site, client:https://product-client.vercel.app/, admin:https://product-admin.vercel.app/, service:https://pheret-service.onrender.com/",
-      "link": "https://github.com/traj3ctory/Pheret_Beauty",
-      "category": "hobby",
-      "role": "JavaScript Engineer",
-      "tech": "NextJs, TypeScript, Express, Node, Postgres"
     },
     {
       "name": "Imdb Movie List",
