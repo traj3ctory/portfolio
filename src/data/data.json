@@ -222,13 +222,23 @@
       "tech": "Blade, JavaScript, Laravel, MySqli, AWS"
     },
     {
-      "name": "Leerix Application",
-      "image": "/asset/img/leerix.png",
-      "description": "Music match api",
-      "link": "https://github.com/traj3ctory/lyricsApp",
+      "name": "Portfolio Site",
+      "image": "/asset/img/portfolio.png",
+      "description": "About Benard Zibiri David, software engineer",
+      "link": "https://bzdavid.netlify.app/",
       "category": "hobby",
       "role": "Frontend Engineer",
       "tech": "React, JavaScript"
+    },
+
+    {
+      "name": "Product",
+      "image": "/asset/img/product.png",
+      "description": "(IN-PROGRESS) An e-commerce site with the web-service, Admin-dashboard and Client site, client:https://product-client.vercel.app/, admin:https://product-admin.vercel.app/, service:https://pheret-service.onrender.com/",
+      "link": "https://github.com/traj3ctory/Pheret_Beauty",
+      "category": "hobby",
+      "role": "JavaScript Engineer",
+      "tech": "NextJs, TypeScript, Express, Node, Postgres"
     },
     {
       "name": "Imdb Movie List",
@@ -240,19 +250,19 @@
       "tech": "Vue3, TypeScript"
     },
     {
-      "name": "Portfolio Site",
-      "image": "/asset/img/portfolio.png",
-      "description": "About Benard Zibiri David, software engineer",
-      "link": "https://bzdavid.netlify.app/",
+      "name": "Todo Application",
+      "image": "/asset/img/todo.png",
+      "description": "Mini Todo Application",
+      "link": "https://digitodo.netlify.app/",
       "category": "hobby",
       "role": "Frontend Engineer",
       "tech": "React, JavaScript"
     },
     {
-      "name": "Todo Application",
-      "image": "/asset/img/todo.png",
-      "description": "Mini Todo Application",
-      "link": "https://digitodo.netlify.app/",
+      "name": "Leerix Application",
+      "image": "/asset/img/leerix.png",
+      "description": "Music match api",
+      "link": "https://github.com/traj3ctory/lyricsApp",
       "category": "hobby",
       "role": "Frontend Engineer",
       "tech": "React, JavaScript"
