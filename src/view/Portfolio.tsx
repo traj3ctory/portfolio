@@ -48,7 +48,7 @@ const Portfolio: React.FC<PortfolioProps> = ({ portfolio }) => {
         <Dialog
           header={visible?.name}
           visible={visible !== null}
-          style={{ width: "50rem" }}
+          style={{ width: "70rem" }}
           onHide={() => setVisible(null)}
         >
           {visible && (
@@ -56,7 +56,7 @@ const Portfolio: React.FC<PortfolioProps> = ({ portfolio }) => {
               <div className="row">
                 <div className="col-md-6 mb-3">
                   <img
-                    width={300}
+                    width={350}
                     src={visible.image}
                     alt={`${visible.name}`}
                   />
