@@ -25,16 +25,12 @@
   },
   "stack": [
     {
-      "name": "Html5",
+      "name": "Html/Html5",
       "progress": 90
     },
     {
-      "name": "CSS",
-      "progress": 80
-    },
-    {
-      "name": "Sass/Scss",
-      "progress": 75
+      "name": "Css/Sass/Scss",
+      "progress": 95
     },
     {
       "name": "Bootstrap",
@@ -42,23 +38,23 @@
     },
     {
       "name": "JavaScript",
-      "progress": 60
+      "progress": 75
     },
     {
       "name": "TypeScript",
-      "progress": 60
+      "progress": 75
     },
     {
       "name": "React",
-      "progress": 65
+      "progress": 75
     },
     {
       "name": "Vue",
-      "progress": 70
+      "progress": 80
     },
     {
       "name": "Node.js",
-      "progress": 50
+      "progress": 70
     },
     {
       "name": "Wordpress",
@@ -66,7 +62,7 @@
     },
     {
       "name": "Python",
-      "progress": 50
+      "progress": 60
     },
     {
       "name": "Postgres",

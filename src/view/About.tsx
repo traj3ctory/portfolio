@@ -142,6 +142,7 @@ function About({
               >
                 <p>{detail.fulltime}</p>
               </Panel>
+              <img src="https://wakatime.com/share/@davebenard/9a6905f1-0d47-4d5c-9840-cb460386c2d6.svg" height="300" width="600" className="img-flid" alt="bz david"/>
             </Card>
           </div>
           <div className="p-col-12 p-md-6">
@@ -156,6 +157,18 @@ function About({
                   />
                 </div>
               ))}
+              <div className="d-flex flex-wrap">
+                <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="bz david" className="mt-3"/>
+                <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="bz david" className="mt-3"/>
+                <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" alt="bz david" className="mt-3"/>
+                <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="bz david" className="mt-3"/>
+                <img src="https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D" alt="bz david" className="mt-3"/>
+                <img src="https://img.shields.io/badge/React-blue?style=for-the-badge&logo=react&logoColor=white" alt="bz david" className="mt-3"/>
+                <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" alt="bz david" className="mt-3"/>
+                <img src="https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white" alt="bz david" className="mt-3"/>
+                <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" alt="bz david" className="mt-3"/>
+                <img src="https://img.shields.io/badge/Jest-323330?style=for-the-badge&logo=Jest&logoColor=white" alt="bz david" className="mt-3"/>
+              </div>
             </Card>
           </div>
         </div>
