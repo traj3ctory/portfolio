@@ -142,7 +142,7 @@ function About({
               >
                 <p>{detail.fulltime}</p>
               </Panel>
-              <img src="https://wakatime.com/share/@davebenard/9a6905f1-0d47-4d5c-9840-cb460386c2d6.svg" height="300" width="600" className="img-flid" alt="bz david"/>
+              <img src="https://wakatime.com/share/@davebenard/9a6905f1-0d47-4d5c-9840-cb460386c2d6.svg" height="300" width="600" className="img-fluid" alt="bz david"/>
             </Card>
           </div>
           <div className="p-col-12 p-md-6">
