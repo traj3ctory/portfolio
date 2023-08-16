@@ -4,7 +4,7 @@
     "`${ Software }`",
     " <Engineer />"
   ],
-  "description": "Hello, my name is Benard Z. David, and I am a highly skilled and experienced Software Engineer. With over three (3) years of professional experience, I am confident in my ability to help make your project a resounding success. I am a dedicated and passionate individual who takes great pride in my work and always strives for excellence.",
+  "description": "Hello, my name is Benard Z. David, and I am a highly skilled and experienced Software Engineer. With over four (4) years of professional experience, I am confident in my ability to help make your project a resounding success. I am a dedicated and passionate individual who takes great pride in my work and always strives for excellence.",
   "desc2": "Throughout my career, I have demonstrated a keen ability to work collaboratively with others, from discussing project requirements to providing technical guidance and support. I approach every project with a sharp analytical mind and a passion for problem-solving, ensuring that I deliver the best possible results for my clients.",
   "desc3": "I am committed to staying up-to-date with the latest developments in my field, and I am always eager to learn new skills and technologies to enhance my expertise. If you are looking for a skilled and reliable Software Engineer to help bring your project to life, then I would be honored to work with you.",
   "name": {
@@ -155,7 +155,7 @@
       "name": "Msdat",
       "image": "/asset/img/msdat.png",
       "description": "Developed a browser-compatible web application for the Federal Ministry of Health using Highcharts for data visualization, conducted UI audits, implemented stakeholder feedback, and integrated Restful APIs to enhance data visualization and management capabilities for the Multi-Source Data Analytic and Triangulation Resource project.",
-      "link": "https://www.beta.msdat.fmohconnect.gov.ng/",
+      "link": "https://beta.msdat.fmohconnect.gov.ng/",
       "category": "web",
       "role": "Frontend Engineer",
       "tech": "Vue2, Vuex, TypeScript, JavaScript, HighChart Postgres, Python, Docker"
@@ -173,12 +173,34 @@
       "name": "Aphrc",
       "image": "/asset/img/aphrc.png",
       "description": "Welcome to the African Population and Health Research Center Monitoring, Evaluation and Learning Platform APHRC - MEL. A locally served analytics platform having various data visualizations, pulling data from an ERP system as well as other sources to give a visual representation of these data",
-      "link": "#",
-      "button": false,
+      "link": "https://melportal.aphrc.org/",
       "category": "web",
       "role": "Software Engineer",
       "tech": "Vue3, Vuex, TypeScript, HighChart, Postgres, Python",
-      "other_img": ["/asset/img/map-1.png", "/asset/img/trend.png", "/asset/img/expanded-map.png", "/asset/img/map-2.png"]
+      "other_img": [
+        "/asset/img/map-1.png",
+        "/asset/img/trend.png",
+        "/asset/img/expanded-map.png",
+        "/asset/img/map-2.png"
+      ]
+    },
+    {
+      "name": "BlogPost",
+      "image": "/asset/img/ss-blog-post.png",
+      "description": "A demo application to tryout infinite scroll and pagination using React, Tailwindcss, TypeScript, and Jsonplaceholder API",
+      "link": "https://sendsprint-blog.netlify.app/",
+      "category": "hobby",
+      "role": "Frontend Engineer",
+      "tech": "React, Tailwindcss, TypeScript, Jsonplaceholder API"
+    },
+    {
+      "name": "SortTable",
+      "image": "/asset/img/table.png",
+      "description": "A demo application to tryout table sort, filterand API integration using Vue3, Bootstrap, and TypeScript",
+      "link": "https://lb-table-component.netlify.app/",
+      "category": "hobby",
+      "role": "Frontend Engineer",
+      "tech": "Vue3, Bootstrap, TypeScript, API Integration"
     },
     {
       "name": "Product (IN-PROGRESS)",
@@ -188,6 +210,33 @@
       "category": "hobby",
       "role": "JavaScript Engineer",
       "tech": "NextJs, TypeScript, Express, Node, Postgres"
+    },
+    {
+      "name": "Imdb Movie List",
+      "image": "/asset/img/imdb.png",
+      "description": "Using imdb api to perform some functionalities in vue3",
+      "link": "https://github.com/traj3ctory/movies",
+      "category": "hobby",
+      "role": "Frontend Engineer",
+      "tech": "Vue3, TypeScript"
+    },
+    {
+      "name": "Todo Application",
+      "image": "/asset/img/todo.png",
+      "description": "Mini Todo Application",
+      "link": "https://digitodo.netlify.app/",
+      "category": "hobby",
+      "role": "Frontend Engineer",
+      "tech": "React, JavaScript"
+    },
+    {
+      "name": "Bhmis",
+      "image": "/asset/img/bhmis.png",
+      "description": "The Ministry of Health (MoH) aims to maximize the impact of innovation through deliberate collaboration and co-creation opportunities to ensure efficiency, availability and sustainability in meeting specific health innovation needs.",
+      "link": "https://mohinnovations.gov.bw/",
+      "category": "web",
+      "role": "Frontend Engineer",
+      "tech": "Vue3, Vuex, TypeScript, Chartjs, Postgres, Python, Docker"
     },
     {
       "name": "MedInstance",
@@ -208,16 +257,6 @@
       "tech": "Nuxt, JavaScript, Postgres, Python, Docker"
     },
     {
-      "name": "Bhmis",
-      "image": "/asset/img/bhmis.png",
-      "description": "The Ministry of Health (MoH) aims to maximize the impact of innovation through deliberate collaboration and co-creation opportunities to ensure efficiency, availability and sustainability in meeting specific health innovation needs.",
-      "link": "http://104.225.220.124:3838/",
-      "button": false,
-      "category": "web",
-      "role": "Frontend Engineer",
-      "tech": "Vue3, Vuex, TypeScript, Chartjs, Postgres, Python, Docker"
-    },
-    {
       "name": "OneHealthNg",
       "image": "/asset/img/oneHealth.png",
       "description": "Pharmacy and Medical Store Management System",
@@ -231,24 +270,6 @@
       "image": "/asset/img/portfolio.png",
       "description": "About Benard Zibiri David, software engineer",
       "link": "https://bzdavid.netlify.app/",
-      "category": "hobby",
-      "role": "Frontend Engineer",
-      "tech": "React, JavaScript"
-    },
-    {
-      "name": "Imdb Movie List",
-      "image": "/asset/img/imdb.png",
-      "description": "Using imdb api to perform some functionalities in vue3",
-      "link": "https://github.com/traj3ctory/movies",
-      "category": "hobby",
-      "role": "Frontend Engineer",
-      "tech": "Vue3, TypeScript"
-    },
-    {
-      "name": "Todo Application",
-      "image": "/asset/img/todo.png",
-      "description": "Mini Todo Application",
-      "link": "https://digitodo.netlify.app/",
       "category": "hobby",
       "role": "Frontend Engineer",
       "tech": "React, JavaScript"

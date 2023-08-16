@@ -1,8 +1,8 @@
-import { useState } from "react";
-import { Card } from "primereact/card";
 import { Button } from "primereact/button";
+import { Card } from "primereact/card";
 import { Dialog } from "primereact/dialog";
 import { Skeleton } from "primereact/skeleton";
+import { useState } from "react";
 import { portfolioData } from "../data/dataType";
 
 const handleFilter = (e: any) => {
@@ -124,16 +124,16 @@ const Portfolio: React.FC<PortfolioProps> = ({ portfolio }) => {
           <button
             className="p-button filter p-button-sm mx-1"
             onClick={handleFilter}
-            data-filter="hobby"
+            data-filter="web"
           >
-            Hobby
+            Web-Apps
           </button>
           <button
             className="p-button filter p-button-sm mx-1"
             onClick={handleFilter}
-            data-filter="web"
+            data-filter="hobby"
           >
-            Web-Apps
+            Personal
           </button>
         </div>
         <div
