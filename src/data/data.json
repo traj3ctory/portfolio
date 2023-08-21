@@ -155,10 +155,26 @@
       "name": "Msdat",
       "image": "/asset/img/msdat.png",
       "description": "Developed a browser-compatible web application for the Federal Ministry of Health using Highcharts for data visualization, conducted UI audits, implemented stakeholder feedback, and integrated Restful APIs to enhance data visualization and management capabilities for the Multi-Source Data Analytic and Triangulation Resource project.",
-      "link": "https://beta.msdat.fmohconnect.gov.ng/",
+      "link": "https://msdat.fmohconnect.gov.ng/",
       "category": "web",
       "role": "Frontend Engineer",
       "tech": "Vue2, Vuex, TypeScript, JavaScript, HighChart Postgres, Python, Docker"
+    },
+    {
+      "name": "Governors Dashboard",
+      "image": "/asset/img/ngf2.png",
+      "description": "Developed a browser-compatible web application for the Nigerian governors forum using Highcharts for data visualization, conducted UI audits, implemented stakeholder feedback, and integrated Restful APIs to enhance data visualization and management capabilities for the Nigerian governors forum.",
+      "link": "https://ngf.fmohconnect.gov.ng/",
+      "category": "web",
+      "role": "Frontend Engineer",
+      "tech": "Vue2, Vuex, TypeScript, HighChart",
+      "other_img": [
+        "/asset/img/ngf3.png",
+        "/asset/img/ngf1.png",
+        "/asset/img/ngf4.png",
+        "/asset/img/ngf5.png",
+        "/asset/img/ngf6.png"
+      ]
     },
     {
       "name": "Treaty",
