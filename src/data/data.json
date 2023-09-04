@@ -185,6 +185,33 @@
       ]
     },
     {
+      "name": "Bhmis",
+      "image": "/asset/img/bhmis.png",
+      "description": "The Ministry of Health (MoH) aims to maximize the impact of innovation through deliberate collaboration and co-creation opportunities to ensure efficiency, availability and sustainability in meeting specific health innovation needs.",
+      "link": "https://mohinnovations.gov.bw/",
+      "category": "web",
+      "role": "Frontend Engineer",
+      "tech": "Vue3, Vuex, TypeScript, Chartjs, Postgres, Python, Docker"
+    },
+    {
+      "name": "MedInstance",
+      "image": "/asset/img/medInstance.png",
+      "description": "Medinstance is the world's first fully automated OpenMRS hosting and server management service.",
+      "link": "https://medinstance.com/",
+      "category": "web",
+      "role": "Frontend Engineer",
+      "tech": "Nuxt, JavaScript, Postgres, Python, Docker"
+    },
+    {
+      "name": "Dhistance",
+      "image": "/asset/img/dhistance.png",
+      "description": "Dhistance is the world's first fully automated DHIS2 hosting and server management service.",
+      "link": "https://dhistance.com/",
+      "category": "web",
+      "role": "Frontend Engineer",
+      "tech": "Nuxt, JavaScript, Postgres, Python, Docker"
+    },
+    {
       "name": "BlogPost",
       "image": "/asset/img/ss-blog-post.png",
       "description": "A demo application to tryout infinite scroll and pagination using React, Tailwindcss, TypeScript, and Jsonplaceholder API",
@@ -228,33 +255,6 @@
       "category": "hobby",
       "role": "Frontend Engineer",
       "tech": "React, JavaScript"
-    },
-    {
-      "name": "Bhmis",
-      "image": "/asset/img/bhmis.png",
-      "description": "The Ministry of Health (MoH) aims to maximize the impact of innovation through deliberate collaboration and co-creation opportunities to ensure efficiency, availability and sustainability in meeting specific health innovation needs.",
-      "link": "https://mohinnovations.gov.bw/",
-      "category": "web",
-      "role": "Frontend Engineer",
-      "tech": "Vue3, Vuex, TypeScript, Chartjs, Postgres, Python, Docker"
-    },
-    {
-      "name": "MedInstance",
-      "image": "/asset/img/medInstance.png",
-      "description": "Medinstance is the world's first fully automated OpenMRS hosting and server management service.",
-      "link": "https://medinstance.com/",
-      "category": "web",
-      "role": "Frontend Engineer",
-      "tech": "Nuxt, JavaScript, Postgres, Python, Docker"
-    },
-    {
-      "name": "Dhistance",
-      "image": "/asset/img/dhistance.png",
-      "description": "Dhistance is the world's first fully automated DHIS2 hosting and server management service.",
-      "link": "https://dhistance.com/",
-      "category": "web",
-      "role": "Frontend Engineer",
-      "tech": "Nuxt, JavaScript, Postgres, Python, Docker"
     },
     {
       "name": "OneHealthNg",
