@@ -1,7 +1,7 @@
-import DisplayLottie from "./DisplayLottie";
-import Coding from "../data/coding.json";
-import SocialMedia from "./Social";
 import { Card } from "primereact/card";
+import Coding from "../data/coding.json";
+import DisplayLottie from "./DisplayLottie";
+import SocialMedia from "./Social";
 
 const Main = () => (
   <main className="main_content" id="home_page">

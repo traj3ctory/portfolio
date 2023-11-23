@@ -72,17 +72,22 @@
   "workXp": [
     {
       "icon": "pi pi-bookmark-fill",
-      "date": "June 2022 - Till Date",
+      "date": "February 2023 - Till Date",
+      "role": "Software Engineer at Georgetown Global Health Nigeria"
+    },
+    {
+      "icon": "pi pi-bookmark-fill",
+      "date": "March 2022 - February 2023",
       "role": "Frontend Engineer at oneHealth (Remote)"
     },
     {
       "icon": "pi pi-file-excel",
-      "date": "June 2021 - June 2022",
+      "date": "March 2021 - March 2022",
       "role": "Frontend Engineer at Ehealth4Everyone"
     },
     {
       "icon": "pi pi-folder-open",
-      "date": "January 2020 - May 2021",
+      "date": "January 2020 - March 2021",
       "role": "Frontend Web Developer at Mira Technologies"
     },
     {
