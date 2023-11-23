@@ -38,19 +38,19 @@
     },
     {
       "name": "JavaScript",
-      "progress": 75
+      "progress": 85
     },
     {
       "name": "TypeScript",
-      "progress": 75
+      "progress": 85
     },
     {
       "name": "React",
-      "progress": 75
+      "progress": 85
     },
     {
       "name": "Vue",
-      "progress": 80
+      "progress": 85
     },
     {
       "name": "Node.js",
@@ -61,7 +61,7 @@
       "progress": 70
     },
     {
-      "name": "Python",
+      "name": "Python(Django)",
       "progress": 60
     },
     {
@@ -71,7 +71,7 @@
   ],
   "workXp": [
     {
-      "icon": "pi pi-bookmark-fill",
+      "icon": "pi pi-briefcase",
       "date": "February 2023 - Till Date",
       "role": "Software Engineer at Georgetown Global Health Nigeria"
     },
@@ -216,7 +216,7 @@
     },
     {
       "name": "MedInstance",
-      "image": "/asset/img/medInstance.png",
+      "image": "/asset/img/medinstance.png",
       "description": "Medinstance is the world's first fully automated OpenMRS hosting and server management service.",
       "link": "https://medinstance.com/",
       "category": "web",
@@ -260,6 +260,15 @@
       "tech": "NextJs, TypeScript, Express, Node, Postgres"
     },
     {
+      "name": "OneHealthNg",
+      "image": "/asset/img/oneHealth.png",
+      "description": "Pharmacy and Medical Store Management System",
+      "link": "https://onehealthng.com/pharmacy",
+      "category": "web",
+      "role": "Frontend Engineer",
+      "tech": "Blade, JavaScript, Laravel, MySqli, AWS"
+    },
+    {
       "name": "Imdb Movie List",
       "image": "/asset/img/imdb.png",
       "description": "Using imdb api to perform some functionalities in vue3",
@@ -276,15 +285,6 @@
       "category": "hobby",
       "role": "Frontend Engineer",
       "tech": "React, JavaScript"
-    },
-    {
-      "name": "OneHealthNg",
-      "image": "/asset/img/oneHealth.png",
-      "description": "Pharmacy and Medical Store Management System",
-      "link": "https://onehealthng.com/pharmacy",
-      "category": "web",
-      "role": "Frontend Engineer",
-      "tech": "Blade, JavaScript, Laravel, MySqli, AWS"
     },
     {
       "name": "Portfolio Site",
