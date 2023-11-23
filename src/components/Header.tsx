@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import ToggleMode from "./ToggleMode";
 
@@ -19,6 +19,12 @@ const Header = (props: any) => {
     <nav className="navbar navbar-expand-md navbar-dark header_container">
       <div className="container">
         <a className="navbar-brand" href="#home_page">
+          <img
+            src="./asset/me.jpg"
+            alt=""
+            className="img-fluid rounded-circle"
+            width={50}
+          />&ensp;
           David Z. Benard
         </a>
         <button
