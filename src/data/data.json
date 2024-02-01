@@ -199,6 +199,24 @@
       "tech": "Html, Css, JavaScript, MySqli, PHP"
     },
     {
+      "name": "OneHealthNg",
+      "image": "/asset/img/oneHealth.png",
+      "description": "Pharmacy and Medical Store Management System",
+      "link": "https://onehealthng.com/pharmacy",
+      "category": "web",
+      "role": "Frontend Engineer",
+      "tech": "Blade, JavaScript, Laravel, MySqli, AWS"
+    },
+    {
+      "name": "Product (IN-PROGRESS)",
+      "image": "/asset/img/product.png",
+      "description": "An e-commerce site with the web-service, Admin-dashboard and Client site, client:https://product-client.vercel.app/, admin:https://product-admin.vercel.app/, service:https://pheret-service.onrender.com/",
+      "link": "https://product-admin.vercel.app",
+      "category": "hobby",
+      "role": "JavaScript Engineer",
+      "tech": "NextJs, TypeScript, Express, Node, Postgres"
+    },
+    {
       "name": "Aphrc",
       "image": "/asset/img/aphrc.png",
       "description": "Welcome to the African Population and Health Research Center Monitoring, Evaluation and Learning Platform APHRC - MEL. A locally served analytics platform having various data visualizations, pulling data from an ERP system as well as other sources to give a visual representation of these data",
@@ -223,6 +241,15 @@
       "tech": "Vue3, Vuex, TypeScript, Chartjs, Postgres, Python, Docker"
     },
     {
+      "name": "SortTable",
+      "image": "/asset/img/table.png",
+      "description": "A demo application to tryout table sort, filterand API integration using Vue3, Bootstrap, and TypeScript",
+      "link": "https://lb-table-component.netlify.app/",
+      "category": "hobby",
+      "role": "Frontend Engineer",
+      "tech": "Vue3, Bootstrap, TypeScript, API Integration"
+    },
+    {
       "name": "MedInstance",
       "image": "/asset/img/medinstance.png",
       "description": "Medinstance is the world's first fully automated OpenMRS hosting and server management service.",
@@ -241,42 +268,6 @@
       "tech": "Nuxt, JavaScript, Postgres, Python, Docker"
     },
     {
-      "name": "BlogPost",
-      "image": "/asset/img/ss-blog-post.png",
-      "description": "A demo application to tryout infinite scroll and pagination using React, Tailwindcss, TypeScript, and Jsonplaceholder API",
-      "link": "https://sendsprint-blog.netlify.app/",
-      "category": "hobby",
-      "role": "Frontend Engineer",
-      "tech": "React, Tailwindcss, TypeScript, Jsonplaceholder API"
-    },
-    {
-      "name": "SortTable",
-      "image": "/asset/img/table.png",
-      "description": "A demo application to tryout table sort, filterand API integration using Vue3, Bootstrap, and TypeScript",
-      "link": "https://lb-table-component.netlify.app/",
-      "category": "hobby",
-      "role": "Frontend Engineer",
-      "tech": "Vue3, Bootstrap, TypeScript, API Integration"
-    },
-    {
-      "name": "Product (IN-PROGRESS)",
-      "image": "/asset/img/product.png",
-      "description": "An e-commerce site with the web-service, Admin-dashboard and Client site, client:https://product-client.vercel.app/, admin:https://product-admin.vercel.app/, service:https://pheret-service.onrender.com/",
-      "link": "https://product-admin.vercel.app",
-      "category": "hobby",
-      "role": "JavaScript Engineer",
-      "tech": "NextJs, TypeScript, Express, Node, Postgres"
-    },
-    {
-      "name": "OneHealthNg",
-      "image": "/asset/img/oneHealth.png",
-      "description": "Pharmacy and Medical Store Management System",
-      "link": "https://onehealthng.com/pharmacy",
-      "category": "web",
-      "role": "Frontend Engineer",
-      "tech": "Blade, JavaScript, Laravel, MySqli, AWS"
-    },
-    {
       "name": "Imdb Movie List",
       "image": "/asset/img/imdb.png",
       "description": "Using imdb api to perform some functionalities in vue3",
@@ -284,6 +275,15 @@
       "category": "hobby",
       "role": "Frontend Engineer",
       "tech": "Vue3, TypeScript"
+    },
+    {
+      "name": "BlogPost",
+      "image": "/asset/img/ss-blog-post.png",
+      "description": "A demo application to tryout infinite scroll and pagination using React, Tailwindcss, TypeScript, and Jsonplaceholder API",
+      "link": "https://sendsprint-blog.netlify.app/",
+      "category": "hobby",
+      "role": "Frontend Engineer",
+      "tech": "React, Tailwindcss, TypeScript, Jsonplaceholder API"
     },
     {
       "name": "Todo Application",
