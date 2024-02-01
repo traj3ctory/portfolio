@@ -17,11 +17,6 @@ const SocialMedia = () => (
 					<span className="pi pi-whatsapp" />
 				</a>
 			</li>
-			<li>
-				<a href="https://twitter.com/dav3ly" rel="noreferrer" target="_blank">
-					<span className="pi pi-twitter" />
-				</a>
-			</li>
 		</ul>
 	</div>
 );

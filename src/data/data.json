@@ -14,7 +14,6 @@
     "nameAbbrv": "BZ David",
     "job": "Software Engineer",
     "linkedin": "https://www.linkedin.com/in/david-benard-196961121/",
-    "twitter": "https://twitter.com/dav3ly",
     "whatsapp": "https://api.whatsapp.com/send?phone=09038660972&text=Hi%20There!",
     "profile": "../images/me.jpg"
   },
@@ -139,6 +138,15 @@
   ],
   "portfolio": [
     {
+      "name": "eN-LIS",
+      "image": "/asset/img/enlis.png",
+      "description": "eN-LIS is a Laboratory Information System that helps to manage the entire laboratory process from the point of sample collection to the point of result delivery",
+      "link": "https://www.en-lis.com",
+      "category": "web",
+      "role": "Frontend Engineer",
+      "tech": "React, JavaScript, Django, Postgres"
+    },
+    {
       "name": "OneWellness",
       "image": "/asset/img/onewell.png",
       "description": "Manage chronic disease like diabetes & hypertension the best way. Access 24/7 personalized care with the help of a dedicated healthcare partner just for you and your family members.",
@@ -151,7 +159,7 @@
       "name": "PillMova",
       "image": "/asset/img/pillmova.png",
       "description": "PillMova is a logistics company specialized in the safe and quick delivery of Pharma products.",
-      "link": "https://develop.pillmova.co/",
+      "link": "https://pillmova.co/",
       "category": "web",
       "role": "Frontend Engineer",
       "tech": "NextJs, TypeScript, Laravel, MySqli, AWS"
