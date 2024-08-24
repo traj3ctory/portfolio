@@ -45,7 +45,9 @@
     "typescript": "^5.5.3",
     "typescript-eslint": "^8.0.1",
     "vite": "^5.4.1",
-    "vite-plugin-pwa": "^0.20.1",
-    "zustand": "^4.5.5"
+    "vite-plugin-pwa": "^0.20.1"
+  },
+  "engines": {
+    "node": "20"
   }
 }
