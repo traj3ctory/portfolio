@@ -59,7 +59,7 @@ function App() {
     <>
       {isOnline ? (
         <Suspense fallback={<LoadingScreen />}>
-          <Router basename="/bzd/">
+          <Router>
             <Routes>
               {renderRoutes(AppRoutes)}
               <Route path="*" element={<NotFound />} />

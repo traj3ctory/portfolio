@@ -139,22 +139,22 @@
   "portfolio": [
     {
       "name": "NPHCDA",
-      "image": "/bzd/asset/img/nphcda_1.png",
+      "image": "/asset/img/nphcda_1.png",
       "description": "The National Primary Health Care Development Agency (NPHCDA) is a government agency responsible for the implementation of primary health care programs in Nigeria.",
       "link": "#",
       "category": "web",
       "role": "Frontend Engineer",
       "tech": "React, JavaScript, Typescript, Leafelet, Postgres, Python, Docker",
       "other_img": [
-        "/bzd/asset/img/nphcda_2.png",
-        "/bzd/asset/img/nphcda_3.png",
-        "/bzd/asset/img/nphcda_4.png",
-        "/bzd/asset/img/nphcda_1.png"
+        "/asset/img/nphcda_2.png",
+        "/asset/img/nphcda_3.png",
+        "/asset/img/nphcda_4.png",
+        "/asset/img/nphcda_1.png"
       ]
     },
     {
       "name": "Campusroots",
-      "image": "/bzd/asset/img/CR.png",
+      "image": "/asset/img/CR.png",
       "description": "Campusroots is a platform that helps students to connect with their peers, share ideas, and collaborate on projects.",
       "link": "https://app.campusroots.com/",
       "category": "web",
@@ -163,7 +163,7 @@
     },
     {
       "name": "eN-LIS",
-      "image": "/bzd/asset/img/enlis.png",
+      "image": "/asset/img/enlis.png",
       "description": "eN-LIS is a Laboratory Information System that helps to manage the entire laboratory process from the point of sample collection to the point of result delivery",
       "link": "https://www.en-lis.com",
       "category": "web",
@@ -172,7 +172,7 @@
     },
     {
       "name": "OneWellness",
-      "image": "/bzd/asset/img/onewell.png",
+      "image": "/asset/img/onewell.png",
       "description": "Manage chronic disease like diabetes & hypertension the best way. Access 24/7 personalized care with the help of a dedicated healthcare partner just for you and your family members.",
       "link": "https://onewellapp.com/",
       "category": "web",
@@ -181,7 +181,7 @@
     },
     {
       "name": "PillMova",
-      "image": "/bzd/asset/img/pillmova.png",
+      "image": "/asset/img/pillmova.png",
       "description": "PillMova is a logistics company specialized in the safe and quick delivery of Pharma products.",
       "link": "https://pillmova.co/",
       "category": "web",
@@ -190,7 +190,7 @@
     },
     {
       "name": "Msdat",
-      "image": "/bzd/asset/img/msdat.png",
+      "image": "/asset/img/msdat.png",
       "description": "Developed a browser-compatible web application for the Federal Ministry of Health using Highcharts for data visualization, conducted UI audits, implemented stakeholder feedback, and integrated Restful APIs to enhance data visualization and management capabilities for the Multi-Source Data Analytic and Triangulation Resource project.",
       "link": "https://msdat.fmohconnect.gov.ng/",
       "category": "web",
@@ -199,23 +199,23 @@
     },
     {
       "name": "Governors Dashboard",
-      "image": "/bzd/asset/img/ngf2.png",
+      "image": "/asset/img/ngf2.png",
       "description": "Developed a browser-compatible web application for the Nigerian governors forum using Highcharts for data visualization, conducted UI audits, implemented stakeholder feedback, and integrated Restful APIs to enhance data visualization and management capabilities for the Nigerian governors forum.",
       "link": "https://ngf.fmohconnect.gov.ng/",
       "category": "web",
       "role": "Frontend Engineer",
       "tech": "Vue2, Vuex, TypeScript, HighChart",
       "other_img": [
-        "/bzd/asset/img/ngf3.png",
-        "/bzd/asset/img/ngf1.png",
-        "/bzd/asset/img/ngf4.png",
-        "/bzd/asset/img/ngf5.png",
-        "/bzd/asset/img/ngf6.png"
+        "/asset/img/ngf3.png",
+        "/asset/img/ngf1.png",
+        "/asset/img/ngf4.png",
+        "/asset/img/ngf5.png",
+        "/asset/img/ngf6.png"
       ]
     },
     {
       "name": "Treaty",
-      "image": "/bzd/asset/img/treaty.png",
+      "image": "/asset/img/treaty.png",
       "description": "The National Depository of Treaties under the Federal Ministry of Justice in Nigeria is responsible for the safekeeping and management of international agreements, conventions, and treaties entered into by the Nigerian government with other countries and international organizations",
       "link": "https://treaties.justice.gov.ng/",
       "category": "web",
@@ -224,7 +224,7 @@
     },
     {
       "name": "OneHealthNg",
-      "image": "/bzd/asset/img/oneHealth.png",
+      "image": "/asset/img/oneHealth.png",
       "description": "Pharmacy and Medical Store Management System",
       "link": "https://onehealthng.com/pharmacy",
       "category": "web",
@@ -233,7 +233,7 @@
     },
     {
       "name": "Product (IN-PROGRESS)",
-      "image": "/bzd/asset/img/product.png",
+      "image": "/asset/img/product.png",
       "description": "An e-commerce site with the web-service, Admin-dashboard and Client site, client:https://product-client.vercel.app/, admin:https://product-admin.vercel.app/, service:https://pheret-service.onrender.com/",
       "link": "https://product-admin.vercel.app",
       "category": "hobby",
@@ -242,22 +242,22 @@
     },
     {
       "name": "Aphrc",
-      "image": "/bzd/asset/img/aphrc.png",
+      "image": "/asset/img/aphrc.png",
       "description": "Welcome to the African Population and Health Research Center Monitoring, Evaluation and Learning Platform APHRC - MEL. A locally served analytics platform having various data visualizations, pulling data from an ERP system as well as other sources to give a visual representation of these data",
       "link": "https://melportal.aphrc.org/",
       "category": "web",
       "role": "Software Engineer",
       "tech": "Vue3, Vuex, TypeScript, HighChart, Postgres, Python",
       "other_img": [
-        "/bzd/asset/img/map-1.png",
-        "/bzd/asset/img/trend.png",
-        "/bzd/asset/img/expanded-map.png",
-        "/bzd/asset/img/map-2.png"
+        "/asset/img/map-1.png",
+        "/asset/img/trend.png",
+        "/asset/img/expanded-map.png",
+        "/asset/img/map-2.png"
       ]
     },
     {
       "name": "Bhmis",
-      "image": "/bzd/asset/img/bhmis.png",
+      "image": "/asset/img/bhmis.png",
       "description": "The Ministry of Health (MoH) aims to maximize the impact of innovation through deliberate collaboration and co-creation opportunities to ensure efficiency, availability and sustainability in meeting specific health innovation needs.",
       "link": "https://mohinnovations.gov.bw/",
       "category": "web",
@@ -266,7 +266,7 @@
     },
     {
       "name": "SortTable",
-      "image": "/bzd/asset/img/table.png",
+      "image": "/asset/img/table.png",
       "description": "A demo application to tryout table sort, filterand API integration using Vue3, Bootstrap, and TypeScript",
       "link": "https://lb-table-component.netlify.app/",
       "category": "hobby",
@@ -275,7 +275,7 @@
     },
     {
       "name": "MedInstance",
-      "image": "/bzd/asset/img/medinstance.png",
+      "image": "/asset/img/medinstance.png",
       "description": "Medinstance is the world's first fully automated OpenMRS hosting and server management service.",
       "link": "https://medinstance.com/",
       "category": "web",
@@ -284,7 +284,7 @@
     },
     {
       "name": "Dhistance",
-      "image": "/bzd/asset/img/dhistance.png",
+      "image": "/asset/img/dhistance.png",
       "description": "Dhistance is the world's first fully automated DHIS2 hosting and server management service.",
       "link": "https://dhistance.com/",
       "category": "web",
@@ -293,7 +293,7 @@
     },
     {
       "name": "Imdb Movie List",
-      "image": "/bzd/asset/img/imdb.png",
+      "image": "/asset/img/imdb.png",
       "description": "Using imdb api to perform some functionalities in vue3",
       "link": "https://github.com/traj3ctory/movies",
       "category": "hobby",
@@ -302,7 +302,7 @@
     },
     {
       "name": "BlogPost",
-      "image": "/bzd/asset/img/ss-blog-post.png",
+      "image": "/asset/img/ss-blog-post.png",
       "description": "A demo application to tryout infinite scroll and pagination using React, Tailwindcss, TypeScript, and Jsonplaceholder API",
       "link": "https://sendsprint-blog.netlify.app/",
       "category": "hobby",
@@ -311,7 +311,7 @@
     },
     {
       "name": "Todo Application",
-      "image": "/bzd/asset/img/todo.png",
+      "image": "/asset/img/todo.png",
       "description": "Mini Todo Application",
       "link": "https://digitodo.netlify.app/",
       "category": "hobby",
@@ -320,7 +320,7 @@
     },
     {
       "name": "Portfolio Site",
-      "image": "/bzd/asset/img/portfolio.png",
+      "image": "/asset/img/portfolio.png",
       "description": "About Benard Zibiri David, software engineer",
       "link": "https://bzdavid.netlify.app/",
       "category": "hobby",
@@ -329,7 +329,7 @@
     },
     {
       "name": "Leerix Application",
-      "image": "/bzd/asset/img/leerix.png",
+      "image": "/asset/img/leerix.png",
       "description": "Music match api",
       "link": "https://github.com/traj3ctory/lyricsApp",
       "category": "hobby",
@@ -338,7 +338,7 @@
     },
     {
       "name": "Accsiss eBs",
-      "image": "/bzd/asset/img/ebs.png",
+      "image": "/asset/img/ebs.png",
       "description": "An enterprise business solution",
       "link": "https://miratechnologiesng.com/products/accsissebs/",
       "category": "web",
@@ -347,7 +347,7 @@
     },
     {
       "name": "Sysbanker EE",
-      "image": "/bzd/asset/img/sys.png",
+      "image": "/asset/img/sys.png",
       "description": "A microfinance bank application",
       "link": "https://miratechnologiesng.com/products/sysbankeree/",
       "category": "web",

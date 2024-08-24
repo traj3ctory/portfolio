@@ -27,16 +27,20 @@ export default defineConfig({
         ],
         orientation: "any",
         display: "standalone",
+        dir: "auto",
         lang: "en-GB",
-        name: "NPHCDA",
-        short_name: "nphcda",
+        name: "Benard Zibiri David",
+        short_name: "BZD",
       },
       workbox: {
         globPatterns: ["**/*.{js,css,html,ico,png,svg}"],
       },
     }),
   ],
-  base: "/bzd/",
+  build: {
+    outDir: "dist",
+  },
+  // base: "/bzd/",
   resolve: {
     alias: [{ find: "@", replacement: path.resolve(__dirname, "src") }],
   },
