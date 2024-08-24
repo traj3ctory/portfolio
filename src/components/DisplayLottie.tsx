@@ -1,7 +1,8 @@
+import { INotSure } from '@/types';
 import { Suspense } from 'react';
 import Lottie from 'react-lottie';
 
-const DisplayLottie = ({ animationData }: any) => {
+const DisplayLottie = ({ animationData }: INotSure) => {
 	const defaultOptions = {
 		loop: true,
 		autoplay: true,
