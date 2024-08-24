@@ -22,7 +22,7 @@ const Header = (props: INotSure) => {
       <div className="container">
         <a className="navbar-brand" href="#home_page">
           <AppImage
-            src="./asset/me.jpg"
+            src="./icon512_rounded.png"
             alt=""
             className="rounded-circle"
             width={50}
