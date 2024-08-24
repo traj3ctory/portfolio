@@ -4,5 +4,5 @@
   status = 200
 
 [build]
-  command = "tsc --noEmit && yarn build"
+  command = "tsc --noEmit && vite build"
   publish = "dist"
