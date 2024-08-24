@@ -141,7 +141,7 @@
       "name": "NPHCDA",
       "image": "/asset/img/nphcda_1.png",
       "description": "The National Primary Health Care Development Agency (NPHCDA) is a government agency responsible for the implementation of primary health care programs in Nigeria.",
-      "link": "#",
+      "link": "",
       "category": "web",
       "role": "Frontend Engineer",
       "tech": "React, JavaScript, Typescript, Leafelet, Postgres, Python, Docker",

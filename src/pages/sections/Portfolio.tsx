@@ -73,7 +73,7 @@ const Portfolio: React.FC<PortfolioProps> = ({ portfolio }) => {
                   <br />
                   <small className="mb-2">{visible.tech}</small>
                   <hr />
-                  {visible.button !== false && (
+                  {visible?.link && visible.link !== "" && (
                     <Button
                       label=" "
                       iconPos="right"
