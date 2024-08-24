@@ -20,6 +20,9 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
 
+    // other options
+    "noEmitOnError": false,
+
     "paths": {
       "@/*": ["./src/*"]
     }
