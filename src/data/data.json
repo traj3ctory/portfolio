@@ -1,0 +1,358 @@
+{
+  "title": "Benard Z. David",
+  "subtitle": [
+    "`${ Software }`",
+    " <Engineer />"
+  ],
+  "description": "Hello, my name is Benard Z. David, and I am a highly skilled and experienced Software Engineer. With over four (4) years of professional experience, I am confident in my ability to help make your project a resounding success. I am a dedicated and passionate individual who takes great pride in my work and always strives for excellence.",
+  "desc2": "Throughout my career, I have demonstrated a keen ability to work collaboratively with others, from discussing project requirements to providing technical guidance and support. I approach every project with a sharp analytical mind and a passion for problem-solving, ensuring that I deliver the best possible results for my clients.",
+  "desc3": "I am committed to staying up-to-date with the latest developments in my field, and I am always eager to learn new skills and technologies to enhance my expertise. If you are looking for a skilled and reliable Software Engineer to help bring your project to life, then I would be honored to work with you.",
+  "name": {
+    "lastName": "Benard",
+    "middleName": "Zibiri",
+    "firstName": "David",
+    "nameAbbrv": "BZ David",
+    "job": "Software Engineer",
+    "linkedin": "https://www.linkedin.com/in/david-benard-196961121/",
+    "whatsapp": "https://api.whatsapp.com/send?phone=09038660972&text=Hi%20There!",
+    "profile": "../images/me.jpg"
+  },
+  "birthday": {
+    "day": 29,
+    "month": "April",
+    "year": "1997"
+  },
+  "stack": [
+    {
+      "name": "Html/Html5",
+      "progress": 90
+    },
+    {
+      "name": "Css/Sass/Scss",
+      "progress": 95
+    },
+    {
+      "name": "Bootstrap",
+      "progress": 90
+    },
+    {
+      "name": "JavaScript",
+      "progress": 85
+    },
+    {
+      "name": "TypeScript",
+      "progress": 85
+    },
+    {
+      "name": "React",
+      "progress": 85
+    },
+    {
+      "name": "Vue",
+      "progress": 85
+    },
+    {
+      "name": "Node.js",
+      "progress": 70
+    },
+    {
+      "name": "Wordpress",
+      "progress": 70
+    },
+    {
+      "name": "Python(Django)",
+      "progress": 60
+    },
+    {
+      "name": "Postgres",
+      "progress": 60
+    }
+  ],
+  "workXp": [
+    {
+      "icon": "pi pi-briefcase",
+      "date": "February 2023 - Till Date",
+      "role": "Software Engineer at Georgetown Global Health Nigeria"
+    },
+    {
+      "icon": "pi pi-bookmark-fill",
+      "date": "March 2022 - February 2023",
+      "role": "Frontend Engineer at oneHealth (Remote)"
+    },
+    {
+      "icon": "pi pi-file-excel",
+      "date": "March 2021 - March 2022",
+      "role": "Frontend Engineer at Ehealth4Everyone"
+    },
+    {
+      "icon": "pi pi-folder-open",
+      "date": "January 2020 - March 2021",
+      "role": "Frontend Web Developer at Mira Technologies"
+    },
+    {
+      "icon": "pi pi-money-bill",
+      "date": "September 2018 - February 2019",
+      "role": "Technical Support Intern at GTBank"
+    },
+    {
+      "icon": "pi pi-tablet",
+      "date": "April 2018 - December 2019",
+      "role": "Frontend Developer at Center4Tech"
+    }
+  ],
+  "detail": {
+    "website": "http://davidbd.netlify.app",
+    "email": "davidbenard.bd@gmail.com",
+    "degree": "Bsc. Computer Science",
+    "phone": "+2349038660972",
+    "city": "Abuja",
+    "contract": "Available",
+    "freelance": "Available",
+    "fulltime": "Available"
+  },
+  "school": [
+    {
+      "icon": "pi pi-calendar",
+      "title": "Certification",
+      "date": "2022",
+      "name": "Web Development Node.js(Progate).",
+      "link": "",
+      "image": "../asset/img/cert1.png"
+    },
+    {
+      "icon": "pi pi-calendar",
+      "title": "Certification",
+      "date": "2020",
+      "name": "Responsive web design(Free Code Camp).",
+      "link": "https://www.freecodecamp.org/certification/traj3ctory/responsive-web-design",
+      "image": "../asset/img/cert2.png"
+    },
+    {
+      "icon": "pi pi-calendar",
+      "title": "University",
+      "date": "2015 - 2019",
+      "name": "University of Benin, Benin-City, Edo State.",
+      "link": "",
+      "image": ""
+    }
+  ],
+  "portfolio": [
+    {
+      "name": "NPHCDA",
+      "image": "/bzd/asset/img/nphcda_1.png",
+      "description": "The National Primary Health Care Development Agency (NPHCDA) is a government agency responsible for the implementation of primary health care programs in Nigeria.",
+      "link": "#",
+      "category": "web",
+      "role": "Frontend Engineer",
+      "tech": "React, JavaScript, Typescript, Leafelet, Postgres, Python, Docker",
+      "other_img": [
+        "/bzd/asset/img/nphcda_2.png",
+        "/bzd/asset/img/nphcda_3.png",
+        "/bzd/asset/img/nphcda_4.png",
+        "/bzd/asset/img/nphcda_1.png"
+      ]
+    },
+    {
+      "name": "Campusroots",
+      "image": "/bzd/asset/img/CR.png",
+      "description": "Campusroots is a platform that helps students to connect with their peers, share ideas, and collaborate on projects.",
+      "link": "https://app.campusroots.com/",
+      "category": "web",
+      "role": "Frontend Engineer",
+      "tech": "React, JavaScript, Typescript, AWS"
+    },
+    {
+      "name": "eN-LIS",
+      "image": "/bzd/asset/img/enlis.png",
+      "description": "eN-LIS is a Laboratory Information System that helps to manage the entire laboratory process from the point of sample collection to the point of result delivery",
+      "link": "https://www.en-lis.com",
+      "category": "web",
+      "role": "Frontend Engineer",
+      "tech": "React, JavaScript, Django, Postgres"
+    },
+    {
+      "name": "OneWellness",
+      "image": "/bzd/asset/img/onewell.png",
+      "description": "Manage chronic disease like diabetes & hypertension the best way. Access 24/7 personalized care with the help of a dedicated healthcare partner just for you and your family members.",
+      "link": "https://onewellapp.com/",
+      "category": "web",
+      "role": "Frontend Engineer",
+      "tech": "React, JavaScript, Laravel, MySqli, AWS"
+    },
+    {
+      "name": "PillMova",
+      "image": "/bzd/asset/img/pillmova.png",
+      "description": "PillMova is a logistics company specialized in the safe and quick delivery of Pharma products.",
+      "link": "https://pillmova.co/",
+      "category": "web",
+      "role": "Frontend Engineer",
+      "tech": "NextJs, TypeScript, Laravel, MySqli, AWS"
+    },
+    {
+      "name": "Msdat",
+      "image": "/bzd/asset/img/msdat.png",
+      "description": "Developed a browser-compatible web application for the Federal Ministry of Health using Highcharts for data visualization, conducted UI audits, implemented stakeholder feedback, and integrated Restful APIs to enhance data visualization and management capabilities for the Multi-Source Data Analytic and Triangulation Resource project.",
+      "link": "https://msdat.fmohconnect.gov.ng/",
+      "category": "web",
+      "role": "Frontend Engineer",
+      "tech": "Vue2, Vuex, TypeScript, JavaScript, HighChart Postgres, Python, Docker"
+    },
+    {
+      "name": "Governors Dashboard",
+      "image": "/bzd/asset/img/ngf2.png",
+      "description": "Developed a browser-compatible web application for the Nigerian governors forum using Highcharts for data visualization, conducted UI audits, implemented stakeholder feedback, and integrated Restful APIs to enhance data visualization and management capabilities for the Nigerian governors forum.",
+      "link": "https://ngf.fmohconnect.gov.ng/",
+      "category": "web",
+      "role": "Frontend Engineer",
+      "tech": "Vue2, Vuex, TypeScript, HighChart",
+      "other_img": [
+        "/bzd/asset/img/ngf3.png",
+        "/bzd/asset/img/ngf1.png",
+        "/bzd/asset/img/ngf4.png",
+        "/bzd/asset/img/ngf5.png",
+        "/bzd/asset/img/ngf6.png"
+      ]
+    },
+    {
+      "name": "Treaty",
+      "image": "/bzd/asset/img/treaty.png",
+      "description": "The National Depository of Treaties under the Federal Ministry of Justice in Nigeria is responsible for the safekeeping and management of international agreements, conventions, and treaties entered into by the Nigerian government with other countries and international organizations",
+      "link": "https://treaties.justice.gov.ng/",
+      "category": "web",
+      "role": "Software Engineer",
+      "tech": "Html, Css, JavaScript, MySqli, PHP"
+    },
+    {
+      "name": "OneHealthNg",
+      "image": "/bzd/asset/img/oneHealth.png",
+      "description": "Pharmacy and Medical Store Management System",
+      "link": "https://onehealthng.com/pharmacy",
+      "category": "web",
+      "role": "Frontend Engineer",
+      "tech": "Blade, JavaScript, Laravel, MySqli, AWS"
+    },
+    {
+      "name": "Product (IN-PROGRESS)",
+      "image": "/bzd/asset/img/product.png",
+      "description": "An e-commerce site with the web-service, Admin-dashboard and Client site, client:https://product-client.vercel.app/, admin:https://product-admin.vercel.app/, service:https://pheret-service.onrender.com/",
+      "link": "https://product-admin.vercel.app",
+      "category": "hobby",
+      "role": "JavaScript Engineer",
+      "tech": "NextJs, TypeScript, Express, Node, Postgres"
+    },
+    {
+      "name": "Aphrc",
+      "image": "/bzd/asset/img/aphrc.png",
+      "description": "Welcome to the African Population and Health Research Center Monitoring, Evaluation and Learning Platform APHRC - MEL. A locally served analytics platform having various data visualizations, pulling data from an ERP system as well as other sources to give a visual representation of these data",
+      "link": "https://melportal.aphrc.org/",
+      "category": "web",
+      "role": "Software Engineer",
+      "tech": "Vue3, Vuex, TypeScript, HighChart, Postgres, Python",
+      "other_img": [
+        "/bzd/asset/img/map-1.png",
+        "/bzd/asset/img/trend.png",
+        "/bzd/asset/img/expanded-map.png",
+        "/bzd/asset/img/map-2.png"
+      ]
+    },
+    {
+      "name": "Bhmis",
+      "image": "/bzd/asset/img/bhmis.png",
+      "description": "The Ministry of Health (MoH) aims to maximize the impact of innovation through deliberate collaboration and co-creation opportunities to ensure efficiency, availability and sustainability in meeting specific health innovation needs.",
+      "link": "https://mohinnovations.gov.bw/",
+      "category": "web",
+      "role": "Frontend Engineer",
+      "tech": "Vue3, Vuex, TypeScript, Chartjs, Postgres, Python, Docker"
+    },
+    {
+      "name": "SortTable",
+      "image": "/bzd/asset/img/table.png",
+      "description": "A demo application to tryout table sort, filterand API integration using Vue3, Bootstrap, and TypeScript",
+      "link": "https://lb-table-component.netlify.app/",
+      "category": "hobby",
+      "role": "Frontend Engineer",
+      "tech": "Vue3, Bootstrap, TypeScript, API Integration"
+    },
+    {
+      "name": "MedInstance",
+      "image": "/bzd/asset/img/medinstance.png",
+      "description": "Medinstance is the world's first fully automated OpenMRS hosting and server management service.",
+      "link": "https://medinstance.com/",
+      "category": "web",
+      "role": "Frontend Engineer",
+      "tech": "Nuxt, JavaScript, Postgres, Python, Docker"
+    },
+    {
+      "name": "Dhistance",
+      "image": "/bzd/asset/img/dhistance.png",
+      "description": "Dhistance is the world's first fully automated DHIS2 hosting and server management service.",
+      "link": "https://dhistance.com/",
+      "category": "web",
+      "role": "Frontend Engineer",
+      "tech": "Nuxt, JavaScript, Postgres, Python, Docker"
+    },
+    {
+      "name": "Imdb Movie List",
+      "image": "/bzd/asset/img/imdb.png",
+      "description": "Using imdb api to perform some functionalities in vue3",
+      "link": "https://github.com/traj3ctory/movies",
+      "category": "hobby",
+      "role": "Frontend Engineer",
+      "tech": "Vue3, TypeScript"
+    },
+    {
+      "name": "BlogPost",
+      "image": "/bzd/asset/img/ss-blog-post.png",
+      "description": "A demo application to tryout infinite scroll and pagination using React, Tailwindcss, TypeScript, and Jsonplaceholder API",
+      "link": "https://sendsprint-blog.netlify.app/",
+      "category": "hobby",
+      "role": "Frontend Engineer",
+      "tech": "React, Tailwindcss, TypeScript, Jsonplaceholder API"
+    },
+    {
+      "name": "Todo Application",
+      "image": "/bzd/asset/img/todo.png",
+      "description": "Mini Todo Application",
+      "link": "https://digitodo.netlify.app/",
+      "category": "hobby",
+      "role": "Frontend Engineer",
+      "tech": "React, JavaScript"
+    },
+    {
+      "name": "Portfolio Site",
+      "image": "/bzd/asset/img/portfolio.png",
+      "description": "About Benard Zibiri David, software engineer",
+      "link": "https://bzdavid.netlify.app/",
+      "category": "hobby",
+      "role": "Frontend Engineer",
+      "tech": "React, JavaScript"
+    },
+    {
+      "name": "Leerix Application",
+      "image": "/bzd/asset/img/leerix.png",
+      "description": "Music match api",
+      "link": "https://github.com/traj3ctory/lyricsApp",
+      "category": "hobby",
+      "role": "Frontend Engineer",
+      "tech": "React, JavaScript"
+    },
+    {
+      "name": "Accsiss eBs",
+      "image": "/bzd/asset/img/ebs.png",
+      "description": "An enterprise business solution",
+      "link": "https://miratechnologiesng.com/products/accsissebs/",
+      "category": "web",
+      "role": "Frontend Engineer",
+      "tech": "Html, PHP, JavaScript, MySqli"
+    },
+    {
+      "name": "Sysbanker EE",
+      "image": "/bzd/asset/img/sys.png",
+      "description": "A microfinance bank application",
+      "link": "https://miratechnologiesng.com/products/sysbankeree/",
+      "category": "web",
+      "role": "Frontend Engineer",
+      "tech": "Html, PHP, JavaScript, MySqli"
+    }
+  ]
+}

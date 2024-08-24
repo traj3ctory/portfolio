@@ -1,0 +1,369 @@
+/**
+ * ==============================================
+ * Experimental: Gooey Effect
+ * Dot Overtaking
+ * ==============================================
+ */
+section.loading_section {
+  height: 100dvh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #00000044;
+
+  &.is_loading {
+    background-color: #ffffff44;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 405;
+  }
+
+  div.wrapper_loader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    .dot-overtaking {
+      position: relative;
+      width: 12px;
+      height: 12px;
+      border-radius: 6px;
+      background-color: transparent;
+      color: #3b86ff;
+      margin: -1px 0;
+      box-shadow: 0 -20px 0 0;
+      animation: dot-overtaking 2s infinite cubic-bezier(0.2, 0.6, 0.8, 0.2);
+
+      &.white {
+        color: #fff;
+      }
+    }
+
+    .dot-overtaking::before,
+    .dot-overtaking::after {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 12px;
+      height: 12px;
+      border-radius: 6px;
+      background-color: transparent;
+      color: #3b86ff;
+      box-shadow: 0 -20px 0 0;
+    }
+
+    .dot-overtaking.white::after,
+    .dot-overtaking.white::before {
+      color: #fff;
+    }
+
+    .dot-overtaking::before {
+      animation: dot-overtaking 2s infinite cubic-bezier(0.2, 0.6, 0.8, 0.2);
+      animation-delay: 0.3s;
+    }
+
+    .dot-overtaking::after {
+      animation: dot-overtaking 1.5s infinite cubic-bezier(0.2, 0.6, 0.8, 0.2);
+      animation-delay: 0.6s;
+    }
+  }
+}
+
+@keyframes dot-overtaking {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+/**
+   * ==============================================
+   * Login Background
+   * Color-Animation
+   * ==============================================
+   */
+
+@keyframes color-animation {
+  0% {
+    background-color: #141e30;
+  }
+
+  25% {
+    background-color: #243b55;
+  }
+
+  50% {
+    background-color: #3f4c6b;
+  }
+
+  75% {
+    // background-color: #7f8fa6;
+    background-color: #243b55;
+  }
+
+  100% {
+    // background-color: #243b55;
+    background-color: #141e30;
+  }
+}
+
+section.login_page {
+  margin-top: -2rem;
+  height: 92vh;
+  animation: color-animation 7.5s infinite ease-in-out;
+
+  div.card_holder {
+    background-color: var(--primary_bg);
+
+    p {
+      color: #3b86ff;
+      font-size: 1.25rem;
+      font-weight: 500;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+div.back_button {
+  a {
+    color: #3b86ff;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      color: #3b86ff;
+      text-decoration: none;
+    }
+  }
+}
+
+// responsive view
+@media only screen and (max-width: 667px) {
+  section.loading_section {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+
+/**
+   * ==============================================
+   * Load More
+   * Channel Message
+   * ==============================================
+   */
+
+div.load_more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  transition: all 0.5s ease-in-out;
+  position: absolute;
+  top: 0.1rem;
+  left: 0;
+  right: 0;
+
+  small {
+    background: rgb(250, 252, 255);
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.15);
+    height: 1.5rem;
+    padding: 0.125rem 1rem 0.15rem;
+    border-radius: 100px;
+    width: fit-content;
+    padding-left: 1rem;
+  }
+
+  // animate the 3 dots to show a loading effect
+  span {
+    animation: loading 1s infinite;
+    font-weight: 600;
+  }
+}
+
+@keyframes loading {
+  0% {
+    opacity: 0.2;
+  }
+
+  20% {
+    opacity: 0.4;
+  }
+
+  40% {
+    opacity: 0.6;
+  }
+
+  60% {
+    opacity: 0.8;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.2;
+  }
+}
+
+/**
+   * ==============================================
+   * Fetch Modal Data 
+   * Ellipsis
+   * ==============================================
+   */
+
+.spinner {
+  border: 0.2rem solid #f3f3f3;
+  border-top: 0.15rem solid #3498db;
+  border-radius: 50%;
+  width: 1.125rem;
+  height: 1.125rem;
+  animation: spin 2s linear infinite;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/**
+   * ==============================================
+   * Tour Guide 
+   * Teacher
+   * ==============================================
+   */
+// Slide Transition Left
+.slide_entering_left {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.slide_entered_left {
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.slide_exiting_left {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+// Slide Transition Right
+.slide_entering_right {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.slide_entered_right {
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.slide_exiting_right {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/**
+   * ==============================================
+   * Fade-In
+   * Fade-Out
+   * ==============================================
+   */
+div.fade_in {
+  animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+div.fade_out {
+  animation: fade-out 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@keyframes slide-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-up {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+}
+
+@keyframes dot-blink {
+  0% {
+    content: '';
+  }
+
+  25% {
+    content: '.';
+  }
+
+  50% {
+    content: '..';
+  }
+
+  75% {
+    content: '...';
+  }
+
+  100% {
+    content: '';
+  }
+}
+
+.dot-animate::after {
+  content: '';
+  animation: dot-blink 2.8s steps(4, end) infinite;
+}
+
+.loading_section {
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+
+.is_loading {
+  animation-name: slide-down;
+}
+
+.is_not_loading {
+  animation-name: slide-up;
+}
