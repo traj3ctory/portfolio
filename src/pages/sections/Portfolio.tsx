@@ -161,12 +161,10 @@ const Portfolio: React.FC<PortfolioProps> = ({ portfolio }) => {
                 alt={`${item.name}`}
                 onLoad={() => setLoaded(true)}
                 style={{ display: loaded ? "block" : "none" }}
+                className="shadow-lg border px-2 py-1"
               />
               <div className="portfolio-info">
                 <h4>{item.name}</h4>
-                <div className="icon">
-                  <i className="fa fa-search" aria-hidden="true" />
-                </div>
               </div>
             </div>
           ))}

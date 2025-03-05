@@ -5,7 +5,6 @@ import {
 } from "@/components/misc";
 import AppRoutes from "@/routes";
 import "@/styles/index.scss";
-import "@/styles/main.scss";
 import "@/styles/prime.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import { ErrorInfo, lazy, Suspense } from "react";

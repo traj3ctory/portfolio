@@ -4,20 +4,21 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "eslint .",
+    "preinstall": "bun -v || npm install -g bun",
+    "dev": "bun clean && vite",
+    "build": "bun clean && bun run lint && tsc && vite build",
+    "clean": "rm -rf node_modules/.vite && rm -rf dist.zip && rm -rf dist && rm -rf dev-dist && bun pm cache rm",
+    "lint": "eslint . --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
   "dependencies": {
-    "@emotion/react": "^11.13.3",
-    "bootstrap": "5.1.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "@ant-design/icons": "^5.4.0",
     "@emailjs/browser": "^4.4.1",
+    "@emotion/react": "^11.13.3",
     "@eslint/js": "^9.9.0",
     "@tsparticles/engine": "^3.5.0",
     "@tsparticles/react": "^3.0.0",
@@ -28,6 +29,7 @@
     "@types/react-transition-group": "^4.4.11",
     "@vitejs/plugin-react-swc": "^3.5.0",
     "antd": "^5.20.2",
+    "bootstrap": "5.1.3",
     "eslint": "^9.9.0",
     "eslint-plugin-react-hooks": "^5.1.0-rc.0",
     "eslint-plugin-react-refresh": "^0.4.9",
@@ -48,6 +50,6 @@
     "vite-plugin-pwa": "^0.20.1"
   },
   "engines": {
-    "node": "20"
+    "node": ">= 22"
   }
 }

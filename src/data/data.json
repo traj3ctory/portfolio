@@ -4,9 +4,9 @@
     "`${ Software }`",
     " <Engineer />"
   ],
-  "description": "Hello, my name is Benard Z. David, and I am a highly skilled and experienced Software Engineer. With over four (4) years of professional experience, I am confident in my ability to help make your project a resounding success. I am a dedicated and passionate individual who takes great pride in my work and always strives for excellence.",
-  "desc2": "Throughout my career, I have demonstrated a keen ability to work collaboratively with others, from discussing project requirements to providing technical guidance and support. I approach every project with a sharp analytical mind and a passion for problem-solving, ensuring that I deliver the best possible results for my clients.",
-  "desc3": "I am committed to staying up-to-date with the latest developments in my field, and I am always eager to learn new skills and technologies to enhance my expertise. If you are looking for a skilled and reliable Software Engineer to help bring your project to life, then I would be honored to work with you.",
+  "description": "Hello, my name is Benard Z. David, and I am a highly skilled Frontend Engineer with over five years of professional experience, complemented by additional years in software engineering. I bring a strong technical foundation, a collaborative mindset, and a relentless commitment to delivering exceptional results",
+  "desc2": "Throughout my career, I have worked closely with cross-functional teams—ranging from initial requirement discussions to providing technical guidance—to ensure that every project achieves its full potential. My analytical approach and problem-solving abilities enable me to tackle complex challenges effectively, while my passion for excellence drives me to exceed client expectations consistently.",
+  "desc3": "I am dedicated to continuous learning and staying current with the latest industry trends and technologies. If you are looking for a reliable and innovative Software Engineer to help bring your project to life, I would be honored to contribute my expertise to your team.",
   "name": {
     "lastName": "Benard",
     "middleName": "Zibiri",
@@ -28,19 +28,11 @@
       "progress": 90
     },
     {
-      "name": "Css/Sass/Scss",
+      "name": "CSS, SASS, SCSS, and UI Frameworks",
       "progress": 95
     },
     {
-      "name": "Bootstrap",
-      "progress": 90
-    },
-    {
-      "name": "JavaScript",
-      "progress": 85
-    },
-    {
-      "name": "TypeScript",
+      "name": "JavaScript/TypeScript",
       "progress": 85
     },
     {
@@ -52,7 +44,7 @@
       "progress": 85
     },
     {
-      "name": "Node.js",
+      "name": "Node.js (Express)",
       "progress": 70
     },
     {
@@ -65,7 +57,11 @@
     },
     {
       "name": "Postgres",
-      "progress": 60
+      "progress": 70
+    },
+    {
+      "name": "Docker",
+      "progress": 70
     }
   ],
   "workXp": [
@@ -114,6 +110,30 @@
     {
       "icon": "pi pi-calendar",
       "title": "Certification",
+      "date": "2025",
+      "name": "Python Project for Data Engineering",
+      "link": "https://www.coursera.org/account/accomplishments/records/BU15E5D6NHBQ",
+      "image": "../asset/img/cert1.png"
+    },
+    {
+      "icon": "pi pi-calendar",
+      "title": "Certification",
+      "date": "2025",
+      "name": "Python for Data Science, AI & Development",
+      "link": "https://www.coursera.org/account/accomplishments/records/8B4WFFTUB1MU",
+      "image": "../asset/img/cert1.png"
+    },
+    {
+      "icon": "pi pi-calendar",
+      "title": "Certification",
+      "date": "2025",
+      "name": "Introduction to Data Engineering",
+      "link": "https://www.coursera.org/account/accomplishments/records/MKM25WCW15LF",
+      "image": ""
+    },
+    {
+      "icon": "pi pi-calendar",
+      "title": "Certification",
       "date": "2022",
       "name": "Web Development Node.js(Progate).",
       "link": "",
@@ -139,22 +159,61 @@
   "portfolio": [
     {
       "name": "NPHCDA",
-      "image": "/asset/img/nphcda_1.png",
+      "image": "/asset/img/nphcda_7.png",
       "description": "The National Primary Health Care Development Agency (NPHCDA) is a government agency responsible for the implementation of primary health care programs in Nigeria.",
       "link": "https://phc.nphcda.gov.ng/",
       "category": "web",
       "role": "Software Engineer",
       "tech": "React, Zustand, Typescript, Leafelet, Postgres, Django, Docker",
       "other_img": [
+        "/asset/img/nphcda_5.png",
+        "/asset/img/nphcda_6.png",
         "/asset/img/nphcda_2.png",
         "/asset/img/nphcda_3.png",
         "/asset/img/nphcda_4.png",
-        "/asset/img/nphcda_1.png"
+        "/asset/img/nphcda_1.png",
+        "/asset/img/nphcda_7.png"
       ]
     },
     {
+      "name": "Campusroots Business",
+      "image": "/asset/img/cr-business_dark.png",
+      "description": "Campus Root Business - A Business App for Business owners looking to recruit students for internships and full-time roles.",
+      "link": "https://business.campusroots.com/",
+      "category": "web",
+      "role": "Frontend Engineer",
+      "tech": "React, Zustand, JavaScript, Typescript, AWS",
+      "other_img": [
+        "/asset/img/cr-business_light.png",
+        "/asset/img/cr-business_dark.png"
+      ]
+    },
+    {
+      "name": "Campusroots",
+      "image": "/asset/img/CR.png",
+      "description": "Campusroots is a platform that helps students to connect with their peers, share ideas, and collaborate on projects.",
+      "link": "https://app.campusroots.com/",
+      "category": "web",
+      "role": "Frontend Engineer",
+      "tech": "React, JavaScript, Typescript, AWS",
+      "other_img": [
+        "/asset/img/campusroots_1.png",
+        "/asset/img/campusroots_2.png",
+        "/asset/img/campusroots_3.png"
+      ]
+    },
+    {
+      "name": "eN-LIS",
+      "image": "/asset/img/enlis.png",
+      "description": "eN-LIS is a Laboratory Information System that helps to manage the entire laboratory process from the point of sample collection to the point of result delivery",
+      "link": "https://www.en-lis.com",
+      "category": "web",
+      "role": "Software Engineer",
+      "tech": "React, Redux, Typescript, Postgres, Django, Docker"
+    },
+    {
       "name": "NCDC TATAAFO",
-      "image": "/asset/img/tataafo.png",
+      "image": "/asset/img/tataafo2.png",
       "description": "Tataafo is a surveillance app for the NCDC",
       "link": "http://tataafo.ncdc.gov.ng/",
       "category": "web",
@@ -166,24 +225,6 @@
         "/asset/img/tataafo2.png",
         "/asset/img/tataafo3.png"
       ]
-    },
-    {
-      "name": "Campusroots",
-      "image": "/asset/img/CR.png",
-      "description": "Campusroots is a platform that helps students to connect with their peers, share ideas, and collaborate on projects.",
-      "link": "https://app.campusroots.com/",
-      "category": "web",
-      "role": "Frontend Engineer",
-      "tech": "React, JavaScript, Typescript, AWS"
-    },
-    {
-      "name": "eN-LIS",
-      "image": "/asset/img/enlis.png",
-      "description": "eN-LIS is a Laboratory Information System that helps to manage the entire laboratory process from the point of sample collection to the point of result delivery",
-      "link": "https://www.en-lis.com",
-      "category": "web",
-      "role": "Frontend Engineer",
-      "tech": "React, JavaScript, Django, Postgres"
     },
     {
       "name": "OneWellness",
@@ -229,15 +270,6 @@
       ]
     },
     {
-      "name": "Treaty",
-      "image": "/asset/img/treaty.png",
-      "description": "The National Depository of Treaties under the Federal Ministry of Justice in Nigeria is responsible for the safekeeping and management of international agreements, conventions, and treaties entered into by the Nigerian government with other countries and international organizations",
-      "link": "https://treaties.justice.gov.ng/",
-      "category": "web",
-      "role": "Software Engineer",
-      "tech": "Html, Css, JavaScript, MySqli, PHP"
-    },
-    {
       "name": "OneHealthNg",
       "image": "/asset/img/oneHealth.png",
       "description": "Pharmacy and Medical Store Management System",
@@ -280,15 +312,6 @@
       "tech": "Vue3, Vuex, TypeScript, Chartjs, Postgres, Python, Docker"
     },
     {
-      "name": "SortTable",
-      "image": "/asset/img/table.png",
-      "description": "A demo application to tryout table sort, filterand API integration using Vue3, Bootstrap, and TypeScript",
-      "link": "https://lb-table-component.netlify.app/",
-      "category": "hobby",
-      "role": "Frontend Engineer",
-      "tech": "Vue3, Bootstrap, TypeScript, API Integration"
-    },
-    {
       "name": "MedInstance",
       "image": "/asset/img/medinstance.png",
       "description": "Medinstance is the world's first fully automated OpenMRS hosting and server management service.",
@@ -305,6 +328,33 @@
       "category": "web",
       "role": "Frontend Engineer",
       "tech": "Nuxt, JavaScript, Postgres, Python, Docker"
+    },
+    {
+      "name": "Portfolio Site",
+      "image": "/asset/img/portfolio.png",
+      "description": "About Benard Zibiri David, software engineer",
+      "link": "https://bzdavid.netlify.app/",
+      "category": "hobby",
+      "role": "Frontend Engineer",
+      "tech": "React, JavaScript"
+    },
+    {
+      "name": "Treaty",
+      "image": "/asset/img/treaty.png",
+      "description": "The National Depository of Treaties under the Federal Ministry of Justice in Nigeria is responsible for the safekeeping and management of international agreements, conventions, and treaties entered into by the Nigerian government with other countries and international organizations",
+      "link": "https://treaties.justice.gov.ng/",
+      "category": "web",
+      "role": "Software Engineer",
+      "tech": "Html, Css, JavaScript, MySqli, PHP"
+    },
+    {
+      "name": "SortTable",
+      "image": "/asset/img/table.png",
+      "description": "A demo application to tryout table sort, filterand API integration using Vue3, Bootstrap, and TypeScript",
+      "link": "https://lb-table-component.netlify.app/",
+      "category": "hobby",
+      "role": "Frontend Engineer",
+      "tech": "Vue3, Bootstrap, TypeScript, API Integration"
     },
     {
       "name": "Imdb Movie List",
@@ -334,24 +384,6 @@
       "tech": "React, JavaScript"
     },
     {
-      "name": "Portfolio Site",
-      "image": "/asset/img/portfolio.png",
-      "description": "About Benard Zibiri David, software engineer",
-      "link": "https://bzdavid.netlify.app/",
-      "category": "hobby",
-      "role": "Frontend Engineer",
-      "tech": "React, JavaScript"
-    },
-    {
-      "name": "Leerix Application",
-      "image": "/asset/img/leerix.png",
-      "description": "Music match api",
-      "link": "https://github.com/traj3ctory/lyricsApp",
-      "category": "hobby",
-      "role": "Frontend Engineer",
-      "tech": "React, JavaScript"
-    },
-    {
       "name": "Accsiss eBs",
       "image": "/asset/img/ebs.png",
       "description": "An enterprise business solution",
@@ -368,6 +400,15 @@
       "category": "web",
       "role": "Frontend Engineer",
       "tech": "Html, PHP, JavaScript, MySqli"
+    },
+    {
+      "name": "Leerix Application",
+      "image": "/asset/img/leerix.png",
+      "description": "Music match api",
+      "link": "https://github.com/traj3ctory/lyricsApp",
+      "category": "hobby",
+      "role": "Frontend Engineer",
+      "tech": "React, JavaScript"
     }
   ]
 }
