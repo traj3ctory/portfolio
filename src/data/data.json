@@ -166,13 +166,12 @@
       "role": "Software Engineer",
       "tech": "React, Zustand, Typescript, Leafelet, Postgres, Django, Docker",
       "other_img": [
-        "/asset/img/nphcda_5.png",
-        "/asset/img/nphcda_6.png",
+        "/asset/img/nphcda_7.png",
         "/asset/img/nphcda_2.png",
         "/asset/img/nphcda_3.png",
         "/asset/img/nphcda_4.png",
         "/asset/img/nphcda_1.png",
-        "/asset/img/nphcda_7.png"
+        "/asset/img/nphcda_5.png"
       ]
     },
     {
@@ -291,7 +290,7 @@
       "name": "Aphrc",
       "image": "/asset/img/aphrc.png",
       "description": "Welcome to the African Population and Health Research Center Monitoring, Evaluation and Learning Platform APHRC - MEL. A locally served analytics platform having various data visualizations, pulling data from an ERP system as well as other sources to give a visual representation of these data",
-      "link": "https://melportal.aphrc.org/",
+      "link": "",
       "category": "web",
       "role": "Software Engineer",
       "tech": "Vue3, Vuex, TypeScript, HighChart, Postgres, Python",
@@ -306,7 +305,7 @@
       "name": "Bhmis",
       "image": "/asset/img/bhmis.png",
       "description": "The Ministry of Health (MoH) aims to maximize the impact of innovation through deliberate collaboration and co-creation opportunities to ensure efficiency, availability and sustainability in meeting specific health innovation needs.",
-      "link": "https://mohinnovations.gov.bw/",
+      "link": "",
       "category": "web",
       "role": "Frontend Engineer",
       "tech": "Vue3, Vuex, TypeScript, Chartjs, Postgres, Python, Docker"
@@ -342,7 +341,7 @@
       "name": "Treaty",
       "image": "/asset/img/treaty.png",
       "description": "The National Depository of Treaties under the Federal Ministry of Justice in Nigeria is responsible for the safekeeping and management of international agreements, conventions, and treaties entered into by the Nigerian government with other countries and international organizations",
-      "link": "https://treaties.justice.gov.ng/",
+      "link": "",
       "category": "web",
       "role": "Software Engineer",
       "tech": "Html, Css, JavaScript, MySqli, PHP"
