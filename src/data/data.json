@@ -48,12 +48,8 @@
       "progress": 70
     },
     {
-      "name": "Wordpress",
-      "progress": 70
-    },
-    {
       "name": "Python(Django)",
-      "progress": 60
+      "progress": 70
     },
     {
       "name": "Postgres",
@@ -61,6 +57,10 @@
     },
     {
       "name": "Docker",
+      "progress": 70
+    },
+    {
+      "name": "Wordpress",
       "progress": 70
     }
   ],
@@ -157,6 +157,21 @@
     }
   ],
   "portfolio": [
+    {
+      "name": "1840 GTC",
+      "image": "/asset/img/gtc_4.png",
+      "description": "1840 GTC is a recruitment platform that connects students with employers, helping them find internships and full-time roles.",
+      "link": "https://gtc-dev.1840andco.com/",
+      "category": "web",
+      "role": "Frontend Engineer",
+      "tech": "React, Zustand, Typescript, AWS, React-Query,",
+      "other_img": [
+        "/asset/img/gtc_3.png",
+        "/asset/img/gtc_2.png",
+        "/asset/img/gtc_1.png",
+        "/asset/img/gtc_4.png"
+      ]
+    },
     {
       "name": "NPHCDA",
       "image": "/asset/img/nphcda_7.png",
