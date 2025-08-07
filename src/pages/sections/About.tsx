@@ -1,10 +1,10 @@
-import { Card } from "primereact/card";
-import { Timeline } from "primereact/timeline";
-import { ProgressBar } from "primereact/progressbar";
-import { Panel } from "primereact/panel";
-import { Button } from "primereact/button";
-import { Link } from "react-router-dom";
 import { INotSure, stackData } from "@/types";
+import { Button } from "primereact/button";
+import { Card } from "primereact/card";
+import { Panel } from "primereact/panel";
+import { ProgressBar } from "primereact/progressbar";
+import { Timeline } from "primereact/timeline";
+import { Link } from "react-router-dom";
 
 const customizedMarker = (item: INotSure) => (
   <span
@@ -89,7 +89,7 @@ function About({
       <main className="about_content mb-3">
         <div className="p-grid">
           <div className="p-col-12 p-md-6">
-            <Card className="h-100" title="Details">
+            <Card className="card_scroll" title="Details">
               <Panel header={Object.keys(detail)[0].toUpperCase()} toggleable>
                 <Link to="/">{detail.website}</Link>
               </Panel>
@@ -142,11 +142,17 @@ function About({
               >
                 <p>{detail.fulltime}</p>
               </Panel>
-              <img src="https://wakatime.com/share/@davebenard/9a6905f1-0d47-4d5c-9840-cb460386c2d6.svg" height="300" width="600" className="img-fluid" alt="bz david"/>
+              <img
+                src="https://wakatime.com/share/@davebenard/9a6905f1-0d47-4d5c-9840-cb460386c2d6.svg"
+                height="300"
+                width="600"
+                className="img-fluid"
+                alt="bz david"
+              />
             </Card>
           </div>
           <div className="p-col-12 p-md-6">
-            <Card className="h-100" title="Stack">
+            <Card className="card_scroll" title="Stack">
               {stack.map((el: stackData, i: string) => (
                 <div key={i}>
                   <span>{el.name}</span>
@@ -158,16 +164,56 @@ function About({
                 </div>
               ))}
               <div className="d-flex flex-wrap">
-                <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="bz david" className="mt-3"/>
-                <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="bz david" className="mt-3"/>
-                <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" alt="bz david" className="mt-3"/>
-                <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="bz david" className="mt-3"/>
-                <img src="https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D" alt="bz david" className="mt-3"/>
-                <img src="https://img.shields.io/badge/React-blue?style=for-the-badge&logo=react&logoColor=white" alt="bz david" className="mt-3"/>
-                <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" alt="bz david" className="mt-3"/>
-                <img src="https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white" alt="bz david" className="mt-3"/>
-                <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" alt="bz david" className="mt-3"/>
-                <img src="https://img.shields.io/badge/Jest-323330?style=for-the-badge&logo=Jest&logoColor=white" alt="bz david" className="mt-3"/>
+                <img
+                  src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"
+                  alt="bz david"
+                  className="mt-3"
+                />
+                <img
+                  src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"
+                  alt="bz david"
+                  className="mt-3"
+                />
+                <img
+                  src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E"
+                  alt="bz david"
+                  className="mt-3"
+                />
+                <img
+                  src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"
+                  alt="bz david"
+                  className="mt-3"
+                />
+                <img
+                  src="https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D"
+                  alt="bz david"
+                  className="mt-3"
+                />
+                <img
+                  src="https://img.shields.io/badge/React-blue?style=for-the-badge&logo=react&logoColor=white"
+                  alt="bz david"
+                  className="mt-3"
+                />
+                <img
+                  src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white"
+                  alt="bz david"
+                  className="mt-3"
+                />
+                <img
+                  src="https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white"
+                  alt="bz david"
+                  className="mt-3"
+                />
+                <img
+                  src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white"
+                  alt="bz david"
+                  className="mt-3"
+                />
+                <img
+                  src="https://img.shields.io/badge/Jest-323330?style=for-the-badge&logo=Jest&logoColor=white"
+                  alt="bz david"
+                  className="mt-3"
+                />
               </div>
             </Card>
           </div>
@@ -176,7 +222,10 @@ function About({
       <main className="about_content">
         <div className="p-grid">
           <div className="p-col-12 p-md-6">
-            <Card className="h-100" title="Education">
+            <Card
+              className="card_scroll"
+              title="Education"
+            >
               <Timeline
                 value={school}
                 align="alternate"
@@ -187,7 +236,7 @@ function About({
             </Card>
           </div>
           <div className="p-col-12 p-md-6">
-            <Card className="h-100" title="Experience">
+            <Card className="card_scroll" title="Experience">
               <Timeline
                 value={workXp}
                 align="alternate"
