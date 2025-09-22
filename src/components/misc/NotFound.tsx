@@ -9,7 +9,7 @@ import SimpleLayout from "./SimpleLayout";
 
 const NotFound = () => {
   return (
-    <SimpleLayout title="Not Found" >
+    <SimpleLayout title="Not Found">
       <div className="min-h-[100dvh] flex items-center justify-center">
         <AppResult
           status="404"
@@ -24,7 +24,7 @@ const NotFound = () => {
             </p>
           }
           extra={
-            <div className="flex_center">
+            <div className="flex items-center justify-center">
               <AppButton
                 htmlType="button"
                 onClick={() => window.history.back()}

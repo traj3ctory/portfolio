@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom layer extensions */
+@layer base {
+  :root {
+    --color-primary: #8936ff;
+    --color-secondary: #2ec6fe;
+    --color-bg: #ffffff;
+    --color-bg-dark: #0d1117;
+  }
+  body {
+    @apply antialiased text-gray-800 dark:text-gray-100 bg-[var(--color-bg)] dark:bg-[var(--color-bg-dark)];
+  }
+}
+
+@layer components {
+  .container-default {
+    @apply mx-auto w-full max-w-7xl px-4;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:opacity-60 disabled:cursor-not-allowed text-sm h-10 px-4 py-2 bg-primary text-white hover:bg-primary-600;
+  }
+  .btn-outline {
+    @apply inline-flex items-center justify-center rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:opacity-60 disabled:cursor-not-allowed text-sm h-10 px-4 py-2 border border-primary text-primary hover:bg-primary hover:text-white;
+  }
+  .card-scroll {
+    @apply min-h-[60dvh] h-[60dvh] max-h-[60dvh] overflow-y-auto scrollbar-thin;
+  }
+  .portfolio-grid {
+    @apply grid gap-6 sm:grid-cols-2 lg:grid-cols-3;
+  }
+  .error-bg {
+    @apply min-h-dvh flex items-center justify-center bg-cover bg-center;
+  }
+  .custom-marker {
+    @apply flex items-center justify-center w-8 h-8 rounded-full text-neutral-800 dark:text-neutral-100 bg-white dark:bg-neutral-700 shadow;
+  }
+  .timeline-card {
+    @apply mt-4;
+  }
+  .panel-title-xs .p-panel-title {
+    @apply text-xs;
+  }
+}
+
+@layer utilities {
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background-color: #979797;
+    border-radius: 4px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    background-color: #d9d9d9;
+  }
+  .hide-scroll::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scroll {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .loading_section {
+    @apply h-dvh w-full flex items-center justify-center bg-black/20 dark:bg-black/40;
+  }
+  .wrapper_loader {
+    @apply flex flex-col items-center gap-4;
+  }
+}

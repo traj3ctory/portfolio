@@ -4,7 +4,7 @@
     "`${ Software }`",
     " <Engineer />"
   ],
-  "description": "Hello, my name is Benard Z. David, and I am a highly skilled Frontend Engineer with over five years of professional experience, complemented by additional years in software engineering. I bring a strong technical foundation, a collaborative mindset, and a relentless commitment to delivering exceptional results",
+  "description": "I am a highly skilled Frontend Engineer with over five years of professional experience, complemented by additional years in software engineering. I bring a strong technical foundation, a collaborative mindset, and a relentless commitment to delivering exceptional results",
   "desc2": "Throughout my career, I have worked closely with cross-functional teams—ranging from initial requirement discussions to providing technical guidance—to ensure that every project achieves its full potential. My analytical approach and problem-solving abilities enable me to tackle complex challenges effectively, while my passion for excellence drives me to exceed client expectations consistently.",
   "desc3": "I am dedicated to continuous learning and staying current with the latest industry trends and technologies. If you are looking for a reliable and innovative Software Engineer to help bring your project to life, I would be honored to contribute my expertise to your team.",
   "name": {
@@ -15,6 +15,7 @@
     "job": "Software Engineer",
     "linkedin": "https://www.linkedin.com/in/david-benard-196961121/",
     "whatsapp": "https://api.whatsapp.com/send?phone=09038660972&text=Hi%20There!",
+    "wakatime": "https://wakatime.com/@davebenard",
     "profile": "../images/me.jpg"
   },
   "birthday": {
