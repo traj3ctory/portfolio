@@ -79,7 +79,7 @@ function Contact() {
   };
 
   return (
-    <section id="contact" className="mt-4 mb-6">
+    <section id="contact" className="my-6">
       <Card title="Contact">
         <form onSubmit={handleContact} ref={form} noValidate>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -202,11 +202,11 @@ function Contact() {
             </div>
           </div>
 
-          <div className="mt-4 px-2">
+          <div className="mt-4 px-2 flex justify-end">
             <button
               type="submit"
               disabled={loading}
-              className="inline-flex items-center gap-2 px-4 py-2 bg-primary-600 hover:bg-primary-700 disabled:opacity-60 text-white rounded-md"
+              className="inline-flex items-center gap-2 px-4 py-2 bg-primary-600 hover:bg-primary-700 disabled:opacity-60 text-white rounded-none"
             >
               {loading ? (
                 <svg

@@ -1,33 +1,28 @@
 import { AppImage } from "@/components";
-import { INotSure, portfolioData } from "@/types";
+import { portfolioData } from "@/types";
 import { Button } from "primereact/button";
 import { Card } from "primereact/card";
 import { Dialog } from "primereact/dialog";
 import { Skeleton } from "primereact/skeleton";
+import type { MouseEvent } from "react";
 import { Key, useState } from "react";
 
-const handleFilter = (e: INotSure) => {
-  const selectedFilter = e.target.attributes[1].nodeValue;
-  let itemsToHide: NodeListOf<Element> = document.querySelectorAll(
-    `#portfolioItem .project:not([data-filter='${selectedFilter}'])`
-  );
-  let itemsToShow = document.querySelectorAll(
-    `#portfolioItem [data-filter='${selectedFilter}']`
-  );
+const handleFilter = (e: MouseEvent<HTMLButtonElement>) => {
+  // use the button element that received the click (currentTarget)
+  const btn = e.currentTarget as HTMLButtonElement;
+  const selectedFilter = btn.dataset.filter || "all";
 
-  if (selectedFilter === "all") {
-    itemsToHide = [] as INotSure;
-    itemsToShow = document.querySelectorAll("#portfolioItem [data-filter]");
-  }
-
-  itemsToHide.forEach((el) => {
-    el.classList.add("hide");
-    el.classList.remove("show");
-  });
-
-  itemsToShow.forEach((el) => {
-    el.classList.remove("hide");
-    el.classList.add("show");
+  const items = document.querySelectorAll("#portfolioItem [data-filter]");
+  items.forEach((el) => {
+    const filter = el.getAttribute("data-filter");
+    if (!filter) return;
+    if (selectedFilter === "all" || filter === selectedFilter) {
+      el.classList.remove("hide");
+      el.classList.add("show");
+    } else {
+      el.classList.remove("show");
+      el.classList.add("hide");
+    }
   });
 };
 
@@ -128,7 +123,7 @@ const Portfolio: React.FC<PortfolioProps> = ({ portfolio }) => {
           ].map((btn) => (
             <button
               key={btn.value}
-              className="btn px-3 py-1 h-9 text-base uppercase font-medium bg-primary/90 hover:bg-primary rounded-md"
+              className="btn px-3 py-1 h-9 text-base uppercase font-medium bg-primary/90 hover:bg-primary rounded-md z-50"
               onClick={handleFilter}
               data-filter={btn.value}
             >
@@ -144,7 +139,7 @@ const Portfolio: React.FC<PortfolioProps> = ({ portfolio }) => {
           {portfolio.map((item: portfolioData, i: number) => (
             <div
               key={i}
-              className={`project ${item.category} group relative rounded-md p-3 shadow-sm hover:shadow-lg transition-all border-b-2 border-gray-700`}
+              className={`project ${item.category} show group relative rounded-md p-3 shadow-sm hover:shadow-lg transition-all border-b-2 border-gray-700`}
               data-filter={`${item.category}`}
               onClick={() => setVisible(item)}
             >

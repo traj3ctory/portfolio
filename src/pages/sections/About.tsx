@@ -86,7 +86,7 @@ function About({
       </main>
       <main className="about_content mb-3">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="w-full md:w-1/2 px-2">
+          <div className="w-full px-2">
             <Card className="card_scroll" title="Details">
               <Panel header={Object.keys(detail)[0].toUpperCase()} toggleable>
                 <Link to="/">{detail.website}</Link>
@@ -142,18 +142,18 @@ function About({
               </Panel>
               <div className="mt-6">
                 <h5 className="text-sm font-semibold mb-2">
-                  Coding Activity (WakaTime)
+                  7 days Coding Activity (WakaTime)
                 </h5>
                 <object
                   data="https://wakatime.com/share/@davebenard/e056372a-98c1-46b2-9395-2679d9143448.svg"
                   type="image/svg+xml"
-                  className="w-full max-w-[600px] h-auto"
+                  className="w-full h-auto"
                   aria-label="WakaTime coding activity chart"
                 >
                   <img
                     src="https://wakatime.com/share/@davebenard/e056372a-98c1-46b2-9395-2679d9143448.svg"
                     alt="WakaTime coding activity"
-                    className="w-full max-w-[600px] h-auto"
+                    className="w-full h-auto"
                   />
                 </object>
               </div>
@@ -222,6 +222,23 @@ function About({
                   alt="bz david"
                   className="mt-3"
                 />
+              </div>
+              <div className="mt-6">
+                <h5 className="text-sm font-semibold mb-2">
+                  Coding Activity for the Year (WakaTime)
+                </h5>
+                <object
+                  data="https://wakatime.com/share/@davebenard/1131a30c-1e80-43f1-8da4-22b4822a6c73.svg"
+                  type="image/svg+xml"
+                  className="w-full h-auto"
+                  aria-label="WakaTime coding activity chart"
+                >
+                  <img
+                    src="https://wakatime.com/share/@davebenard/1131a30c-1e80-43f1-8da4-22b4822a6c73.svg"
+                    alt="WakaTime coding activity"
+                    className="w-full h-auto"
+                  />
+                </object>
               </div>
             </Card>
           </div>
