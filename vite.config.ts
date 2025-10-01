@@ -40,7 +40,6 @@ export default defineConfig({
   build: {
     outDir: "dist",
   },
-  // base: "/bzd/",
   resolve: {
     alias: [{ find: "@", replacement: path.resolve(__dirname, "src") }],
   },
