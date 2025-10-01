@@ -1,33 +1,28 @@
 import { AppImage } from "@/components";
-import { INotSure, portfolioData } from "@/types";
+import { portfolioData } from "@/types";
 import { Button } from "primereact/button";
 import { Card } from "primereact/card";
 import { Dialog } from "primereact/dialog";
 import { Skeleton } from "primereact/skeleton";
+import type { MouseEvent } from "react";
 import { Key, useState } from "react";
 
-const handleFilter = (e: INotSure) => {
-  const selectedFilter = e.target.attributes[1].nodeValue;
-  let itemsToHide: NodeListOf<Element> = document.querySelectorAll(
-    `#portfolioItem .project:not([data-filter='${selectedFilter}'])`
-  );
-  let itemsToShow = document.querySelectorAll(
-    `#portfolioItem [data-filter='${selectedFilter}']`
-  );
+const handleFilter = (e: MouseEvent<HTMLButtonElement>) => {
+  // use the button element that received the click (currentTarget)
+  const btn = e.currentTarget as HTMLButtonElement;
+  const selectedFilter = btn.dataset.filter || "all";
 
-  if (selectedFilter === "all") {
-    itemsToHide = [] as INotSure;
-    itemsToShow = document.querySelectorAll("#portfolioItem [data-filter]");
-  }
-
-  itemsToHide.forEach((el) => {
-    el.classList.add("hide");
-    el.classList.remove("show");
-  });
-
-  itemsToShow.forEach((el) => {
-    el.classList.remove("hide");
-    el.classList.add("show");
+  const items = document.querySelectorAll("#portfolioItem [data-filter]");
+  items.forEach((el) => {
+    const filter = el.getAttribute("data-filter");
+    if (!filter) return;
+    if (selectedFilter === "all" || filter === selectedFilter) {
+      el.classList.remove("hide");
+      el.classList.add("show");
+    } else {
+      el.classList.remove("show");
+      el.classList.add("hide");
+    }
   });
 };
 
@@ -52,8 +47,8 @@ const Portfolio: React.FC<PortfolioProps> = ({ portfolio }) => {
         >
           {visible && (
             <>
-              <div className="row">
-                <div className="col-md-6 mb-3">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
                   <AppImage
                     width={350}
                     src={visible.image}
@@ -63,7 +58,7 @@ const Portfolio: React.FC<PortfolioProps> = ({ portfolio }) => {
                     }}
                   />
                 </div>
-                <div className="col-md-6 mb-3">
+                <div>
                   <h4 className="mb-3">{visible.name}</h4>
                   <small className="mb-2">...{visible.description}</small>
                   <hr />
@@ -93,11 +88,11 @@ const Portfolio: React.FC<PortfolioProps> = ({ portfolio }) => {
                 </div>
               </div>
               {visible?.other_img && visible?.other_img?.length > 0 && (
-                <div className="row my-3">
+                <div className="grid my-3 grid-cols-1 sm:grid-cols-2 gap-4">
                   {visible?.other_img?.map(
                     (el: string | undefined, i: Key | null | undefined) => {
                       return (
-                        <div className="col-md-6 col-12 mb-3" key={i}>
+                        <div key={i}>
                           <AppImage
                             src={el}
                             alt={`${visible.name}-${i}`}
@@ -119,39 +114,32 @@ const Portfolio: React.FC<PortfolioProps> = ({ portfolio }) => {
       <Card title="Portfolio">
         <div
           id="filter"
-          className="d-flex w-100 justify-content-center btn_container"
+          className="w-full flex flex-wrap justify-center gap-2 my-4"
         >
-          <button
-            className="p-button filter p-button-sm mx-1"
-            onClick={handleFilter}
-            data-filter="all"
-          >
-            All
-          </button>
-          <button
-            className="p-button filter p-button-sm mx-1"
-            onClick={handleFilter}
-            data-filter="web"
-          >
-            Web-Apps
-          </button>
-          <button
-            className="p-button filter p-button-sm mx-1"
-            onClick={handleFilter}
-            data-filter="hobby"
-          >
-            Personal
-          </button>
+          {[
+            { label: "All", value: "all" },
+            { label: "Web-Apps", value: "web" },
+            { label: "Personal", value: "hobby" },
+          ].map((btn) => (
+            <button
+              key={btn.value}
+              className="btn px-3 py-1 h-9 text-base uppercase font-medium bg-primary/90 hover:bg-primary rounded-md z-50"
+              onClick={handleFilter}
+              data-filter={btn.value}
+            >
+              {btn.label}
+            </button>
+          ))}
         </div>
         <div
-          className="p-grid"
+          className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
           id="portfolioItem"
           style={{ cursor: "pointer" }}
         >
           {portfolio.map((item: portfolioData, i: number) => (
             <div
               key={i}
-              className={`p-col-12 p-md-4 project ${item.category}`}
+              className={`project ${item.category} show group relative rounded-md p-3 shadow-sm hover:shadow-lg transition-all border-b-2 border-gray-700`}
               data-filter={`${item.category}`}
               onClick={() => setVisible(item)}
             >
@@ -163,8 +151,8 @@ const Portfolio: React.FC<PortfolioProps> = ({ portfolio }) => {
                 style={{ display: loaded ? "block" : "none" }}
                 className="shadow-lg border px-2 py-1"
               />
-              <div className="portfolio-info">
-                <h4>{item.name}</h4>
+              <div className="portfolio-info mt-2">
+                <h4 className="text-sm font-semibold">{item.name}</h4>
               </div>
             </div>
           ))}

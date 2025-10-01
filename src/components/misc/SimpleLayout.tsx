@@ -19,9 +19,9 @@ export default function SimpleLayout({ children, showNav = true }: IProps) {
   const { isMobile, isTablet } = useLayout();
 
   return (
-    <div className="picture_bg">
+    <div className="picture_bg min-h-[100dvh] relative bg-white dark:bg-gray-950 transition-colors">
       {showNav && (
-        <div className="flex simple_layout_bg items-center lg:px-8 px-3 h-[5dvh] shadow-md w-full py-3 bg_white">
+        <div className="flex items-center lg:px-8 px-3 h-14 shadow-md w-full py-3 bg-white/80 dark:bg-gray-900/70 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
           {isTablet && (
             <AppImage
               src={miscImages.Me}
@@ -52,7 +52,7 @@ export default function SimpleLayout({ children, showNav = true }: IProps) {
 
         {children}
       </div>
-      <p className="h-[3dvh] text-sm absolute bottom-0 right-0 w-full text-right shadow-xl pr-4 text_white">
+      <p className="h-8 leading-8 text-xs md:text-sm absolute bottom-0 right-0 w-full text-right shadow-inner pr-4 text-gray-600 dark:text-gray-300 bg-white/70 dark:bg-gray-900/60 backdrop-blur">
         {appName} ©{new Date().getFullYear()}
       </p>
     </div>

@@ -4,13 +4,13 @@ import {
   OfflineFallBack,
 } from "@/components/misc";
 import AppRoutes from "@/routes";
-import "@/styles/index.scss";
-import "@/styles/prime.css";
-import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import "@/styles/index.scss"; // Legacy / component SCSS overrides
+import "@/styles/prime.css"; // PrimeReact theme
 import { ErrorInfo, lazy, Suspense } from "react";
 import { ErrorBoundary } from "react-error-boundary";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import { useOnlineStatus } from "./hooks";
+import "./styles/tailwind.css"; // Tailwind first
 import { IRoute, ISubRoute } from "./types";
 
 const NotFound = lazy(() => import("@/components/misc/NotFound"));

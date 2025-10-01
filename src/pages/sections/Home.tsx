@@ -1,10 +1,10 @@
-import { useState, useEffect } from "react";
 import Main from "@/components/Main";
+import data from "@/data/data.json";
+import { dataType } from "@/types";
+import { useEffect, useState } from "react";
 import About from "./About";
 import Contact from "./Contact";
 import Portfolio from "./Portfolio";
-import data from "@/data/data.json";
-import { dataType } from "@/types";
 
 function Home() {
   const [value, setValue] = useState<dataType | undefined>();
@@ -13,9 +13,7 @@ function Home() {
     setValue(data);
   }, []);
 
-  if (!value) {
-    return null;
-  }
+  if (!value) return null;
 
   const {
     school,
@@ -31,7 +29,7 @@ function Home() {
   } = value;
 
   return (
-    <div className="container content">
+    <div className="container content mx-auto">
       <Main />
       <About
         school={school}

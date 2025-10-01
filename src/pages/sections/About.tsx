@@ -48,26 +48,24 @@ function About({
   school,
   title,
   subtitle,
-  description,
   desc2,
   desc3,
   detail,
 }: INotSure) {
   return (
-    <section id="about">
+    <section id="about" className="mb-4">
       <main className="about_content mb-3">
         <Card title="About">
           <div className="mb-3">
-            <h4 className="ml-3">{title}</h4>
+            <h4 className="text-lg">{title}</h4>
             {subtitle.map((el: string, i: string) => (
-              <span className="fs-5 text-primary" key={i}>
+              <span className="text-xl text-blue-500/90" key={i}>
                 {el}
               </span>
             ))}
           </div>
-          <p>{description}</p>
           <p>{desc2}</p>
-          <p>{desc3}</p>
+          <p className="mb-3">{desc3}</p>
           <Link
             to="/asset/DAVID_BENARD_CV.pdf"
             target="_blank"
@@ -87,8 +85,8 @@ function About({
         </Card>
       </main>
       <main className="about_content mb-3">
-        <div className="p-grid">
-          <div className="p-col-12 p-md-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="w-full px-2">
             <Card className="card_scroll" title="Details">
               <Panel header={Object.keys(detail)[0].toUpperCase()} toggleable>
                 <Link to="/">{detail.website}</Link>
@@ -142,16 +140,26 @@ function About({
               >
                 <p>{detail.fulltime}</p>
               </Panel>
-              <img
-                src="https://wakatime.com/share/@davebenard/9a6905f1-0d47-4d5c-9840-cb460386c2d6.svg"
-                height="300"
-                width="600"
-                className="img-fluid"
-                alt="bz david"
-              />
+              <div className="mt-6">
+                <h5 className="text-sm font-semibold mb-2">
+                  7 days Coding Activity (WakaTime)
+                </h5>
+                <object
+                  data="https://wakatime.com/share/@davebenard/e056372a-98c1-46b2-9395-2679d9143448.svg"
+                  type="image/svg+xml"
+                  className="w-full h-auto"
+                  aria-label="WakaTime coding activity chart"
+                >
+                  <img
+                    src="https://wakatime.com/share/@davebenard/e056372a-98c1-46b2-9395-2679d9143448.svg"
+                    alt="WakaTime coding activity"
+                    className="w-full h-auto"
+                  />
+                </object>
+              </div>
             </Card>
           </div>
-          <div className="p-col-12 p-md-6">
+          <div className="w-full">
             <Card className="card_scroll" title="Stack">
               {stack.map((el: stackData, i: string) => (
                 <div key={i}>
@@ -163,7 +171,7 @@ function About({
                   />
                 </div>
               ))}
-              <div className="d-flex flex-wrap">
+              <div className="flex flex-wrap">
                 <img
                   src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"
                   alt="bz david"
@@ -215,17 +223,31 @@ function About({
                   className="mt-3"
                 />
               </div>
+              <div className="mt-6">
+                <h5 className="text-sm font-semibold mb-2">
+                  Coding Activity for the Year (WakaTime)
+                </h5>
+                <object
+                  data="https://wakatime.com/share/@davebenard/1131a30c-1e80-43f1-8da4-22b4822a6c73.svg"
+                  type="image/svg+xml"
+                  className="w-full h-auto"
+                  aria-label="WakaTime coding activity chart"
+                >
+                  <img
+                    src="https://wakatime.com/share/@davebenard/1131a30c-1e80-43f1-8da4-22b4822a6c73.svg"
+                    alt="WakaTime coding activity"
+                    className="w-full h-auto"
+                  />
+                </object>
+              </div>
             </Card>
           </div>
         </div>
       </main>
       <main className="about_content">
-        <div className="p-grid">
-          <div className="p-col-12 p-md-6">
-            <Card
-              className="card_scroll"
-              title="Education"
-            >
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="w-full">
+            <Card className="card_scroll" title="Education">
               <Timeline
                 value={school}
                 align="alternate"
@@ -235,7 +257,7 @@ function About({
               />
             </Card>
           </div>
-          <div className="p-col-12 p-md-6">
+          <div className="w-full px-2">
             <Card className="card_scroll" title="Experience">
               <Timeline
                 value={workXp}

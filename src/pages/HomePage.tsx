@@ -8,6 +8,7 @@ import Home from "./sections/Home";
 
 function Homepage() {
   const [visibleRight, setVisibleRight] = useState(false);
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const toggler = () => {
     setVisibleRight(!visibleRight);
   };
@@ -18,7 +19,7 @@ function Homepage() {
         <div className="d-one">
           <Shimmer />
         </div>
-        <Header sidebarToggle={toggler} />
+        <Header/>
         <Home />
         <Sidebar
           visible={visibleRight}

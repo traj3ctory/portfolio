@@ -1,13 +1,13 @@
-import data from "../data/coding2.json";
+import data from "../data/coding.json";
 import DisplayLottie from "./DisplayLottie";
 
 const Loader = () => (
-    <div className="container">
-      <div className="loader_container">
-        <div className="loader">
-          <DisplayLottie animationData={data} />
-        </div>
+  <div className="w-full max-w-5xl mx-auto px-4">
+    <div className="loader_container">
+      <div className="loader">
+        <DisplayLottie animationData={data} />
       </div>
     </div>
+  </div>
 );
 export default Loader;

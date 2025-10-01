@@ -16,6 +16,20 @@
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" /> -->
   <title>Benard Zibiri David Portfolio</title>
 
+  <script>
+    // Prevent theme flash
+    (function () {
+      try {
+        const storageKey = 'theme:dark';
+        const stored = localStorage.getItem(storageKey);
+        const prefers = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (stored === 'true' || (stored === null && prefers)) {
+          document.documentElement.classList.add('dark');
+        }
+      } catch (e) { /* ignore */ }
+    })();
+  </script>
+
 </head>
 
 <body>
