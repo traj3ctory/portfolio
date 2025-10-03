@@ -1,41 +1,10 @@
 import react from "@vitejs/plugin-react-swc";
 import * as path from "path";
 import { defineConfig } from "vite";
-import { VitePWA } from "vite-plugin-pwa";
 
 export default defineConfig({
   plugins: [
     react(),
-    VitePWA({
-      injectRegister: "auto",
-      manifest: {
-        theme_color: "#8936FF",
-        background_color: "#2EC6FE",
-        icons: [
-          {
-            purpose: "maskable",
-            sizes: "512x512",
-            src: "icon512_maskable.png",
-            type: "image/png",
-          },
-          {
-            purpose: "any",
-            sizes: "512x512",
-            src: "icon512_rounded.png",
-            type: "image/png",
-          },
-        ],
-        orientation: "any",
-        display: "standalone",
-        dir: "auto",
-        lang: "en-GB",
-        name: "Benard Zibiri David",
-        short_name: "BZD",
-      },
-      workbox: {
-        globPatterns: ["**/*.{js,css,html,ico,png,svg}"],
-      },
-    }),
   ],
   build: {
     outDir: "dist",
