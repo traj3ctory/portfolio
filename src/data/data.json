@@ -159,6 +159,15 @@
   ],
   "portfolio": [
     {
+      "name": "eN-LIS",
+      "image": "/asset/img/enlis.png",
+      "description": "eN-LIS is a Laboratory Information System that helps to manage the entire laboratory process from the point of sample collection to the point of result delivery",
+      "link": "https://www.en-lis.com",
+      "category": "web",
+      "role": "Software Engineer, Dev Ops Engineer",
+      "tech": "React, Redux, Typescript, Postgres, Django, Docker"
+    },
+    {
       "name": "1840 GTC",
       "image": "/asset/img/gtc_4.png",
       "description": "1840 GTC is a recruitment platform that connects students with employers, helping them find internships and full-time roles.",
@@ -172,15 +181,6 @@
         "/asset/img/gtc_1.png",
         "/asset/img/gtc_4.png"
       ]
-    },
-    {
-      "name": "eN-LIS",
-      "image": "/asset/img/enlis.png",
-      "description": "eN-LIS is a Laboratory Information System that helps to manage the entire laboratory process from the point of sample collection to the point of result delivery",
-      "link": "https://www.en-lis.com",
-      "category": "web",
-      "role": "Software Engineer, Dev Ops Engineer",
-      "tech": "React, Redux, Typescript, Postgres, Django, Docker"
     },
     {
       "name": "NPHCDA",
