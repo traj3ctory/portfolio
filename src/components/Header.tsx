@@ -43,9 +43,9 @@ const Header = () => {
             <a
               key={link.hash}
               href={link.hash}
-              className={`relative transition-colors hover:text-primary ${
+              className={`relative transition-colors hover:text-primary-600 ${
                 url === link.hash
-                  ? "text-primary font-semibold after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-full after:bg-primary"
+                  ? "text-primary-600 font-semibold after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-full after:bg-primary-600"
                   : "text-gray-600 dark:text-gray-300"
               }`}
             >
@@ -127,7 +127,7 @@ const Header = () => {
                     }}
                     className={`block px-3 py-2 rounded-md text-sm font-medium transition-colors ${
                       url === link.hash
-                        ? "bg-primary text-white"
+                        ? "bg-primary-600 text-white"
                         : "text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"
                     }`}
                   >

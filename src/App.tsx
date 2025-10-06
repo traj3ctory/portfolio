@@ -1,8 +1,4 @@
-import {
-  ErrorFallback,
-  LoadingScreen,
-  OfflineFallBack,
-} from "@/components/misc";
+import { ErrorFallback, LoadingScreen } from "@/components/misc";
 import AppRoutes from "@/routes";
 import "@/styles/index.scss"; // Legacy / component SCSS overrides
 import "@/styles/prime.css"; // PrimeReact theme
@@ -56,18 +52,25 @@ function App() {
 
   return (
     <>
-      {isOnline ? (
-        <Suspense fallback={<LoadingScreen />}>
-          <Router>
-            <Routes>
-              {renderRoutes(AppRoutes)}
-              <Route path="*" element={<NotFound />} />
-            </Routes>
-          </Router>
-        </Suspense>
-      ) : (
+      {/* {isOnline ? ( */}
+      <Suspense fallback={<LoadingScreen />}>
+        {!isOnline ? null : (
+          <div className="bg-amber-700 text-gray-200 text-center py-1 text-xs">
+            You are currently offline. Some features may be unavailable.
+          </div>
+        )}
+        <Router>
+          <Routes>
+            {/* create a banner to show offline */}
+            {/* --- IGNORE --- */}
+            {renderRoutes(AppRoutes)}
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </Router>
+      </Suspense>
+      {/* ) : (
         <OfflineFallBack />
-      )}
+      )} */}
     </>
   );
 }

@@ -5,7 +5,7 @@
 /* Custom layer extensions */
 @layer base {
   :root {
-    --color-primary: #8936ff;
+    --color-primary: #2563eb;
     --color-secondary: #2ec6fe;
     --color-bg: #ffffff;
     --color-bg-dark: #0d1117;
@@ -20,10 +20,10 @@
     @apply mx-auto w-full max-w-7xl px-4;
   }
   .btn {
-    @apply inline-flex items-center justify-center rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:opacity-60 disabled:cursor-not-allowed text-sm h-10 px-4 py-2 bg-primary text-white hover:bg-primary-600;
+    @apply inline-flex items-center justify-center rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:opacity-60 disabled:cursor-not-allowed text-sm h-10 px-4 py-2 bg-primary-600 text-white hover:bg-primary-700;
   }
   .btn-outline {
-    @apply inline-flex items-center justify-center rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:opacity-60 disabled:cursor-not-allowed text-sm h-10 px-4 py-2 border border-primary text-primary hover:bg-primary hover:text-white;
+    @apply inline-flex items-center justify-center rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:opacity-60 disabled:cursor-not-allowed text-sm h-10 px-4 py-2 border border-primary-600 text-primary-600 hover:bg-primary-700 hover:text-white;
   }
   .card-scroll {
     @apply min-h-[60dvh] h-[60dvh] max-h-[60dvh] overflow-y-auto scrollbar-thin;
@@ -38,7 +38,7 @@
     @apply flex items-center justify-center w-8 h-8 rounded-full text-neutral-800 dark:text-neutral-100 bg-white dark:bg-neutral-700 shadow;
   }
   .timeline-card {
-    @apply mt-4;
+    @apply mt-4 #2563EB;
   }
   .panel-title-xs .p-panel-title {
     @apply text-xs;

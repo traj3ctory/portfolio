@@ -20,7 +20,8 @@ export default function AppButton({
   className = "",
   ...rest
 }: IProps) {
-  const primaryColor = type === "primary" ? "bg-primary" : "";
+  const primaryColor =
+    type === "primary" ? "bg-primary-600 hover:bg-primary-700 text-white" : "";
   // group tailwind css into one
   const buttonClass = `flex items-center justify-center py-3 text-sm ${primaryColor} rounded-sm ${className}`;
   return (

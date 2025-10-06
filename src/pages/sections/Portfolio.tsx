@@ -1,6 +1,5 @@
 import { AppImage } from "@/components";
 import { portfolioData } from "@/types";
-import { Button } from "primereact/button";
 import { Card } from "primereact/card";
 import { Dialog } from "primereact/dialog";
 import { Skeleton } from "primereact/skeleton";
@@ -69,21 +68,23 @@ const Portfolio: React.FC<PortfolioProps> = ({ portfolio }) => {
                   <small className="mb-2">{visible.tech}</small>
                   <hr />
                   {visible?.link && visible.link !== "" && (
-                    <Button
-                      label=" "
-                      iconPos="right"
-                      icon="pi pi-external-link"
-                      className="shadow"
+                    // <Button
+                    //   // iconPos="right"
+                    //   icon="pi pi-external-link"
+                    //   // className="shadow bg-primary/90 hover:bg-primary p-2"
+                    //   // className="inline-flex items-center gap-2 px-4 py-2 bg-primary-600 hover:bg-primary-700 disabled:opacity-60 text-white rounded-none"
+                    // >
+                    <a
+                      href={visible.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ textDecoration: "none", color: "inherit" }}
+                      className="flex items-center gap-2 px-4 py-1 bg-primary-600 hover:bg-primary-700 disabled:opacity-60 text-white rounded-none mt-2 w-fit"
                     >
-                      <a
-                        href={visible.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        style={{ textDecoration: "none", color: "inherit" }}
-                      >
-                        {visible.name}
-                      </a>
-                    </Button>
+                      <i className="pi pi-external-link text-xs" />
+                      {visible.name}
+                    </a>
+                    // </Button>
                   )}
                 </div>
               </div>
@@ -123,7 +124,7 @@ const Portfolio: React.FC<PortfolioProps> = ({ portfolio }) => {
           ].map((btn) => (
             <button
               key={btn.value}
-              className="btn px-3 py-1 h-9 text-base uppercase font-medium bg-primary/90 hover:bg-primary rounded-md z-50"
+              className="btn px-3 py-1 h-9 text-base uppercase font-medium bg-primary-600 hover:bg-primary-700 rounded-md z-50"
               onClick={handleFilter}
               data-filter={btn.value}
             >

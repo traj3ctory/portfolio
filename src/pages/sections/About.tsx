@@ -54,7 +54,7 @@ function About({
 }: INotSure) {
   return (
     <section id="about" className="mb-4">
-      <main className="about_content mb-3">
+      <main className="about_content hidden mb-3">
         <Card title="About">
           <div className="mb-3">
             <h4 className="text-lg">{title}</h4>
