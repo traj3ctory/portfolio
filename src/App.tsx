@@ -51,27 +51,19 @@ function App() {
   const isOnline = useOnlineStatus();
 
   return (
-    <>
-      {/* {isOnline ? ( */}
-      <Suspense fallback={<LoadingScreen />}>
-        {!isOnline ? null : (
-          <div className="bg-amber-700 text-gray-200 text-center py-1 text-xs">
-            You are currently offline. Some features may be unavailable.
-          </div>
-        )}
-        <Router>
-          <Routes>
-            {/* create a banner to show offline */}
-            {/* --- IGNORE --- */}
-            {renderRoutes(AppRoutes)}
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </Router>
-      </Suspense>
-      {/* ) : (
-        <OfflineFallBack />
-      )} */}
-    </>
+    <Suspense fallback={<LoadingScreen />}>
+      {isOnline ? null : (
+        <div className="bg-amber-700 text-gray-200 text-center py-1 text-xs">
+          You are currently offline. Some features may be unavailable.
+        </div>
+      )}
+      <Router>
+        <Routes>
+          {renderRoutes(AppRoutes)}
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </Router>
+    </Suspense>
   );
 }
 

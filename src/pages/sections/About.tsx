@@ -42,48 +42,9 @@ const customizedContent2 = (item: INotSure) => (
   </Card>
 );
 
-function About({
-  stack,
-  workXp,
-  school,
-  title,
-  subtitle,
-  desc2,
-  desc3,
-  detail,
-}: INotSure) {
+function About({ stack, workXp, school, detail }: INotSure) {
   return (
     <section id="about" className="mb-4">
-      <main className="about_content hidden mb-3">
-        <Card title="About">
-          <div className="mb-3">
-            <h4 className="text-lg">{title}</h4>
-            {subtitle.map((el: string, i: string) => (
-              <span className="text-xl text-blue-500/90" key={i}>
-                {el}
-              </span>
-            ))}
-          </div>
-          <p>{desc2}</p>
-          <p className="mb-3">{desc3}</p>
-          <Link
-            to="/asset/DAVID_BENARD_CV.pdf"
-            target="_blank"
-            className="p-button p-button-text p-button-small p-button-raised"
-            download
-          >
-            Download CV
-            <i className="mx-2 pi pi-check" />
-          </Link>
-          <a
-            href="#contact"
-            className="p-button p-button-small p-button-raised mx-2"
-          >
-            Hire Me
-            <i className="mx-2 pi pi-check" />
-          </a>
-        </Card>
-      </main>
       <main className="about_content mb-3">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="w-full px-2">

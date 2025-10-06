@@ -68,10 +68,6 @@ function Home() {
         school={school}
         workXp={workXp}
         description={description}
-        desc2={desc2}
-        desc3={desc3}
-        subtitle={subtitle}
-        title={title}
         stack={stack}
         detail={detail}
       />
