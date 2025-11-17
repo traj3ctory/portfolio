@@ -25,12 +25,11 @@ const Header = () => {
           className="flex items-center gap-2 font-semibold text-gray-900 dark:text-gray-100"
         >
           <AppImage
-            src="./icon512_rounded.png"
+            src="./pwa-512x512.png"
             alt="logo"
             className="rounded-full"
             width={40}
             height={40}
-            preview={false}
           />
           <span className="hidden sm:inline">David Z. Benard</span>
         </a>

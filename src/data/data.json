@@ -4,8 +4,8 @@
     "`${ Software }`",
     " <Engineer />"
   ],
-  "description": "I am a highly skilled Frontend Engineer with over five years of professional experience, complemented by additional years in software engineering. I bring a strong technical foundation, a collaborative mindset, and a relentless commitment to delivering exceptional results",
-  "desc2": "Throughout my career, I have worked closely with cross-functional teams—ranging from initial requirement discussions to providing technical guidance—to ensure that every project achieves its full potential. My analytical approach and problem-solving abilities enable me to tackle complex challenges effectively, while my passion for excellence drives me to exceed client expectations consistently.",
+  "description": "I am a Full-Stack Engineer with over 5 years of experience building fast, scalable, and user-focused web applications. I specialise in frontend engineering using React, Vue.js, Next.js, and TypeScript, and I also work across the backend with Django, Node.js, and PostgreSQL to deliver reliable and efficient systems.",
+  "desc2": "In addition to engineering features, I have experience in the full development lifecycle, including CI/CD automation, Docker containerization, Linux server deployments, API integrations, debugging, and performance optimisation. I enjoy creating solutions that balance clean UI, strong backend logic, and smooth deployment pipelines.",
   "desc3": "I am dedicated to continuous learning and staying current with the latest industry trends and technologies. If you are looking for a reliable and innovative Software Engineer to help bring your project to life, I would be honored to contribute my expertise to your team.",
   "name": {
     "lastName": "Benard",
@@ -16,7 +16,7 @@
     "linkedin": "https://www.linkedin.com/in/david-benard-196961121/",
     "whatsapp": "https://api.whatsapp.com/send?phone=09038660972&text=Hi%20There!",
     "wakatime": "https://wakatime.com/@davebenard",
-    "profile": "../images/me.jpg"
+    "profile": "../images/me.png"
   },
   "birthday": {
     "day": 29,
@@ -69,7 +69,7 @@
     {
       "icon": "pi pi-briefcase",
       "date": "February 2023 - Till Date",
-      "role": "Software Engineer at Georgetown Global Health Nigeria"
+      "role": "Full-Stack Engineer at Georgetown Global Health Nigeria"
     },
     {
       "icon": "pi pi-bookmark-fill",

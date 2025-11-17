@@ -3,7 +3,7 @@ import _4X3 from "./4x3.png";
 import ImageBg from "./bg.png";
 import svgTriangle from "./triangle.svg";
 import fineGrain from "./fine_grain.png";
-import Me from "./me.jpg";
+import Me from "./me.png";
 
 export const miscImages = {
   _4X1,
