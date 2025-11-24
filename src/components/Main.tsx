@@ -20,7 +20,9 @@ const Main = () => {
           <aside className="w-full flex items-center justify-center">
             <div className="w-full max-w-2xl bg-white/5 dark:bg-black/20 p-6 border border-gray-300/30 dark:border-gray-600 rounded-md">
               <div className="w-full">
-                <h4 className="text-sm text-gray-400 mb-1">Hello there, I'm</h4>
+                <h4 className="text-sm text-gray-400 mb-1">
+                  Hello there, I am
+                </h4>
                 <h1 className="text-3xl lg:text-4xl font-semibold mb-2">
                   {fullName}
                 </h1>
