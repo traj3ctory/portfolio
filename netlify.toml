@@ -4,5 +4,5 @@
   status = 200
 
 [build]
-  command = "tsc --noEmit && vite build"
+  command = "rm -rf dist && pnpm build"
   publish = "dist"
