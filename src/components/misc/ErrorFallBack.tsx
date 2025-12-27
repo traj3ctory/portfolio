@@ -1,5 +1,5 @@
-import { ArrowLeftOutlined, ReloadOutlined } from "@/assets/Icon";
-import AppButton from "@/components/button";
+import { ArrowLeftOutlined, ReloadOutlined } from "~/assets/Icon";
+import AppButton from "~/components/button";
 import SimpleLayout from "./SimpleLayout";
 
 interface ErrorFallbackProps {
@@ -14,8 +14,16 @@ interface ErrorFallbackProps {
 export default function ErrorFallback({ error }: ErrorFallbackProps) {
   return (
     <SimpleLayout>
-      <section className="error">
-        <div className="flex flex-col items-center justify-center shadow-lg rounded-md p-10 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100">
+      <section
+        className="w-full min-h-screen flex items-center justify-center"
+        style={{
+          backgroundImage: "url('/assets/misc/bg.png')",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+        }}
+      >
+        <div className="flex flex-col items-center justify-center shadow-lg rounded-md p-10 bg-surface dark:bg-surface-elev ">
           <h1 className="text-2xl font-bold mb-4">Something went wrong</h1>
           <div className="flex items-center gap-2 my-2">
             <p className="text-sm font-semibold uppercase">

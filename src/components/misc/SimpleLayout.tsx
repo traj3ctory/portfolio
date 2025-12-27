@@ -1,8 +1,8 @@
-import { miscImages } from "@/assets";
-import { AppImage } from "@/components";
-import { appName } from "@/constants";
-import { useLayout } from "@/hooks";
 import { ReactNode } from "react";
+import { miscImages } from "~/assets";
+import { AppImage } from "~/components";
+import { appName } from "~/constants";
+import { useLayout } from "~/hooks";
 
 interface IProps {
   children: ReactNode;
@@ -19,9 +19,9 @@ export default function SimpleLayout({ children, showNav = true }: IProps) {
   const { isMobile, isTablet } = useLayout();
 
   return (
-    <div className="picture_bg min-h-[100dvh] relative bg-white dark:bg-gray-950 transition-colors">
+    <div className="picture_bg min-h-[100dvh] relative bg-bg dark:bg-bg transition-colors">
       {showNav && (
-        <div className="flex items-center lg:px-8 px-3 h-14 shadow-md w-full py-3 bg-white/80 dark:bg-gray-900/70 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
+        <div className="flex items-center lg:px-8 px-3 h-14 shadow-md w-full py-3 bg-surface/80 dark:bg-surface-elev/70 backdrop-blur-md border-b border-accent/40 dark:border-accent/70">
           {isTablet && (
             <AppImage
               src={miscImages.Me}
@@ -52,7 +52,7 @@ export default function SimpleLayout({ children, showNav = true }: IProps) {
 
         {children}
       </div>
-      <p className="h-8 leading-8 text-xs md:text-sm absolute bottom-0 right-0 w-full text-right shadow-inner pr-4 text-gray-600 dark:text-gray-300 bg-white/70 dark:bg-gray-900/60 backdrop-blur">
+      <p className="h-8 leading-8 text-xs md:text-sm absolute bottom-0 right-0 w-full text-right shadow-inner pr-4 text-muted dark:text-muted bg-surface/70 dark:bg-surface-elev/60 backdrop-blur">
         {appName} ©{new Date().getFullYear()}
       </p>
     </div>

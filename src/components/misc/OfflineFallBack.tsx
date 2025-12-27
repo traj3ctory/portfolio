@@ -1,4 +1,4 @@
-import { ExclamationCircleOutlined } from "@/assets/Icon";
+import { ExclamationCircleOutlined } from "~/assets/Icon";
 
 /**
  * @author traj3ctory
@@ -7,8 +7,16 @@ import { ExclamationCircleOutlined } from "@/assets/Icon";
 
 export default function OfflineFallBack() {
   return (
-    <section className="error">
-      <div className="flex flex-col items-center justify-center shadow-lg rounded-md p-10 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100">
+    <section
+      className="w-full min-h-screen flex items-center justify-center"
+      style={{
+        backgroundImage: "url('/assets/misc/bg.png')",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+      }}
+    >
+      <div className="flex flex-col items-center justify-center shadow-lg rounded-md p-10 bg-surface dark:bg-surface-elev ">
         <h1 className="text-2xl font-bold mb-4">You are offline</h1>
         <p>Please check your internet connection and try again.</p>
         <br />

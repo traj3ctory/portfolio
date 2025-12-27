@@ -1,5 +1,5 @@
-import { deviceEnum } from "@/constants";
 import { useEffect, useState } from "react";
+import { deviceEnum } from "~/constants";
 
 /**
  * @function useLayout

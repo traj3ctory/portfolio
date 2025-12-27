@@ -1,4 +1,4 @@
-import { appName } from "@/constants";
+import { appName } from "~/constants";
 
 /**
  * @author traj3ctory
@@ -7,15 +7,12 @@ import { appName } from "@/constants";
 
 const LoadingPage = () => {
   return (
-    <section className="loading_section">
-      <div className="wrapper_loader">
-        <div className="snippet mb-10" data-title="dot-overtaking">
-          <div className="stage filter-contrast">
-            <div className="dot-overtaking" />
-          </div>
+    <section className="h-screen w-full flex items-center justify-center bg-black/10">
+      <div className="flex flex-col items-center gap-4">
+        <div className="mb-10" aria-hidden>
+          <div className="dot-overtaking" />
         </div>
-        {/* <AppImage src={miscImages.Me} alt="NPHCDA" width={120} /> */}
-        <h6 data-testid="appName" className="hidden">
+        <h6 data-testid="appName" className="sr-only">
           {appName}
         </h6>
       </div>

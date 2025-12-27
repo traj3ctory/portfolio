@@ -24,7 +24,7 @@
     "noEmitOnError": false,
 
     "paths": {
-      "@/*": ["./src/*"]
+      "~/*": ["./src/*"]
     }
   },
   "include": ["src"]

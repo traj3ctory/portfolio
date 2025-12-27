@@ -1,6 +1,6 @@
-import { miscImages } from "@/assets";
 import { Image, ImageProps } from "antd";
 import { useState } from "react";
+import { miscImages } from "~/assets";
 
 /**
  * @author traj3ctory

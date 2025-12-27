@@ -1,33 +1,52 @@
 import { useEffect, useState } from "react";
 
-const storageKey = "theme:dark";
+const storageKey = "theme:selection";
+
+const themes = ["dark", "light"] as const;
+type ThemeName = (typeof themes)[number];
 
 const ToggleMode = () => {
-  const [dark, setDark] = useState<boolean>(() => {
-    const saved = localStorage.getItem(storageKey);
-    if (saved !== null) return saved === "true";
-    return window.matchMedia("(prefers-color-scheme: dark)").matches;
+  const [theme, setTheme] = useState<ThemeName>(() => {
+    if (typeof window === "undefined") return "dark";
+    const saved = localStorage.getItem(storageKey) as ThemeName | null;
+    if (saved && themes.includes(saved)) return saved;
+    // default to dark as requested
+    return "dark";
   });
 
   useEffect(() => {
     const root = document.documentElement;
-    if (dark) {
+    // apply theme via data-theme for theme.css and Tailwind mapping
+    root.setAttribute("data-theme", theme);
+    // also add a theme class on root for backwards compatibility
+    const themeClasses = Array.from(themes);
+    root.classList.remove(...themeClasses);
+    root.classList.add(theme);
+
+    // keep Tailwind's `dark` class in sync (some Tailwind utilities rely on it)
+    if (theme === "dark") {
       root.classList.add("dark");
-      localStorage.setItem(storageKey, "true");
+      root.style.colorScheme = "dark";
     } else {
       root.classList.remove("dark");
-      localStorage.setItem(storageKey, "false");
+      root.style.colorScheme = "light";
     }
-  }, [dark]);
+
+    // persist exact theme name
+    localStorage.setItem(storageKey, theme);
+  }, [theme]);
 
   return (
     <button
       type="button"
-      aria-label="Toggle dark mode"
-      onClick={() => setDark(!dark)}
-      className="inline-flex items-center justify-center rounded-md h-9 w-9 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+      aria-label="Toggle theme"
+      aria-pressed={theme === "dark"}
+      onClick={() => {
+        setTheme(theme === "dark" ? "light" : "dark");
+      }}
+      className="inline-flex items-center justify-center rounded-md h-9 w-9 border border-accent bg-surface text-muted hover:bg-surface-elev transition-colors border-none cursor-pointer"
     >
-      {dark ? (
+      {theme === "dark" ? (
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-5 w-5"

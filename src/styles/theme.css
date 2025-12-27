@@ -1,0 +1,44 @@
+@theme inline {
+  --color-primary: var(--brand-primary);
+  --color-secondary: var(--brand-secondary);
+  --color-accent: var(--brand-accent);
+  --color-surface: var(--brand-surface);
+  --color-muted: var(--brand-muted);
+}
+
+:root {
+  /* Brand Core - Using values from your current setup */
+  --brand-font-family: "Inter", sans-serif; /* */
+  --brand-primary: #3b82f6;
+  --brand-secondary: #1d4ed8;
+  --brand-accent: #60a5fa;
+  --brand-surface: #1e2125;
+  --brand-muted: #e7e7e7;
+}
+
+/* Light Theme with Blue Primary */
+[data-theme="light"] {
+  --brand-primary: #2563eb;
+  --brand-secondary: #1e40af;
+  --brand-accent: #337ad0;
+  --brand-surface: #ffffff;
+  --brand-muted: #64748b;
+}
+
+/* Ocean Theme (Monochromatic Blue focus) */
+[data-theme="ocean"] {
+  --brand-primary: #90e0ef;
+  --brand-secondary: #00b4d8;
+  --brand-accent: #012a4a;
+  --brand-surface: #013a63;
+  --brand-muted: #a3cddc;
+}
+
+/* Sunset (Blue accenting warm backgrounds) */
+[data-theme="sunset"] {
+  --brand-primary: #60a5fa;
+  --brand-secondary: #3b82f6;
+  --brand-accent: #2c0f0a;
+  --brand-surface: #3d1a14;
+  --brand-muted: #e8c9ba;
+}

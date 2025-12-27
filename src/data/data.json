@@ -171,7 +171,7 @@
       "name": "1840 GTC",
       "image": "/asset/img/gtc_4.png",
       "description": "1840 GTC is a recruitment platform that connects students with employers, helping them find internships and full-time roles.",
-      "link": "https://gtc-dev.1840andco.com/",
+      "link": "https://gtc-app.1840andco.com/",
       "category": "web",
       "role": "Frontend Engineer",
       "tech": "React, Zustand, Typescript, AWS, React-Query,",
@@ -188,7 +188,7 @@
       "description": "The National Primary Health Care Development Agency (NPHCDA) is a government agency responsible for the implementation of primary health care programs in Nigeria.",
       "link": "https://phc.nphcda.gov.ng/",
       "category": "web",
-      "role": "Software Engineer",
+      "role": "Software Engineer, Dev Ops Engineer",
       "tech": "React, Zustand, Typescript, Leafelet, Postgres, Django, Docker",
       "other_img": [
         "/asset/img/nphcda_7.png",
@@ -232,7 +232,7 @@
       "description": "Tataafo is a surveillance app for the NCDC",
       "link": "http://tataafo.ncdc.gov.ng/",
       "category": "web",
-      "role": "Software Engineer",
+      "role": "Software Engineer, Dev Ops Engineer",
       "tech": "React, Redux, Typescript, Leafelet, Postgres, Django, Docker",
       "other_img": [
         "/asset/img/tataafo.png",

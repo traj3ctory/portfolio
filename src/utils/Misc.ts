@@ -1,5 +1,5 @@
-import { appName } from "@/constants";
-import { INotSure } from "@/types";
+import { appName } from "~/constants";
+import { INotSure } from "~/types";
 
 /**
  * @function capitalizeWord
