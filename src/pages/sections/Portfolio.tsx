@@ -1,4 +1,4 @@
-import { Key, useMemo, useState } from "react";
+import { Key, useEffect, useMemo, useRef, useState } from "react";
 import { AppImage } from "~/components";
 import { portfolioData } from "~/types";
 
@@ -17,6 +17,40 @@ const Portfolio: React.FC<PortfolioProps> = ({ portfolio }) => {
     if (activeFilter === "all") return portfolio;
     return portfolio.filter((p) => p.category === activeFilter);
   }, [activeFilter, portfolio]);
+
+  const scrollY = useRef<number>(0);
+
+  useEffect(() => {
+    // Lock background scroll when modal is visible.
+    if (visible) {
+      scrollY.current = window.scrollY || window.pageYOffset || 0;
+      document.body.style.position = "fixed";
+      document.body.style.top = `-${scrollY.current}px`;
+      document.body.style.left = "0";
+      document.body.style.right = "0";
+      document.body.style.width = "100%";
+    } else {
+      // Restore
+      const prev = scrollY.current || 0;
+      document.body.style.position = "";
+      document.body.style.top = "";
+      document.body.style.left = "";
+      document.body.style.right = "";
+      document.body.style.width = "";
+      window.scrollTo(0, prev);
+    }
+
+    return () => {
+      // Ensure cleanup on unmount
+      const prev = scrollY.current || 0;
+      document.body.style.position = "";
+      document.body.style.top = "";
+      document.body.style.left = "";
+      document.body.style.right = "";
+      document.body.style.width = "";
+      window.scrollTo(0, prev);
+    };
+  }, [visible]);
 
   return (
     <section className="section mb-16" id="portfolio">
@@ -47,7 +81,7 @@ const Portfolio: React.FC<PortfolioProps> = ({ portfolio }) => {
               </button>
             </div>
 
-            <div className="clamp-[p,2,5]">
+            <div className="clamp-[p,2,5] max-h-[70dvh] overflow-y-auto">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="flex justify-center items-center">
                   <AppImage
@@ -82,7 +116,7 @@ const Portfolio: React.FC<PortfolioProps> = ({ portfolio }) => {
               </div>
 
               {visible?.other_img && visible.other_img.length > 0 ? (
-                <div className="grid mt-6 grid-cols-1 sm:grid-cols-2 gap-4 max-h-[40dvh] overflow-y-auto hide_scroll">
+                <div className="grid mt-6 grid-cols-1 sm:grid-cols-2 gap-4">
                   {visible.other_img.map(
                     (el: string | undefined, i: Key | null | undefined) => (
                       <div
