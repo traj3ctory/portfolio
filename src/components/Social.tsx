@@ -1,4 +1,4 @@
-import data from "@/data/data.json";
+import data from "~/data/data.json";
 
 const WakaIcon = ({ className = "w-5 h-5" }: { className?: string }) => (
   <svg
@@ -54,10 +54,8 @@ const SocialMedia = () => {
   ];
 
   return (
-    <div className="social">
-      <span className="find_me block text-sm text-gray-400 mb-2">
-        Find Me on
-      </span>
+    <div className="mt-4">
+      <span className="block text-sm text-muted mb-2">Find Me on</span>
       <ul className="flex gap-3 items-center">
         {socialItems.map((s) => (
           <li key={s.key}>
@@ -66,7 +64,7 @@ const SocialMedia = () => {
               rel="noreferrer"
               target="_blank"
               aria-label={s.label}
-              className="inline-flex items-center justify-center w-9 h-9 rounded-md bg-white/5 hover:bg-white/10 text-gray-100"
+              className="inline-flex items-center justify-center w-9 h-9 rounded-md bg-surface/5 hover:bg-surface/10 text-text"
             >
               {s.node}
             </a>

@@ -1,17 +1,49 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@layer theme, base, antd, components, utilities;
 
-/* Custom layer extensions */
+@import "tailwindcss";
+@import "./theme.css";
+@plugin "tailwind-clamp";
+
+@font-face {
+  font-family: "Helvetica Now Text";
+  src: url("/fonts/HelveticaNowText-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica Now Text";
+  src: url("/fonts/HelveticaNowText-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica Now Text";
+  src: url("/fonts/HelveticaNowText-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica Now Text";
+  src: url("/fonts/HelveticaNowText-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Ensure headings and common text elements use the same display font */
 @layer base {
-  :root {
-    --color-primary: #2563eb;
-    --color-secondary: #2ec6fe;
-    --color-bg: #ffffff;
-    --color-bg-dark: #0d1117;
-  }
-  body {
-    @apply antialiased text-gray-800 dark:text-gray-100 bg-[var(--color-bg)] dark:bg-[var(--color-bg-dark)];
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  span,
+  small {
+    font-family: "Roboto Slab", serif;
   }
 }
 
@@ -19,29 +51,167 @@
   .container-default {
     @apply mx-auto w-full max-w-7xl px-4;
   }
+
   .btn {
-    @apply inline-flex items-center justify-center rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:opacity-60 disabled:cursor-not-allowed text-sm h-10 px-4 py-2 bg-primary-600 text-white hover:bg-primary-700;
+    @apply inline-flex items-center justify-center rounded-md font-medium text-sm h-10 px-4 py-2;
+    background-color: var(--color-primary);
+    color: white;
+    transition: background-color 0.15s ease, color 0.15s ease;
   }
+  .btn:hover {
+    background-color: var(--color-primary-600);
+  }
+
   .btn-outline {
-    @apply inline-flex items-center justify-center rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:opacity-60 disabled:cursor-not-allowed text-sm h-10 px-4 py-2 border border-primary-600 text-primary-600 hover:bg-primary-700 hover:text-white;
+    @apply inline-flex items-center justify-center rounded-md font-medium text-sm h-10 px-4 py-2 border;
+    background: transparent;
   }
-  .card-scroll {
-    @apply min-h-[60dvh] h-[60dvh] max-h-[60dvh] overflow-y-auto scrollbar-thin;
+  .btn-outline:hover {
+    background-color: var(--color-primary-600);
+    color: white;
   }
-  .portfolio-grid {
-    @apply grid gap-6 sm:grid-cols-2 lg:grid-cols-3;
+
+  /* Small helpers still used by components */
+  .dot-overtaking {
+    animation: dot-overtaking 2s infinite cubic-bezier(0.2, 0.6, 0.8, 0.2);
   }
-  .error-bg {
-    @apply min-h-dvh flex items-center justify-center bg-cover bg-center;
+  .dot-overtaking::before,
+  .dot-overtaking::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 9999px;
+    color: #3b86ff;
   }
-  .custom-marker {
-    @apply flex items-center justify-center w-8 h-8 rounded-full text-neutral-800 dark:text-neutral-100 bg-white dark:bg-neutral-700 shadow;
+
+  .spinner {
+    border: 0.2rem solid #f3f3f3;
+    border-top: 0.15rem solid #3498db;
+    border-radius: 50%;
+    width: 1.125rem;
+    height: 1.125rem;
+    animation: spin 2s linear infinite;
+    display: inline-block;
+    margin-top: 0.5rem;
   }
-  .timeline-card {
-    @apply mt-4 #2563EB;
+
+  /* Small entrance animations used across hero and cards */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
   }
-  .panel-title-xs .p-panel-title {
-    @apply text-xs;
+
+  @keyframes zoomIn {
+    from { opacity: 0; transform: scale(0.985) translateY(6px); }
+    to { opacity: 1; transform: scale(1) translateY(0); }
+  }
+
+  .animate-fade-up {
+    animation: fadeUp 420ms ease-out both;
+  }
+
+  .animate-zoom-in {
+    animation: zoomIn 360ms ease-out both;
+  }
+
+  /* Respect reduced motion preference */
+  @media (prefers-reduced-motion: reduce) {
+    .animate-fade-up,
+    .animate-zoom-in,
+    .dot-overtaking,
+    .spinner {
+      animation: none !important;
+      transition: none !important;
+    }
+  }
+
+  /* PrimeReact card theming: make p-card follow theme variables */
+  .p-card,
+  .p-card .p-card-body {
+    background: var(--color-surface-elev, var(--color-surface)) !important;
+    color: var(--color-text) !important;
+    border-color: var(--color-surface-border, var(--color-border)) !important;
+    box-shadow: 0 1px 2px rgba(2, 6, 23, 0.06) !important;
+  }
+
+  .p-card .p-card-title,
+  .p-card .p-card-subtitle {
+    color: var(--color-text) !important;
+  }
+
+  /* PrimeReact panels, buttons, and inputs should follow theme variables */
+  .p-panel,
+  .p-panel .p-panel-content {
+    background: var(--color-surface) !important;
+    color: var(--color-text) !important;
+    border-color: var(--color-border) !important;
+    box-shadow: none !important;
+  }
+
+  /* Buttons: neutral default and primary variant */
+  .p-button {
+    background: transparent !important;
+    color: var(--color-text) !important;
+    border: 1px solid var(--color-border) !important;
+    box-shadow: none !important;
+  }
+
+  .p-button:hover {
+    background: color-mix(
+      in srgb,
+      var(--color-primary) 12%,
+      transparent
+    ) !important;
+    color: var(--color-text) !important;
+  }
+
+  .p-button.p-button-primary,
+  .p-button.p-button-success,
+  .p-button.p-button-warning,
+  .p-button.p-button-danger {
+    background: var(--color-primary) !important;
+    color: white !important;
+    border-color: var(--color-primary-600) !important;
+  }
+
+  .p-button.p-button-primary:hover,
+  .p-button.p-button-success:hover,
+  .p-button.p-button-warning:hover,
+  .p-button.p-button-danger:hover {
+    background: var(--color-primary-600) !important;
+    color: white !important;
+  }
+
+  /* Inputs / textareas / dropdowns */
+  .p-inputtext,
+  .p-inputtextarea,
+  .p-dropdown .p-dropdown-label,
+  .p-dropdown .p-dropdown-trigger {
+    background: var(--color-surface) !important;
+    color: var(--color-text) !important;
+    border: 1px solid var(--color-border) !important;
+    box-shadow: none !important;
+  }
+
+  .p-inputtext:focus,
+  .p-inputtextarea:focus,
+  .p-dropdown:focus-within {
+    outline: none !important;
+    box-shadow: 0 0 0 3px
+      color-mix(in srgb, var(--color-primary) 12%, transparent) !important;
+    border-color: var(--color-primary-600) !important;
+  }
+
+  /* Dialogs */
+  .p-dialog .p-dialog-titlebar,
+  .p-dialog .p-dialog-content {
+    background: var(--color-surface) !important;
+    color: var(--color-text) !important;
+    border-color: var(--color-border) !important;
   }
 }
 
@@ -66,10 +236,20 @@
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
-  .loading_section {
-    @apply h-dvh w-full flex items-center justify-center bg-black/20 dark:bg-black/40;
+  @keyframes dot-overtaking {
+    0% {
+      transform: rotateZ(0deg);
+    }
+    100% {
+      transform: rotateZ(360deg);
+    }
   }
-  .wrapper_loader {
-    @apply flex flex-col items-center gap-4;
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
   }
 }

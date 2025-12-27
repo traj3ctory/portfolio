@@ -8,22 +8,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Blue palette (mature shades)
-        primary: {
-          DEFAULT: "#2563EB",
-          50: "#EFF6FF",
-          100: "#DBEAFE",
-          200: "#BFDBFE",
-          300: "#93C5FD",
-          400: "#60A5FA",
-          500: "#3B82F6",
-          600: "#2563EB",
-          700: "#1D4ED8",
-          800: "#1E40AF",
-          900: "#1E3A8A",
-        },
-        secondary: "#2EC6FE",
-        base: "#ffffff",
+        "brand-primary": "var(--color-brand-primary)",
+        "brand-secondary": "var(--color-brand-secondary)",
+        "brand-accent": "var(--color-brand-accent)",
+        "brand-surface": "var(--color-brand-surface)",
+        "brand-text": "var(--color-brand-text)",
+        "brand-text-muted": "var(--color-brand-text-muted)",
       },
     },
   },

@@ -1,15 +1,15 @@
-import { ErrorFallback, LoadingScreen } from "@/components/misc";
-import AppRoutes from "@/routes";
-import "@/styles/index.scss"; // Legacy / component SCSS overrides
-import "@/styles/prime.css"; // PrimeReact theme
 import { ErrorInfo, lazy, Suspense } from "react";
 import { ErrorBoundary } from "react-error-boundary";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import { ErrorFallback, LoadingScreen } from "~/components/misc";
+import AppRoutes from "~/routes";
+import "~/styles/prime.css"; // PrimeReact theme
+import "~/styles/theme.css"; // CSS variables for easy theme switching
 import { useOnlineStatus } from "./hooks";
 import "./styles/tailwind.css"; // Tailwind first
 import { IRoute, ISubRoute } from "./types";
 
-const NotFound = lazy(() => import("@/components/misc/NotFound"));
+const NotFound = lazy(() => import("~/components/misc/NotFound"));
 
 function App() {
   // const { theme: storeTheme } = useAppStore();

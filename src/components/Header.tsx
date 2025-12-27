@@ -18,11 +18,11 @@ const Header = () => {
   }, [currentUrl.hash]);
 
   return (
-    <header className="w-full sticky top-0 z-40 backdrop-blur supports-[backdrop-filter]:bg-white/70 bg-white/80 dark:bg-gray-900/80 border-b border-gray-200 dark:border-gray-800">
+    <header className="w-full sticky top-0 z-50 backdrop-blur-sm supports-[backdrop-filter]:bg-surface/85 bg-surface/90 border-b border-accent/60 transition-colors">
       <div className="container-default flex items-center h-16">
         <a
           href="#home_page"
-          className="flex items-center gap-2 font-semibold text-gray-900 dark:text-gray-100"
+          className="flex items-center gap-2 font-semibold text-text"
         >
           <AppImage
             src="./pwa-512x512.png"
@@ -42,10 +42,10 @@ const Header = () => {
             <a
               key={link.hash}
               href={link.hash}
-              className={`relative transition-colors hover:text-primary-600 ${
+              className={`relative transition-colors hover:text-primary ${
                 url === link.hash
-                  ? "text-primary-600 font-semibold after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-full after:bg-primary-600"
-                  : "text-gray-600 dark:text-gray-300"
+                  ? "text-primary font-semibold after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-full after:bg-primary"
+                  : "text-muted"
               }`}
             >
               {link.label}
@@ -55,7 +55,7 @@ const Header = () => {
         </nav>
         <button
           onClick={() => setOpen(!open)}
-          className="md:hidden ml-auto inline-flex items-center justify-center rounded-md h-10 w-10 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-primary"
+          className="md:hidden ml-auto inline-flex items-center justify-center rounded-md h-10 w-10 text-text hover:bg-surface-elev focus:outline-none focus:ring-2 focus:ring-primary"
           aria-label="Toggle navigation"
           aria-expanded={open}
         >
@@ -85,15 +85,13 @@ const Header = () => {
               className="absolute inset-0 bg-black/40 backdrop-blur-sm"
               onClick={() => setOpen(false)}
             />
-            <div className="absolute top-0 right-0 h-full w-72 bg-white dark:bg-gray-900 shadow-xl border-l border-gray-200 dark:border-gray-800 flex flex-col">
-              <div className="flex items-center justify-between px-4 h-16 border-b border-gray-200 dark:border-gray-800">
-                <span className="font-semibold text-gray-800 dark:text-gray-100">
-                  Menu
-                </span>
+            <div className="absolute top-0 right-0 h-full w-72 bg-surface shadow-xl border-l border-accent flex flex-col">
+              <div className="flex items-center justify-between px-4 h-16 border-b border-accent">
+                <span className="font-semibold text-text">Menu</span>
                 <button
                   onClick={() => setOpen(false)}
                   aria-label="Close menu"
-                  className="h-9 w-9 inline-flex items-center justify-center rounded-md hover:bg-gray-100 dark:hover:bg-gray-800"
+                  className="h-9 w-9 inline-flex items-center justify-center rounded-md hover:bg-surface-elev"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -126,16 +124,16 @@ const Header = () => {
                     }}
                     className={`block px-3 py-2 rounded-md text-sm font-medium transition-colors ${
                       url === link.hash
-                        ? "bg-primary-600 text-white"
-                        : "text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"
+                        ? "bg-primary text-white"
+                        : "text-text hover:bg-surface-elev"
                     }`}
                   >
                     {link.label}
                   </a>
                 ))}
               </nav>
-              <div className="p-4 border-t border-gray-200 dark:border-gray-800 flex items-center justify-between">
-                <span className="text-xs text-gray-500">Theme</span>
+              <div className="p-4 border-t border-accent flex items-center justify-between">
+                <span className="text-xs text-muted">Theme</span>
                 <ToggleMode />
               </div>
             </div>

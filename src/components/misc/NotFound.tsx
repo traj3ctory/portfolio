@@ -1,5 +1,5 @@
-import { LeftCircleOutlined } from "@/assets/Icon";
-import { AppButton, AppResult } from "@/components";
+import { LeftCircleOutlined } from "~/assets/Icon";
+import { AppButton, AppResult } from "~/components";
 import SimpleLayout from "./SimpleLayout";
 
 /**
