@@ -56,7 +56,7 @@ const SocialMedia = () => {
   return (
     <div className="mt-4">
       <span className="block text-sm text-muted mb-2">Find Me on</span>
-      <ul className="flex gap-3 items-center">
+      <ul className="flex gap-3 items-center justify-end bg-accent/25">
         {socialItems.map((s) => (
           <li key={s.key}>
             <a
@@ -64,7 +64,7 @@ const SocialMedia = () => {
               rel="noreferrer"
               target="_blank"
               aria-label={s.label}
-              className="inline-flex items-center justify-center w-9 h-9 rounded-md bg-surface/5 hover:bg-surface/10 text-text"
+              className="inline-flex items-center justify-center w-9 h-9 rounded-md bg-surface/5 hover:bg-surface/10 "
             >
               {s.node}
             </a>

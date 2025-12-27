@@ -23,7 +23,7 @@ export default function ErrorFallback({ error }: ErrorFallbackProps) {
           backgroundSize: "cover",
         }}
       >
-        <div className="flex flex-col items-center justify-center shadow-lg rounded-md p-10 bg-surface dark:bg-surface-elev text-text">
+        <div className="flex flex-col items-center justify-center shadow-lg rounded-md p-10 bg-surface dark:bg-surface-elev ">
           <h1 className="text-2xl font-bold mb-4">Something went wrong</h1>
           <div className="flex items-center gap-2 my-2">
             <p className="text-sm font-semibold uppercase">

@@ -50,7 +50,7 @@ function Home() {
 
           <div className="relative">
             <div className="mb-6">
-              <h3 className="text-2xl font-bold text-text mb-3">{title}</h3>
+              <h3 className="text-2xl font-bold  mb-3">{title}</h3>
               <div className="flex flex-wrap gap-2">
                 {subtitle?.map((el: string, i: Key) => (
                   <span
@@ -73,7 +73,7 @@ function Home() {
                 href="/asset/DAVID_BENARD_CV.pdf"
                 target="_blank"
                 rel="noreferrer"
-                className="group inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-primary-600 to-primary-700 px-6 py-3 text-white font-medium shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/40 hover:-translate-y-0.5 transition-all duration-200 focus-visible:outline-none"
+                className="group inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-bg-primary-600 bg-primary-700 px-6 py-3 font-medium shadow shadow-primary/30 hover:shadow-lg hover:shadow-primary/40 hover:-translate-y-0.5 transition-all duration-200 focus-visible:outline-none"
                 download
               >
                 <span>Download CV</span>
@@ -82,7 +82,7 @@ function Home() {
 
               <a
                 href="#contact"
-                className="group inline-flex items-center gap-2 rounded-lg border-2 border-accent bg-transparent px-6 py-3 text-text font-medium hover:border-primary hover:bg-primary/5 hover:-translate-y-0.5 transition-all duration-200 focus-visible:outline-none "
+                className="group inline-flex items-center gap-2 rounded-lg border border-accent bg-transparent px-6 py-3 text-muted font-medium hover:border-primary hover:bg-primary/50 hover:-translate-y-0.5 transition-all duration-200 focus-visible:outline-none shadow shadow-primary/30 hover:shadow-lg hover:shadow-primary/10"
               >
                 <span>Hire Me</span>
                 <i className="pi pi-arrow-right group-hover:translate-x-1 transition-transform" />

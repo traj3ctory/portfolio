@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 const storageKey = "theme:selection";
 
-const themes = ["dark", "light", "ocean", "sunset"] as const;
+const themes = ["dark", "light"] as const;
 type ThemeName = (typeof themes)[number];
 
 const ToggleMode = () => {
@@ -42,11 +42,9 @@ const ToggleMode = () => {
       aria-label="Toggle theme"
       aria-pressed={theme === "dark"}
       onClick={() => {
-        const idx = themes.indexOf(theme);
-        const next = themes[(idx + 1) % themes.length];
-        setTheme(next);
+        setTheme(theme === "dark" ? "light" : "dark");
       }}
-      className="inline-flex items-center justify-center rounded-md h-9 w-9 border border-accent bg-surface text-text hover:bg-surface-elev transition-colors"
+      className="inline-flex items-center justify-center rounded-md h-9 w-9 border border-accent bg-surface text-muted hover:bg-surface-elev transition-colors border-none cursor-pointer"
     >
       {theme === "dark" ? (
         <svg

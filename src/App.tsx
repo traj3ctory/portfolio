@@ -3,17 +3,13 @@ import { ErrorBoundary } from "react-error-boundary";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import { ErrorFallback, LoadingScreen } from "~/components/misc";
 import AppRoutes from "~/routes";
-import "~/styles/prime.css"; // PrimeReact theme
-import "~/styles/theme.css"; // CSS variables for easy theme switching
 import { useOnlineStatus } from "./hooks";
-import "./styles/tailwind.css"; // Tailwind first
+import "./styles/tailwind.css";
 import { IRoute, ISubRoute } from "./types";
 
 const NotFound = lazy(() => import("~/components/misc/NotFound"));
 
 function App() {
-  // const { theme: storeTheme } = useAppStore();
-
   /**
    * @description This function renders the routes
    * @param {IRoute[]} routes

@@ -57,10 +57,10 @@ function About({ stack, workXp, school, detail }: INotSure) {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-        <div className="group relative rounded-2xl border border-accent/50 bg-gradient-to-br from-surface via-surface-elev to-surface p-6 shadow-lg hover:shadow-xl transition-all duration-300">
+        <div className="group relative rounded rounded-tl-xl bg-gradient-to-br from-surface via-surface-elev to-surface clamp-[p,2,6] shadow shadow-accent/50 hover:shadow-lg transition-all duration-300">
           <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           <div className="relative">
-            <h3 className="text-xl font-bold text-text mb-4">Details</h3>
+            <h3 className="text-xl font-bold  mb-4">Details</h3>
 
             <dl className="space-y-4">
               {detailsItems.map((item) => (
@@ -71,7 +71,7 @@ function About({ stack, workXp, school, detail }: INotSure) {
                   <dt className="w-32 shrink-0 text-sm font-semibold text-muted">
                     {item.label}
                   </dt>
-                  <dd className="min-w-0 text-sm text-text">
+                  <dd className="min-w-0 text-sm ">
                     {item.href ? (
                       <a
                         className="break-words text-primary hover:text-primary-600 underline-offset-2 hover:underline transition-colors"
@@ -96,7 +96,7 @@ function About({ stack, workXp, school, detail }: INotSure) {
             </dl>
 
             <div className="mt-6">
-              <h3 className="text-sm font-semibold text-text mb-2">
+              <h3 className="text-sm font-semibold  mb-2">
                 7 days Coding Activity (WakaTime)
               </h3>
               <object
@@ -115,23 +115,21 @@ function About({ stack, workXp, school, detail }: INotSure) {
           </div>
         </div>
 
-        <div className="group relative rounded-2xl border border-accent/50 bg-gradient-to-br from-surface via-surface-elev to-surface p-6 shadow-lg hover:shadow-xl transition-all duration-300">
+        <div className="group relative rounded rounded-tr-xl bg-gradient-to-br from-surface via-surface-elev to-surface clamp-[p,2,6] shadow shadow-accent/50 hover:shadow-lg transition-all duration-300">
           <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 to-primary/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           <div className="relative">
-            <h3 className="text-xl font-bold text-text mb-4">Stack</h3>
+            <h3 className="text-xl font-bold  mb-4">Stack</h3>
 
             <div className="space-y-4">
               {(stack as stackData[]).map((el, i) => (
                 <div key={`${el.name}-${i}`}>
                   <div className="flex items-center justify-between gap-3 mb-2">
-                    <span className="text-sm font-medium text-text">
-                      {el.name}
-                    </span>
+                    <span className="text-sm font-medium ">{el.name}</span>
                     <span className="text-xs font-semibold text-primary">
                       {el.progress}%
                     </span>
                   </div>
-                  <div className="h-2.5 w-full bg-border/30 rounded-full overflow-hidden">
+                  <div className="h-2.5 w-full bg-accent/30 rounded-full overflow-hidden">
                     <div
                       className="h-full bg-gradient-to-r from-primary to-secondary rounded-full transition-all duration-1000 ease-out"
                       style={{
@@ -188,7 +186,7 @@ function About({ stack, workXp, school, detail }: INotSure) {
             </div>
 
             <div className="mt-6">
-              <h3 className="text-sm font-semibold text-text mb-2">
+              <h3 className="text-sm font-semibold  mb-2">
                 Coding Activity for the Year (WakaTime)
               </h3>
               <object
@@ -209,16 +207,16 @@ function About({ stack, workXp, school, detail }: INotSure) {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div className="group relative rounded-2xl border border-accent/50 bg-gradient-to-br from-surface via-surface-elev to-surface p-6 shadow-lg hover:shadow-xl transition-all duration-300">
+        <div className="group relative rounded rounded-bl-xl bg-gradient-to-br from-surface via-surface-elev to-surface clamp-[p,2,6] shadow shadow-accent/50 hover:shadow-lg transition-all duration-300">
           <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           <div className="relative">
-            <h3 className="text-xl font-bold text-text mb-6">Education</h3>
+            <h3 className="text-xl font-bold  mb-6">Education</h3>
             <ul className="border-l-2 border-primary/30 pl-6 space-y-6">
               {(school as schoolData[]).map((item, idx) => {
                 const link = (item as unknown as { link?: string }).link;
                 return (
                   <li key={`${item.title}-${idx}`} className="relative">
-                    <span className="absolute -left-[1.6rem] top-1 flex h-3 w-3">
+                    <span className="absolute left-0 top-1 -translate-x-1/2 flex h-3 w-3">
                       <span className="absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
                       <span className="relative inline-flex rounded-full h-3 w-3 bg-primary ring-4 ring-surface"></span>
                     </span>
@@ -230,7 +228,7 @@ function About({ stack, workXp, school, detail }: INotSure) {
                               className={`${item.icon} text-primary text-lg`}
                             />
                           ) : null}
-                          <h4 className="text-sm font-semibold text-text">
+                          <h4 className="text-sm font-semibold ">
                             {item.title}
                           </h4>
                         </div>
@@ -244,7 +242,7 @@ function About({ stack, workXp, school, detail }: INotSure) {
                           href={link}
                           target="_blank"
                           rel="noreferrer"
-                          className="inline-flex items-center gap-1 text-sm text-primary hover:text-primary-600 font-medium transition-colors"
+                          className="inline-flex items-center gap-1 text-sm text-primary hover:text-primary-600 font-medium transition-colors border px-2 py-1 border-accent rounded"
                         >
                           Verify <i className="pi pi-external-link text-xs" />
                         </a>
@@ -257,14 +255,14 @@ function About({ stack, workXp, school, detail }: INotSure) {
           </div>
         </div>
 
-        <div className="group relative rounded-2xl border border-accent/50 bg-gradient-to-br from-surface via-surface-elev to-surface p-6 shadow-lg hover:shadow-xl transition-all duration-300">
+        <div className="group relative rounded rounded-br-xl bg-gradient-to-br from-surface via-surface-elev to-surface clamp-[p,2,6] shadow shadow-accent/50 hover:shadow-lg transition-all duration-300">
           <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 to-primary/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           <div className="relative">
-            <h3 className="text-xl font-bold text-text mb-6">Experience</h3>
+            <h3 className="text-xl font-bold  mb-6">Experience</h3>
             <ul className="border-l-2 border-secondary/30 pl-6 space-y-6">
               {(workXp as workData[]).map((item, idx) => (
                 <li key={`${item.role}-${idx}`} className="relative">
-                  <span className="absolute -left-[1.6rem] top-1 flex h-3 w-3">
+                  <span className="absolute left-0 top-1 -translate-x-1/2 flex h-3 w-3">
                     <span className="absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
                     <span className="relative inline-flex rounded-full h-3 w-3 bg-secondary ring-4 ring-surface"></span>
                   </span>
@@ -276,9 +274,7 @@ function About({ stack, workXp, school, detail }: INotSure) {
                             className={`${item.icon} text-secondary text-lg`}
                           />
                         ) : null}
-                        <h4 className="text-sm font-semibold text-text">
-                          {item.role}
-                        </h4>
+                        <h4 className="text-sm font-semibold ">{item.role}</h4>
                       </div>
                       <span className="text-xs font-medium text-muted whitespace-nowrap px-2 py-1 rounded-full bg-muted/10">
                         {item.date}

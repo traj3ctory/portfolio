@@ -20,8 +20,8 @@ const Main = () => {
           <aside className="w-full flex flex-col space-y-8">
             <div className="inline-flex items-center gap-2 bg-gradient-to-r from-primary/10 to-secondary/10 border border-primary/20 rounded-full px-4 py-1.5 w-fit">
               <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75" />
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-primary" />
               </span>
               <span className="text-xs font-medium text-primary">
                 Available for new opportunities
@@ -31,19 +31,19 @@ const Main = () => {
             <div className="space-y-4">
               <div>
                 <p className="text-sm font-medium text-muted mb-2 uppercase tracking-wider">
-                  Hello, I'm
+                  Hello,
                 </p>
-                <h1 className="text-4xl lg:text-6xl font-bold mb-3 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent animate-fade-up">
+                <h1 className="text-4xl lg:text-6xl font-bold mb-3 bg-gradient-to-r from-primary via-[#90e0ef] to-secondary inline-block text-transparent bg-clip-text animate-fade-up">
                   {fullName}
                 </h1>
                 <p
-                  className="text-xl lg:text-2xl text-primary font-semibold mb-3 animate-fade-up"
+                  className="text-xl lg:text-2xl text-blue-600 dark:text-blue-300 font-semibold mb-3 animate-fade-up"
                   style={{ animationDelay: "80ms" }}
                 >
                   {job}
                 </p>
                 <p
-                  className="text-base text-muted leading-relaxed max-w-xl animate-fade-up"
+                  className="text-base text-muted font-semibold leading-relaxed max-w-xl animate-fade-up"
                   style={{ animationDelay: "160ms" }}
                 >
                   {data?.description}
@@ -60,7 +60,13 @@ const Main = () => {
             className="relative animate-zoom-in"
             style={{ animationDelay: "120ms" }}
           >
-            <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20 blur-3xl rounded-full" />
+            <div
+              className="absolute inset-0 blur-3xl rounded-full"
+              style={{
+                background:
+                  "linear-gradient(90deg, rgba(59,130,246,0.18), rgba(96,165,250,0.18))",
+              }}
+            />
             <div className="animation_container w-full max-w-lg relative z-10">
               <div className="animation">
                 <DisplayLottie animationData={Coding} />

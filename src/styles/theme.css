@@ -1,92 +1,44 @@
-/*
-  Simplified theme tokens (clean, professional palettes).
-  Dark-first defaults; `data-theme="light"` flips to the light palette.
-*/
+@theme inline {
+  --color-primary: var(--brand-primary);
+  --color-secondary: var(--brand-secondary);
+  --color-accent: var(--brand-accent);
+  --color-surface: var(--brand-surface);
+  --color-muted: var(--brand-muted);
+}
 
 :root {
-  /* Primary and accent */
-  --brand-primary: #4f46e5; /* indigo */
-  --brand-primary-rgb: 79 70 229;
-  --brand-accent: #06b6d4; /* cyan */
-  --brand-accent-rgb: 6 182 212;
-
-  /* Surface & text (dark-first defaults) */
-  --brand-surface: #0b1220; /* deep bluish-slate */
-  --brand-surface-rgb: 11 18 32;
-  --brand-text: #e6eef8; /* soft off-white for text */
-  --brand-text-rgb: 230 238 248;
-  --brand-text-muted: #94a3b8;
-  --brand-text-muted-rgb: 148 163 184;
-
-  /* Small semantic tokens */
-  --brand-success: #10b981;
-  --brand-warning: #f59e0b;
-  --brand-danger: #ef4444;
+  /* Brand Core - Using values from your current setup */
+  --brand-font-family: "Inter", sans-serif; /* */
+  --brand-primary: #3b82f6;
+  --brand-secondary: #1d4ed8;
+  --brand-accent: #60a5fa;
+  --brand-surface: #1e2125;
+  --brand-muted: #e7e7e7;
 }
 
-/* Light theme: professional, slightly desaturated surfaces */
+/* Light Theme with Blue Primary */
 [data-theme="light"] {
-  --brand-surface: #f8fafc; /* near-white slate */
-  --brand-surface-rgb: 248 250 252;
-  --brand-text: #0f1724; /* dark text */
-  --brand-text-rgb: 15 23 36;
-  --brand-text-muted: #64748b;
-  --brand-text-muted-rgb: 100 116 139;
+  --brand-primary: #2563eb;
+  --brand-secondary: #1e40af;
+  --brand-accent: #337ad0;
+  --brand-surface: #ffffff;
+  --brand-muted: #64748b;
 }
 
-/* Dark theme override (keeps primary/accent but ensures softer surfaces) */
-[data-theme="dark"] {
-  --brand-surface: #0b1220;
-  --brand-surface-rgb: 11 18 32;
-  --brand-text: #e6eef8;
-  --brand-text-rgb: 230 238 248;
+/* Ocean Theme (Monochromatic Blue focus) */
+[data-theme="ocean"] {
+  --brand-primary: #90e0ef;
+  --brand-secondary: #00b4d8;
+  --brand-accent: #012a4a;
+  --brand-surface: #013a63;
+  --brand-muted: #a3cddc;
 }
 
-/* Map canonical tokens used by Tailwind */
-:root,
-[data-theme="light"],
-[data-theme="dark"] {
-  --color-primary: var(--brand-primary);
-  --color-primary-rgb: var(--brand-primary-rgb);
-  --color-accent: var(--brand-accent);
-  --color-accent-rgb: var(--brand-accent-rgb);
-  --color-surface: var(--brand-surface);
-  --color-surface-rgb: var(--brand-surface-rgb);
-  --color-bg: var(--brand-surface);
-  --color-bg-rgb: var(--brand-surface-rgb);
-  --color-text: var(--brand-text);
-  --color-text-rgb: var(--brand-text-rgb);
-  --color-muted: var(--brand-text-muted);
-  --color-muted-rgb: var(--brand-text-muted-rgb);
-  --color-border: color-mix(in srgb, var(--color-surface) 86%, black 8%);
+/* Sunset (Blue accenting warm backgrounds) */
+[data-theme="sunset"] {
+  --brand-primary: #60a5fa;
+  --brand-secondary: #3b82f6;
+  --brand-accent: #2c0f0a;
+  --brand-surface: #3d1a14;
+  --brand-muted: #e8c9ba;
 }
-
-/* Page background + soft accents */
-html, body {
-  background-color: rgb(var(--color-bg-rgb));
-  background-image:
-    radial-gradient(circle at 12% 12%, rgba(var(--color-accent-rgb), 0.04) 0%, transparent 16%),
-    radial-gradient(circle at 88% 78%, rgba(var(--color-primary-rgb), 0.03) 0%, transparent 20%);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  color: rgb(var(--color-text-rgb));
-}
-
-/* Subtle vignette to focus content */
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  background: radial-gradient(60% 60% at 50% 72%, transparent 0%, rgba(5,10,20,0.06) 60%, rgba(0,0,0,0.14) 100%);
-  mix-blend-mode: multiply;
-  z-index: 0;
-}
-
-/* Ensure app content renders above overlay */
-#root, #app, .app-root {
-  position: relative;
-  z-index: 1;
-}
-/* :root,

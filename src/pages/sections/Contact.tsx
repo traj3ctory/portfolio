@@ -77,12 +77,12 @@ function Contact() {
         </div>
       </div>
 
-      <div className="group relative rounded bg-gradient-to-br from-surface via-surface-elev to-surface clamp-[p,2,6] shadow-lg hover:shadow-xl transition-all duration-300">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+      <div className="group relative rounded-2xl p-6 bg-gradient-to-br from-surface via-surface-elev to-surface clamp-[p,2,6] shadow-lg hover:shadow-xl transition-all duration-300">
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
 
         <div className="relative">
           <div className="mb-6">
-            <h3 className="text-2xl font-bold text-text mb-2">Contact</h3>
+            <h3 className="text-2xl font-bold  mb-2">Contact</h3>
             <p className="text-muted">
               Send me a message and I'll get back to you.
             </p>
@@ -93,8 +93,8 @@ function Contact() {
               role="status"
               className={
                 notice.type === "success"
-                  ? "mb-6 border-l-4 border-primary bg-gradient-to-r from-primary/10 to-transparent px-4 py-3 rounded-lg text-text font-medium"
-                  : "mb-6 border-l-4 border-red-500 bg-gradient-to-r from-red-500/10 to-transparent px-4 py-3 rounded-lg text-text font-medium"
+                  ? "mb-6 border-l-4 border-primary bg-gradient-to-r from-primary/10 to-transparent px-4 py-3 rounded-lg  font-medium"
+                  : "mb-6 border-l-4 border-red-500 bg-gradient-to-r from-red-500/10 to-transparent px-4 py-3 rounded-lg  font-medium"
               }
             >
               {notice.message}
@@ -116,8 +116,8 @@ function Contact() {
                   type="text"
                   value={data.name}
                   onChange={(e) => setData({ ...data, name: e.target.value })}
-                  className={`block w-full rounded-md !bg-bg/60 border border-accent/70 px-3 py-2 !text-text placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-primary-600 ${
-                    errors.name ? "ring-2 ring-red-500" : ""
+                  className={`block w-full rounded-md bg-surface/90 border border-accent/50 px-3 py-2  placeholder:text-muted focus:outline-none focus:ring focus:ring-primary-600 ${
+                    errors.name ? "ring ring-red-500" : ""
                   }`}
                   aria-invalid={!!errors.name}
                   aria-describedby={errors.name ? "name-error" : undefined}
@@ -144,8 +144,8 @@ function Contact() {
                   type="email"
                   value={data.email}
                   onChange={(e) => setData({ ...data, email: e.target.value })}
-                  className={`block w-full rounded-md !bg-bg/60 border border-accent/70 px-3 py-2 !text-text placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-primary-600 ${
-                    errors.email ? "ring-2 ring-red-500" : ""
+                  className={`block w-full rounded-md bg-surface/90 border border-accent/50 px-3 py-2  placeholder:text-muted focus:outline-none focus:ring focus:ring-primary-600 ${
+                    errors.email ? "ring ring-red-500" : ""
                   }`}
                   aria-invalid={!!errors.email}
                   aria-describedby={errors.email ? "email-error" : undefined}
@@ -174,8 +174,8 @@ function Contact() {
                   onChange={(e) =>
                     setData({ ...data, subject: e.target.value })
                   }
-                  className={`block w-full rounded-md !bg-bg/60 border border-accent/70 px-3 py-2 !text-text focus:outline-none focus:ring-2 focus:ring-primary-600 ${
-                    errors.subject ? "ring-2 ring-red-500" : ""
+                  className={`block w-full rounded-md bg-surface/90 border border-accent/50 px-3 py-2  focus:outline-none focus:ring focus:ring-primary-600 ${
+                    errors.subject ? "ring ring-red-500" : ""
                   }`}
                   aria-invalid={!!errors.subject}
                   aria-describedby={
@@ -212,8 +212,8 @@ function Contact() {
                     setData({ ...data, message: e.target.value })
                   }
                   rows={6}
-                  className={`block w-full rounded-md !bg-bg/60 border border-accent/70 px-3 py-2 !text-text placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-primary-600 ${
-                    errors.message ? "ring-2 ring-red-500" : ""
+                  className={`block w-full rounded-md bg-surface/90 border border-accent/50 px-3 py-2  placeholder:text-muted focus:outline-none focus:ring focus:ring-primary-600 ${
+                    errors.message ? "ring ring-red-500" : ""
                   }`}
                   placeholder="Write your message here"
                   aria-invalid={!!errors.message}
@@ -234,7 +234,7 @@ function Contact() {
               <button
                 type="submit"
                 disabled={loading}
-                className="group/btn inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-primary to-primary-600 hover:from-primary-600 hover:to-primary-700 disabled:opacity-60 text-white rounded-lg shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/30 transition-all duration-300 focus-visible:outline-none"
+                className="group/btn inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-primary to-primary/60 hover:from-primary/60 hover:to-primary/70 disabled:opacity-60 text-white rounded shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/30 transition-all duration-300 focus-visible:outline-none cursor-pointer"
               >
                 {loading ? (
                   <svg

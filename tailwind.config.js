@@ -8,12 +8,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        "brand-primary": "var(--color-brand-primary)",
-        "brand-secondary": "var(--color-brand-secondary)",
-        "brand-accent": "var(--color-brand-accent)",
-        "brand-surface": "var(--color-brand-surface)",
-        "brand-text": "var(--color-brand-text)",
-        "brand-text-muted": "var(--color-brand-text-muted)",
+        primary: "var(--color-primary)",
+        secondary: "var(--color-secondary)",
+        accent: "var(--color-accent)",
+        surface: "var(--color-surface)",
+        muted: "var(--color-muted)",
       },
     },
   },
