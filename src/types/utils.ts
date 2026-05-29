@@ -6,9 +6,20 @@ export interface dataType {
   description: string;
   desc2: string;
   desc3: string;
-  name: object;
+  name: {
+    lastName?: string;
+    middleName?: string;
+    firstName?: string;
+    nameAbbrv?: string;
+    job?: string;
+    linkedin?: string;
+    whatsapp?: string;
+    wakatime?: string;
+    profile?: string;
+  };
   birthday: object;
   stack: Array<stackData>;
+  skills: Record<string, Array<string>>;
   workXp: Array<workData>;
   detail: object;
   school: Array<schoolData>;
@@ -24,6 +35,9 @@ export interface workData {
   icon: string;
   date: string;
   role: string;
+  company: string;
+  stack: string;
+  responsibilities: Array<string>;
 }
 
 export interface schoolData {
@@ -31,6 +45,7 @@ export interface schoolData {
   title: string;
   date: string;
   name: string;
+  link?: string;
 }
 export interface portfolioData {
   name: string;

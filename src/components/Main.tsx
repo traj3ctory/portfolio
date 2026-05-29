@@ -1,3 +1,4 @@
+import { motion, useScroll, useTransform } from "framer-motion";
 import Coding from "~/data/coding.json";
 import data from "~/data/data.json";
 import DisplayLottie from "./DisplayLottie";
@@ -10,13 +11,20 @@ const Main = () => {
   }`.trim();
   const job = name.job ?? "Software Engineer";
 
+  const { scrollY } = useScroll();
+  const textY = useTransform(scrollY, [0, 800], [0, -60]);
+  const imageY = useTransform(scrollY, [0, 800], [0, 80]);
+
   return (
     <main
       id="home_page"
       className="relative min-h-[85dvh] flex items-center py-16 lg:py-20"
     >
       <div className="w-full grid lg:grid-cols-2 grid-cols-1 gap-16 px-4 lg:px-12">
-        <div className="flex items-center col-span-1 order-2 lg:order-1">
+        <motion.div 
+          className="flex items-center col-span-1 order-2 lg:order-1"
+          style={{ y: textY }}
+        >
           <aside className="w-full flex flex-col space-y-8">
             <div className="inline-flex items-center gap-2 bg-gradient-to-r from-primary/10 to-secondary/10 border border-primary/20 rounded-full px-4 py-1.5 w-fit">
               <span className="relative flex h-2 w-2">
@@ -53,9 +61,12 @@ const Main = () => {
               <SocialMedia />
             </div>
           </aside>
-        </div>
+        </motion.div>
 
-        <div className="w-full col-span-1 flex items-center justify-center order-1 lg:order-2">
+        <motion.div 
+          className="w-full col-span-1 flex items-center justify-center order-1 lg:order-2"
+          style={{ y: imageY }}
+        >
           <div
             className="relative animate-zoom-in"
             style={{ animationDelay: "120ms" }}
@@ -73,7 +84,7 @@ const Main = () => {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </main>
   );

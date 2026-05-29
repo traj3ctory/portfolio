@@ -32,7 +32,7 @@ const Shimmer = () => {
             background: {
               color: { value: "transparent" },
             },
-            fpsLimit: 10,
+            fpsLimit: 120,
             interactivity: {
               events: {
                 onClick: { enable: true, mode: "push" },
@@ -51,31 +51,22 @@ const Shimmer = () => {
                   "#bbbbbb",
               },
               links: {
-                color:
-                  (typeof window !== "undefined" &&
-                    getComputedStyle(document.documentElement)
-                      .getPropertyValue("--color-muted")
-                      ?.trim()) ||
-                  "#bbbbbb",
-                distance: 50,
-                enable: true,
-                opacity: 0.35,
-                width: 1,
+                enable: false,
               },
-              collisions: { enable: true },
+              collisions: { enable: false },
               move: {
                 enable: true,
                 direction: "none",
-                speed: 0.75,
+                speed: 0.5,
                 outModes: { default: "out" },
               },
               number: {
-                value: 80,
+                value: 40,
                 density: { enable: true, width: 800, height: 800 },
               },
-              opacity: { value: 0.5 },
+              opacity: { value: 0.3 },
               shape: { type: "circle" },
-              size: { value: { min: 1, max: 5 } },
+              size: { value: { min: 1, max: 4 } },
             },
             detectRetina: true,
           }}

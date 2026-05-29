@@ -1,6 +1,7 @@
 import { Fade } from "react-awesome-reveal";
 import Header from "~/components/Header";
 import Shimmer from "~/components/Particle";
+import ParallaxBackground from "~/components/ParallaxBackground";
 // import Loader from "../components/Loader";
 import Home from "./sections/Home";
 
@@ -12,6 +13,9 @@ function Homepage() {
         <section className="relative w-full min-h-screen overflow-hidden">
           <div className="absolute inset-0 z-0 pointer-events-none">
             <Shimmer />
+          </div>
+          <div className="absolute inset-0 z-20 pointer-events-none">
+            <ParallaxBackground />
           </div>
           <div className="relative z-10">
             <Home />

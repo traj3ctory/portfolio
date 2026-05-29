@@ -18,12 +18,11 @@ function Home() {
   const {
     school,
     workXp,
-    description,
     desc2,
     desc3,
     subtitle,
     title,
-    stack,
+    skills,
     detail,
     portfolio,
   } = value;
@@ -95,8 +94,7 @@ function Home() {
       <About
         school={school}
         workXp={workXp}
-        description={description}
-        stack={stack}
+        skills={skills}
         detail={detail}
       />
       <Contact />

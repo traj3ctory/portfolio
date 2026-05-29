@@ -1,8 +1,8 @@
-import type { INotSure, schoolData, stackData, workData } from "~/types";
+import type { INotSure, schoolData, workData } from "~/types";
 
 type DetailRecord = Record<string, string>;
 
-function About({ stack, workXp, school, detail }: INotSure) {
+function About({ skills, workXp, school, detail }: INotSure) {
   const detailRecord = (detail ?? {}) as DetailRecord;
 
   const detailsItems: Array<{ label: string; value?: string; href?: string }> =
@@ -118,75 +118,30 @@ function About({ stack, workXp, school, detail }: INotSure) {
         <div className="group relative rounded rounded-tr-xl bg-gradient-to-br from-surface via-surface-elev to-surface clamp-[p,2,6] shadow shadow-accent/50 hover:shadow-lg transition-all duration-300">
           <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 to-primary/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           <div className="relative">
-            <h3 className="text-xl font-bold  mb-4">Stack</h3>
+            <h3 className="text-xl font-bold mb-6">Skills</h3>
 
-            <div className="space-y-4">
-              {(stack as stackData[]).map((el, i) => (
-                <div key={`${el.name}-${i}`}>
-                  <div className="flex items-center justify-between gap-3 mb-2">
-                    <span className="text-sm font-medium ">{el.name}</span>
-                    <span className="text-xs font-semibold text-primary">
-                      {el.progress}%
-                    </span>
-                  </div>
-                  <div className="h-2.5 w-full bg-accent/30 rounded-full overflow-hidden">
-                    <div
-                      className="h-full bg-gradient-to-r from-primary to-secondary rounded-full transition-all duration-1000 ease-out"
-                      style={{
-                        width: `${Math.max(0, Math.min(100, el.progress))}%`,
-                      }}
-                      aria-label={`${el.name} proficiency`}
-                    />
+            <div className="space-y-6">
+              {Object.entries(skills ?? {}).map(([category, items]) => (
+                <div key={category} className="space-y-2">
+                  <h4 className="text-xs font-bold uppercase tracking-wider text-primary">
+                    {category}
+                  </h4>
+                  <div className="flex flex-wrap gap-1.5">
+                    {(items as string[]).map((skill) => (
+                      <span
+                        key={skill}
+                        className="inline-flex items-center px-2.5 py-1 rounded bg-primary/10 text-xs font-semibold text-primary border border-primary/20 hover:border-primary/40 hover:bg-primary/20 transition-all duration-200"
+                      >
+                        {skill}
+                      </span>
+                    ))}
                   </div>
                 </div>
               ))}
             </div>
 
-            <div className="mt-5 flex flex-wrap gap-2">
-              <img
-                src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"
-                alt="HTML5"
-                className="h-7"
-              />
-              <img
-                src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"
-                alt="CSS3"
-                className="h-7"
-              />
-              <img
-                src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E"
-                alt="JavaScript"
-                className="h-7"
-              />
-              <img
-                src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"
-                alt="TypeScript"
-                className="h-7"
-              />
-              <img
-                src="https://img.shields.io/badge/React-blue?style=for-the-badge&logo=react&logoColor=white"
-                alt="React"
-                className="h-7"
-              />
-              <img
-                src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white"
-                alt="Node.js"
-                className="h-7"
-              />
-              <img
-                src="https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white"
-                alt="Python"
-                className="h-7"
-              />
-              <img
-                src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white"
-                alt="PostgreSQL"
-                className="h-7"
-              />
-            </div>
-
-            <div className="mt-6">
-              <h3 className="text-sm font-semibold  mb-2">
+            <div className="mt-8">
+              <h3 className="text-sm font-semibold mb-2">
                 Coding Activity for the Year (WakaTime)
               </h3>
               <object
@@ -258,28 +213,45 @@ function About({ stack, workXp, school, detail }: INotSure) {
         <div className="group relative rounded rounded-br-xl bg-gradient-to-br from-surface via-surface-elev to-surface clamp-[p,2,6] shadow shadow-accent/50 hover:shadow-lg transition-all duration-300">
           <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 to-primary/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           <div className="relative">
-            <h3 className="text-xl font-bold  mb-6">Experience</h3>
+            <h3 className="text-xl font-bold mb-6">Experience</h3>
             <ul className="border-l-2 border-secondary/30 pl-6 space-y-6">
               {(workXp as workData[]).map((item, idx) => (
                 <li key={`${item.role}-${idx}`} className="relative">
-                  <span className="absolute left-0 top-1 -translate-x-1/2 flex h-3 w-3">
+                  <span className="absolute left-0 top-1.5 -translate-x-1/2 flex h-3 w-3">
                     <span className="absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
                     <span className="relative inline-flex rounded-full h-3 w-3 bg-secondary ring-4 ring-surface"></span>
                   </span>
-                  <div className="space-y-2">
+                  <div className="space-y-3">
                     <div className="flex items-start justify-between gap-3">
-                      <div className="flex items-center gap-2">
-                        {item.icon ? (
-                          <i
-                            className={`${item.icon} text-secondary text-lg`}
-                          />
-                        ) : null}
-                        <h4 className="text-sm font-semibold ">{item.role}</h4>
+                      <div className="flex flex-col">
+                        <div className="flex items-center gap-2">
+                          {item.icon ? (
+                            <i
+                              className={`${item.icon} text-secondary text-base`}
+                            />
+                          ) : null}
+                          <h4 className="text-sm font-bold">{item.role}</h4>
+                        </div>
+                        <span className="text-xs font-semibold text-primary mt-0.5">
+                          {item.company}
+                        </span>
                       </div>
                       <span className="text-xs font-medium text-muted whitespace-nowrap px-2 py-1 rounded-full bg-muted/10">
                         {item.date}
                       </span>
                     </div>
+                    {item.stack && (
+                      <div className="text-xs font-medium text-secondary/90">
+                        <span className="font-semibold text-muted">Stack:</span> {item.stack}
+                      </div>
+                    )}
+                    {item.responsibilities && item.responsibilities.length > 0 && (
+                      <ul className="list-disc pl-4 space-y-1.5 text-xs text-muted leading-relaxed">
+                        {item.responsibilities.map((resp: string, rIdx: number) => (
+                          <li key={rIdx}>{resp}</li>
+                        ))}
+                      </ul>
+                    )}
                   </div>
                 </li>
               ))}

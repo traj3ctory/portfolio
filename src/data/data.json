@@ -1,18 +1,25 @@
 {
   "title": "Benard Z. David",
   "subtitle": [
-    "`${ Software }`",
-    " <Engineer />"
+    "React",
+    "Vue.js",
+    "TypeScript",
+    "Django",
+    "Node.js",
+    "Bun",
+    "Docker",
+    "Linux",
+    "CI/CD"
   ],
-  "description": "I am a Full-Stack Engineer with over 5 years of experience building fast, scalable, and user-focused web applications. I specialise in frontend engineering using React, Vue.js, Next.js, and TypeScript, and I also work across the backend with Django, Node.js, and PostgreSQL to deliver reliable and efficient systems.",
-  "desc2": "In addition to engineering features, I have experience in the full development lifecycle, including CI/CD automation, Docker containerization, Linux server deployments, API integrations, debugging, and performance optimisation. I enjoy creating solutions that balance clean UI, strong backend logic, and smooth deployment pipelines.",
-  "desc3": "I am dedicated to continuous learning and staying current with the latest industry trends and technologies. If you are looking for a reliable and innovative Software Engineer to help bring your project to life, I would be honored to contribute my expertise to your team.",
+  "description": "Full Stack Software Engineer with 6+ years of experience building scalable web applications, backend services, gaming product interfaces, and data-driven health platforms.",
+  "desc2": "Strong frontend depth in React, Vue.js, Next.js, and TypeScript, with backend experience across Django, Node.js, Bun/ElysiaJS, REST APIs, PostgreSQL, and MongoDB.",
+  "desc3": "Practical DevOps experience including Dockerized deployments, Linux server management, Nginx, SSL, GitLab CI/CD, and production/staging environment support.",
   "name": {
     "lastName": "Benard",
     "middleName": "Zibiri",
     "firstName": "David",
     "nameAbbrv": "BZ David",
-    "job": "Software Engineer",
+    "job": "Full Stack Software Engineer",
     "linkedin": "https://www.linkedin.com/in/david-benard-196961121/",
     "whatsapp": "https://api.whatsapp.com/send?phone=09038660972&text=Hi%20There!",
     "wakatime": "https://wakatime.com/@davebenard",
@@ -65,36 +72,112 @@
       "progress": 70
     }
   ],
+  "skills": {
+    "Frontend": [
+      "React",
+      "Vue.js",
+      "Next.js",
+      "TypeScript",
+      "JavaScript",
+      "TailwindCSS",
+      "Redux",
+      "React Query",
+      "Zustand",
+      "Leaflet"
+    ],
+    "Backend": [
+      "Django",
+      "Python",
+      "Node.js",
+      "Bun",
+      "ElysiaJS",
+      "Express",
+      "NestJS",
+      "PHP",
+      "REST APIs"
+    ],
+    "Infrastructure & DevOps": [
+      "Docker",
+      "Linux",
+      "Nginx",
+      "GitLab CI/CD",
+      "GitHub Actions",
+      "AWS (EC2/S3)",
+      "SSL",
+      "Deployment Automation"
+    ],
+    "Database & Data": [
+      "PostgreSQL",
+      "MongoDB",
+      "ETL Scripting",
+      "Data Validation",
+      "Analytics Dashboards",
+      "IndexedDB Caching"
+    ]
+  },
   "workXp": [
     {
       "icon": "pi pi-briefcase",
-      "date": "February 2023 - Till Date",
-      "role": "Full-Stack Engineer at Georgetown Global Health Nigeria"
+      "date": "May 2025 – Present",
+      "company": "Bitville Gaming",
+      "role": "Full Stack Software Engineer",
+      "stack": "Vue.js • TypeScript • Bun • ElysiaJS • PostgreSQL • Full-Stack Product Development",
+      "responsibilities": [
+        "Build gaming product interfaces and game-related UI experiences using Vue.js and TypeScript.",
+        "Develop internal platform tools for game configuration, management workflows, and operational tasks.",
+        "Implement backend features and API tasks using Bun, ElysiaJS, PostgreSQL, and PHP where required.",
+        "Translate product requirements into UI components, API integrations, backend tasks, and maintainable product workflows."
+      ]
     },
     {
-      "icon": "pi pi-bookmark-fill",
-      "date": "March 2022 - February 2023",
-      "role": "Frontend Engineer at oneHealth (Remote)"
+      "icon": "pi pi-briefcase",
+      "date": "Feb 2023 – Apr 2025",
+      "company": "Georgetown Global Health Nigeria",
+      "role": "Full Stack Software Engineer",
+      "stack": "React • TypeScript • Django • Python • PostgreSQL • Docker • GitLab CI/CD • Linux • Nginx • React Query • Leaflet",
+      "responsibilities": [
+        "Led frontend and full-stack development across eN-LIS and the National PHC Dashboard.",
+        "Built scalable React/TypeScript interfaces and Django-backed workflows for laboratory operations, analytics, reporting, maps, and data visualization.",
+        "Developed Python ETL scripts to validate, clean, and transform high-volume health records collected via Kobo Collect.",
+        "Improved analytics performance through PostgreSQL indexing, React Query, IndexedDB caching, and optimized data-fetching patterns.",
+        "Owned DevOps responsibilities across Dockerized frontend/backend services, GitLab CI/CD pipelines, Linux servers, Nginx, SSL, and production/staging deployments."
+      ]
     },
     {
-      "icon": "pi pi-file-excel",
-      "date": "March 2021 - March 2022",
-      "role": "Frontend Engineer at Ehealth4Everyone"
+      "icon": "pi pi-briefcase",
+      "date": "Mar 2022 – Feb 2023",
+      "company": "OneHealth",
+      "role": "Frontend Engineer",
+      "stack": "Next.js • TypeScript • Redux • REST APIs",
+      "responsibilities": [
+        "Built browser-compatible delivery and product tracking applications.",
+        "Improved application load speed by 30%.",
+        "Worked on UI/UX audits, product flow refinements, and API integrations."
+      ]
     },
     {
-      "icon": "pi pi-folder-open",
-      "date": "January 2020 - March 2021",
-      "role": "Frontend Web Developer at Mira Technologies"
+      "icon": "pi pi-briefcase",
+      "date": "Mar 2021 – Mar 2022",
+      "company": "eHealth4Everyone",
+      "role": "Frontend Engineer",
+      "stack": "Vue.js • Django • DHIS2 • REST APIs • IndexedDB • Data Visualization",
+      "responsibilities": [
+        "Developed web applications and healthcare analytics platforms using Vue.js and Django.",
+        "Served as Frontend Engineer on MSDAT for the Federal Ministry of Health.",
+        "Integrated DHIS2 and REST APIs for healthcare reporting, data visualization, and decision-making.",
+        "Improved dashboard responsiveness using client-side caching/data-handling strategies."
+      ]
     },
     {
-      "icon": "pi pi-money-bill",
-      "date": "September 2018 - February 2019",
-      "role": "Technical Support Intern at GTBank"
-    },
-    {
-      "icon": "pi pi-tablet",
-      "date": "April 2018 - December 2019",
-      "role": "Frontend Developer at Center4Tech"
+      "icon": "pi pi-briefcase",
+      "date": "Jan 2020 – Mar 2021",
+      "company": "Mira Technologies",
+      "role": "Frontend Developer",
+      "stack": "JavaScript • APIs • Data Visualization",
+      "responsibilities": [
+        "Developed interactive web applications and dashboards.",
+        "Reduced data processing time by 70% through optimized API integration and frontend performance improvements."
+      ]
     }
   ],
   "detail": {
@@ -159,22 +242,22 @@
   ],
   "portfolio": [
     {
-      "name": "eN-LIS",
-      "image": "/asset/img/enlis.png",
-      "description": "eN-LIS is a Laboratory Information System that helps to manage the entire laboratory process from the point of sample collection to the point of result delivery",
-      "link": "https://www.en-lis.com",
+      "name": "SwearIt",
+      "image": "/asset/img/swearit_1.png",
+      "description": "A blockchain-powered platform for generating Digital Product Passports (DPP). It enables brands to verify product origins, supply chain sustainability, and environmental compliance through secure, tamper-proof QR codes.",
+      "link": "https://swearit.io/",
       "category": "web",
-      "role": "Software Engineer, Dev Ops Engineer",
-      "tech": "React, Redux, Typescript, Postgres, Django, Docker"
+      "role": "Full Stack Software Engineer",
+      "tech": "Vue.js, TypeScript, Node.js, Blockchain, Supply Chain Transparency, EU Labeling Compliance"
     },
     {
-      "name": "1840 GTC",
+      "name": "GTC App",
       "image": "/asset/img/gtc_4.png",
-      "description": "1840 GTC is a recruitment platform that connects students with employers, helping them find internships and full-time roles.",
+      "description": "Staffing/talent platform supporting hiring and work-seeking workflows. I worked on user interfaces and core application flows for a staffing-related product.",
       "link": "https://gtc-app.1840andco.com/",
       "category": "web",
       "role": "Frontend Engineer",
-      "tech": "React, Zustand, Typescript, AWS, React-Query,",
+      "tech": "React, TypeScript, Zustand, React Query, REST APIs, AWS",
       "other_img": [
         "/asset/img/gtc_3.png",
         "/asset/img/gtc_2.png",
@@ -183,13 +266,22 @@
       ]
     },
     {
-      "name": "NPHCDA",
+      "name": "eN-LIS",
+      "image": "/asset/img/enlis.png",
+      "description": "Laboratory information system supporting laboratory workflows, data capture, reporting, and operational visibility.",
+      "link": "https://en-lis.com/",
+      "category": "web",
+      "role": "Full Stack Software Engineer",
+      "tech": "React, Django, PostgreSQL, Docker"
+    },
+    {
+      "name": "PHC Dashboard",
       "image": "/asset/img/nphcda_7.png",
-      "description": "The National Primary Health Care Development Agency (NPHCDA) is a government agency responsible for the implementation of primary health care programs in Nigeria.",
+      "description": "Interactive analytics platform for visualizing primary healthcare data, maps, indicators, and operational metrics.",
       "link": "https://phc.nphcda.gov.ng/",
       "category": "web",
-      "role": "Software Engineer, Dev Ops Engineer",
-      "tech": "React, Zustand, Typescript, Leafelet, Postgres, Django, Docker",
+      "role": "Full Stack Software Engineer",
+      "tech": "React, Leaflet, Django, Data Visualization",
       "other_img": [
         "/asset/img/nphcda_7.png",
         "/asset/img/nphcda_2.png",
@@ -260,13 +352,13 @@
       "tech": "NextJs, TypeScript, Laravel, MySqli, AWS"
     },
     {
-      "name": "Msdat",
+      "name": "MSDAT",
       "image": "/asset/img/msdat.png",
-      "description": "Developed a browser-compatible web application for the Federal Ministry of Health using Highcharts for data visualization, conducted UI audits, implemented stakeholder feedback, and integrated Restful APIs to enhance data visualization and management capabilities for the Multi-Source Data Analytic and Triangulation Resource project.",
+      "description": "Developed for the Federal Ministry of Health to integrate, analyse, and visualize data from multiple healthcare systems for reporting and decision support.",
       "link": "https://msdat.fmohconnect.gov.ng/",
       "category": "web",
       "role": "Frontend Engineer",
-      "tech": "Vue2, Vuex, TypeScript, JavaScript, HighChart Postgres, Python, Docker"
+      "tech": "Vue.js, Django, DHIS2, Analytics"
     },
     {
       "name": "Governors Dashboard",
