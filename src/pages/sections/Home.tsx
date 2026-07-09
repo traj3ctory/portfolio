@@ -2,7 +2,7 @@ import { Key, useEffect, useState } from "react";
 import Main from "~/components/Main";
 import data from "~/data/data.json";
 import { dataType } from "~/types";
-import About from "./About";
+import { EducationSection, ExperienceSection, SkillsSection } from "./About";
 import Contact from "./Contact";
 import Portfolio from "./Portfolio";
 
@@ -66,37 +66,13 @@ function Home() {
               <p>{desc2}</p>
               <p>{desc3}</p>
             </div>
-
-            <div className="mt-8 flex flex-wrap gap-4">
-              <a
-                href="/asset/DAVID_BENARD_CV.pdf"
-                target="_blank"
-                rel="noreferrer"
-                className="group inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-bg-primary-600 bg-primary-700 px-6 py-3 font-medium shadow shadow-primary/30 hover:shadow-lg hover:shadow-primary/40 hover:-translate-y-0.5 transition-all duration-200 focus-visible:outline-none"
-                download
-              >
-                <span>Download CV</span>
-                <i className="pi pi-download group-hover:animate-bounce" />
-              </a>
-
-              <a
-                href="#contact"
-                className="group inline-flex items-center gap-2 rounded-lg border border-accent bg-transparent px-6 py-3 text-muted font-medium hover:border-primary hover:bg-primary/50 hover:-translate-y-0.5 transition-all duration-200 focus-visible:outline-none shadow shadow-primary/30 hover:shadow-lg hover:shadow-primary/10"
-              >
-                <span>Hire Me</span>
-                <i className="pi pi-arrow-right group-hover:translate-x-1 transition-transform" />
-              </a>
-            </div>
           </div>
         </section>
       </main>
+      <ExperienceSection workXp={workXp} />
+      <SkillsSection skills={skills} detail={detail} />
       <Portfolio portfolio={portfolio} />
-      <About
-        school={school}
-        workXp={workXp}
-        skills={skills}
-        detail={detail}
-      />
+      <EducationSection school={school} />
       <Contact />
     </div>
   );

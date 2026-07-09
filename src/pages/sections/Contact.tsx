@@ -48,7 +48,7 @@ function Contact() {
         import.meta.env.REACT_APP_SERVICE_ID,
         import.meta.env.REACT_APP_TEMPLATE_ID,
         form.current,
-        import.meta.env.REACT_APP_USER_ID
+        import.meta.env.REACT_APP_USER_ID,
       );
       setNotice({ type: "success", message: "Message sent successfully." });
       setData({ name: "", email: "", subject: "", message: "" });
@@ -93,8 +93,8 @@ function Contact() {
               role="status"
               className={
                 notice.type === "success"
-                  ? "mb-6 border-l-4 border-primary bg-gradient-to-r from-primary/10 to-transparent px-4 py-3 rounded-lg  font-medium"
-                  : "mb-6 border-l-4 border-red-500 bg-gradient-to-r from-red-500/10 to-transparent px-4 py-3 rounded-lg  font-medium"
+                  ? "mb-6 border-l-4 border-primary bg-gradient-to-r from-primary/10 to-transparent px-4 py-3 rounded  font-medium"
+                  : "mb-6 border-l-4 border-red-500 bg-gradient-to-r from-red-500/10 to-transparent px-4 py-3 rounded  font-medium"
               }
             >
               {notice.message}

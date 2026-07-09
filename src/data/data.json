@@ -11,7 +11,7 @@
     "Linux",
     "CI/CD"
   ],
-  "description": "Full Stack Software Engineer with 6+ years of experience building scalable web applications, backend services, gaming product interfaces, and data-driven health platforms.",
+  "description": "6+ years building scalable web applications, backend services, gaming product interfaces, and data-driven health platforms.",
   "desc2": "Strong frontend depth in React, Vue.js, Next.js, and TypeScript, with backend experience across Django, Node.js, Bun/ElysiaJS, REST APIs, PostgreSQL, and MongoDB.",
   "desc3": "Practical DevOps experience including Dockerized deployments, Linux server management, Nginx, SSL, GitLab CI/CD, and production/staging environment support.",
   "name": {
@@ -455,42 +455,6 @@
       "tech": "Html, Css, JavaScript, MySqli, PHP"
     },
     {
-      "name": "SortTable",
-      "image": "/asset/img/table.png",
-      "description": "A demo application to tryout table sort, filterand API integration using Vue3, Bootstrap, and TypeScript",
-      "link": "https://lb-table-component.netlify.app/",
-      "category": "hobby",
-      "role": "Frontend Engineer",
-      "tech": "Vue3, Bootstrap, TypeScript, API Integration"
-    },
-    {
-      "name": "Imdb Movie List",
-      "image": "/asset/img/imdb.png",
-      "description": "Using imdb api to perform some functionalities in vue3",
-      "link": "https://github.com/traj3ctory/movies",
-      "category": "hobby",
-      "role": "Frontend Engineer",
-      "tech": "Vue3, TypeScript"
-    },
-    {
-      "name": "BlogPost",
-      "image": "/asset/img/ss-blog-post.png",
-      "description": "A demo application to tryout infinite scroll and pagination using React, Tailwindcss, TypeScript, and Jsonplaceholder API",
-      "link": "https://sendsprint-blog.netlify.app/",
-      "category": "hobby",
-      "role": "Frontend Engineer",
-      "tech": "React, Tailwindcss, TypeScript, Jsonplaceholder API"
-    },
-    {
-      "name": "Todo Application",
-      "image": "/asset/img/todo.png",
-      "description": "Mini Todo Application",
-      "link": "https://digitodo.netlify.app/",
-      "category": "hobby",
-      "role": "Frontend Engineer",
-      "tech": "React, JavaScript"
-    },
-    {
       "name": "Accsiss eBs",
       "image": "/asset/img/ebs.png",
       "description": "An enterprise business solution",
@@ -507,15 +471,6 @@
       "category": "web",
       "role": "Frontend Engineer",
       "tech": "Html, PHP, JavaScript, MySqli"
-    },
-    {
-      "name": "Leerix Application",
-      "image": "/asset/img/leerix.png",
-      "description": "Music match api",
-      "link": "https://github.com/traj3ctory/lyricsApp",
-      "category": "hobby",
-      "role": "Frontend Engineer",
-      "tech": "React, JavaScript"
     }
   ]
 }

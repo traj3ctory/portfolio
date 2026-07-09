@@ -21,7 +21,7 @@ const Main = () => {
       className="relative min-h-[85dvh] flex items-center py-16 lg:py-20"
     >
       <div className="w-full grid lg:grid-cols-2 grid-cols-1 gap-16 px-4 lg:px-12">
-        <motion.div 
+        <motion.div
           className="flex items-center col-span-1 order-2 lg:order-1"
           style={{ y: textY }}
         >
@@ -59,11 +59,32 @@ const Main = () => {
               </div>
 
               <SocialMedia />
+
+              <div className="flex flex-wrap gap-4 pt-2">
+                <a
+                  href="/asset/DAVID_BENARD_CV.pdf"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="group inline-flex items-center gap-2 rounded bg-gradient-to-r from-bg-primary-600 bg-primary-700 px-6 py-3 font-medium shadow shadow-primary/30 hover:shadow-lg hover:shadow-primary/40 hover:-translate-y-0.5 transition-all duration-200 focus-visible:outline-none"
+                  download
+                >
+                  <span>Download CV</span>
+                  <i className="pi pi-download group-hover:animate-bounce" />
+                </a>
+
+                <a
+                  href="#contact"
+                  className="group inline-flex items-center gap-2 rounded border border-accent bg-transparent px-6 py-3 text-muted font-medium hover:border-primary hover:bg-primary/50 hover:-translate-y-0.5 transition-all duration-200 focus-visible:outline-none shadow shadow-primary/30 hover:shadow-lg hover:shadow-primary/10"
+                >
+                  <span>Hire Me</span>
+                  <i className="pi pi-arrow-right group-hover:translate-x-1 transition-transform" />
+                </a>
+              </div>
             </div>
           </aside>
         </motion.div>
 
-        <motion.div 
+        <motion.div
           className="w-full col-span-1 flex items-center justify-center order-1 lg:order-2"
           style={{ y: imageY }}
         >

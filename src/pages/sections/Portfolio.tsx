@@ -9,7 +9,7 @@ type PortfolioProps = {
 const Portfolio: React.FC<PortfolioProps> = ({ portfolio }) => {
   const [visible, setVisible] = useState<portfolioData | null>(null);
   const [activeFilter, setActiveFilter] = useState<"all" | "web" | "hobby">(
-    "all"
+    "all",
   );
   const [loadedBySrc, setLoadedBySrc] = useState<Record<string, boolean>>({});
 
@@ -121,7 +121,7 @@ const Portfolio: React.FC<PortfolioProps> = ({ portfolio }) => {
                     (el: string | undefined, i: Key | null | undefined) => (
                       <div
                         key={i}
-                        className="rounded-lg border border-accent/70 bg-surface p-2"
+                        className="rounded border border-accent/70 bg-surface p-2"
                       >
                         <AppImage
                           src={el}
@@ -130,7 +130,7 @@ const Portfolio: React.FC<PortfolioProps> = ({ portfolio }) => {
                           preview={{ zIndex: 2000 }}
                         />
                       </div>
-                    )
+                    ),
                   )}
                 </div>
               ) : null}
@@ -180,8 +180,8 @@ const Portfolio: React.FC<PortfolioProps> = ({ portfolio }) => {
                 aria-pressed={activeFilter === btn.value}
                 className={
                   activeFilter === btn.value
-                    ? "rounded-lg bg-gradient-to-r from-primary-600 to-primary-700 px-4 py-2 text-sm font-medium text-white shadow-lg shadow-primary/25"
-                    : "rounded-lg border-2 border-accent bg-surface px-4 py-2 text-sm font-medium  hover:border-primary hover:bg-primary/5 transition-all"
+                    ? "rounded bg-gradient-to-r from-primary-600 to-primary-700 px-4 py-2 text-sm font-medium text-white shadow-lg shadow-primary/25"
+                    : "rounded border-2 border-accent bg-surface px-4 py-2 text-sm font-medium  hover:border-primary hover:bg-primary/5 transition-all"
                 }
                 onClick={() =>
                   setActiveFilter(btn.value as "all" | "web" | "hobby")
@@ -213,7 +213,7 @@ const Portfolio: React.FC<PortfolioProps> = ({ portfolio }) => {
               >
                 <div className="relative overflow-hidden">
                   {loadedBySrc[item.image] ? null : (
-                    <div className="h-48 w-full animate-pulse bg-gradient-to-br from-border/40 to-border/20" />
+                    <div className="h-40 w-full animate-pulse bg-gradient-to-br from-border/40 to-border/20" />
                   )}
 
                   <img
@@ -228,18 +228,43 @@ const Portfolio: React.FC<PortfolioProps> = ({ portfolio }) => {
                     style={{
                       display: loadedBySrc[item.image] ? "block" : "none",
                     }}
-                    className="h-48 w-full object-cover group-hover:scale-110 transition-transform duration-300"
+                    className="h-40 w-full object-cover group-hover:scale-110 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
+                  <span className="absolute top-3 right-3 rounded-full bg-black/60 backdrop-blur px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wider text-white">
+                    {item.category}
+                  </span>
                 </div>
 
-                <div className="p-4 lg:text-right md:text-center text-right">
-                  <h4 className="text-base font-semibold  group-hover:text-primary transition-colors">
+                <div className="p-4 text-left space-y-2">
+                  <h4 className="text-base font-semibold group-hover:text-primary transition-colors">
                     {item.name}
                   </h4>
-                  <p className="mt-1 text-xs font-medium text-muted uppercase tracking-wider">
-                    {item.category}
-                  </p>
+                  {item.role ? (
+                    <p className="text-xs font-medium text-primary">
+                      {item.role}
+                    </p>
+                  ) : null}
+                  {item.description ? (
+                    <p className="text-xs text-muted leading-relaxed line-clamp-2">
+                      {item.description}
+                    </p>
+                  ) : null}
+                  {item.tech ? (
+                    <div className="flex flex-wrap gap-1.5 pt-1">
+                      {item.tech
+                        .split(",")
+                        .slice(0, 3)
+                        .map((t: string) => (
+                          <span
+                            key={t}
+                            className="inline-flex items-center px-2 py-0.5 rounded bg-primary/10 text-[10px] font-medium text-primary border border-primary/20"
+                          >
+                            {t.trim()}
+                          </span>
+                        ))}
+                    </div>
+                  ) : null}
                 </div>
               </div>
             ))}
