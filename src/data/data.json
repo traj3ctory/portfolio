@@ -11,9 +11,9 @@
     "Linux",
     "CI/CD"
   ],
-  "description": "6+ years building scalable web applications, backend services, gaming product interfaces, and data-driven health platforms.",
-  "desc2": "Strong frontend depth in React, Vue.js, Next.js, and TypeScript, with backend experience across Django, Node.js, Bun/ElysiaJS, REST APIs, PostgreSQL, and MongoDB.",
-  "desc3": "Practical DevOps experience including Dockerized deployments, Linux server management, Nginx, SSL, GitLab CI/CD, and production/staging environment support.",
+  "description": "6+ years building and running production web platforms: TypeScript and Python backends, PostgreSQL, Docker and CI/CD. Open to remote roles worldwide.",
+  "desc2": "I build backend services, data pipelines and the infrastructure they run on: TypeScript, Python, Node.js and Bun/ElysiaJS, Django, PostgreSQL and MongoDB, with React, Vue.js and Next.js on the front end.",
+  "desc3": "I also own releases end to end: Dockerized deployments, Linux hosts, Nginx, SSL, GitLab CI/CD and AWS (EC2, S3), with production and staging environments kept in step.",
   "name": {
     "lastName": "Benard",
     "middleName": "Zibiri",
@@ -121,12 +121,12 @@
       "date": "May 2025 – Present",
       "company": "Bitville Gaming",
       "role": "Full Stack Software Engineer",
-      "stack": "Vue.js • TypeScript • Bun • ElysiaJS • PostgreSQL • Full-Stack Product Development",
+      "stack": "Bun • ElysiaJS • Drizzle ORM • PostgreSQL • TypeScript • Vue.js • Docker • Nginx",
       "responsibilities": [
-        "Build gaming product interfaces and game-related UI experiences using Vue.js and TypeScript.",
-        "Develop internal platform tools for game configuration, management workflows, and operational tasks.",
-        "Implement backend features and API tasks using Bun, ElysiaJS, PostgreSQL, and PHP where required.",
-        "Translate product requirements into UI components, API integrations, backend tasks, and maintainable product workflows."
+        "Build backend services in Bun and ElysiaJS with Drizzle ORM and PostgreSQL for a multi-service games platform running across operator sites.",
+        "Own releases end to end with Docker, Nginx and Linux hosts, verifying on dev before production and checking that each database migration exists in every environment.",
+        "Integrate operator wallet APIs and manage shared accounts data across the game engines.",
+        "Build the Vue and Nuxt front ends and internal platform tools that consume these services."
       ]
     },
     {
@@ -162,10 +162,11 @@
       "role": "Frontend Engineer",
       "stack": "Vue.js • Django • DHIS2 • REST APIs • IndexedDB • Data Visualization",
       "responsibilities": [
-        "Developed web applications and healthcare analytics platforms using Vue.js and Django.",
+        "Built a browser-compatible Highcharts web application to visualise health data by query parameters for the Federal Ministry of Health.",
         "Served as Frontend Engineer on MSDAT for the Federal Ministry of Health.",
         "Integrated DHIS2 and REST APIs for healthcare reporting, data visualization, and decision-making.",
-        "Improved dashboard responsiveness using client-side caching/data-handling strategies."
+        "Helped build a manual unit-testing setup that cut reported bugs and raised the Lighthouse score by 40%.",
+        "Built Innovation Scaling from scratch with Vue.js, TypeScript and Vuex: a platform that digitises how health-sector needs are identified and how partnerships to meet them are formed."
       ]
     },
     {
@@ -181,7 +182,7 @@
     }
   ],
   "detail": {
-    "website": "http://davidbd.netlify.app",
+    "website": "https://bzdavid.netlify.app",
     "email": "davidbenard.bd@gmail.com",
     "degree": "Bsc. Computer Science",
     "phone": "+2349038660972",
@@ -214,14 +215,6 @@
       "name": "Introduction to Data Engineering",
       "link": "https://www.coursera.org/account/accomplishments/records/MKM25WCW15LF",
       "image": ""
-    },
-    {
-      "icon": "pi pi-calendar",
-      "title": "Certification",
-      "date": "2022",
-      "name": "Web Development Node.js(Progate).",
-      "link": "",
-      "image": "../asset/img/cert1.png"
     },
     {
       "icon": "pi pi-calendar",

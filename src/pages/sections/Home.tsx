@@ -1,5 +1,6 @@
 import { Key, useEffect, useState } from "react";
 import Main from "~/components/Main";
+import SectionHeading from "~/components/SectionHeading";
 import data from "~/data/data.json";
 import { dataType } from "~/types";
 import { EducationSection, ExperienceSection, SkillsSection } from "./About";
@@ -28,24 +29,16 @@ function Home() {
   } = value;
 
   return (
-    <div className="container content mx-auto">
+    <div className="container content mx-auto px-4 pb-24 md:pb-0">
       <Main />
-      <main className="w-full mb-16">
-        <div className="relative mb-6">
-          <div className="flex items-center gap-3">
-            <div className="h-px flex-1 bg-gradient-to-r from-transparent via-border to-transparent" />
-            <h2 className="text-sm font-semibold uppercase tracking-wider text-muted">
-              About Me
-            </h2>
-            <div className="h-px flex-1 bg-gradient-to-r from-transparent via-border to-transparent" />
-          </div>
-        </div>
+      <main id="about" className="w-full mb-16">
+        <SectionHeading eyebrow="Hello" label="About me" />
 
         <section
           aria-label="About"
-          className="group relative rounded bg-gradient-to-br from-surface via-surface-elev to-surface clamp-[p,2,6] shadow-lg hover:shadow-xl transition-all duration-300"
+          className="group relative rounded-xl border border-border bg-gradient-to-br from-surface via-surface-elev to-surface clamp-[p,2,6] shadow-lg hover:shadow-xl transition-all duration-300"
         >
-          <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
           <div className="relative">
             <div className="mb-6">

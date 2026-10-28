@@ -1,5 +1,6 @@
-import { Key, useEffect, useMemo, useRef, useState } from "react";
-import { AppImage } from "~/components";
+import { useMemo, useState } from "react";
+import ProjectModal from "~/components/ProjectModal";
+import SectionHeading from "~/components/SectionHeading";
 import { portfolioData } from "~/types";
 
 type PortfolioProps = {
@@ -18,152 +19,19 @@ const Portfolio: React.FC<PortfolioProps> = ({ portfolio }) => {
     return portfolio.filter((p) => p.category === activeFilter);
   }, [activeFilter, portfolio]);
 
-  const scrollY = useRef<number>(0);
-
-  useEffect(() => {
-    // Lock background scroll when modal is visible.
-    if (visible) {
-      scrollY.current = window.scrollY || window.pageYOffset || 0;
-      document.body.style.position = "fixed";
-      document.body.style.top = `-${scrollY.current}px`;
-      document.body.style.left = "0";
-      document.body.style.right = "0";
-      document.body.style.width = "100%";
-    } else {
-      // Restore
-      const prev = scrollY.current || 0;
-      document.body.style.position = "";
-      document.body.style.top = "";
-      document.body.style.left = "";
-      document.body.style.right = "";
-      document.body.style.width = "";
-      window.scrollTo(0, prev);
-    }
-
-    return () => {
-      // Ensure cleanup on unmount
-      const prev = scrollY.current || 0;
-      document.body.style.position = "";
-      document.body.style.top = "";
-      document.body.style.left = "";
-      document.body.style.right = "";
-      document.body.style.width = "";
-      window.scrollTo(0, prev);
-    };
-  }, [visible]);
-
   return (
     <section className="section mb-16" id="portfolio">
-      {/* Tailwind modal (replaces PrimeReact Dialog) */}
-      {visible ? (
-        <div
-          className="fixed inset-0 z-[1000] flex items-center justify-center p-4"
-          role="dialog"
-          aria-modal="true"
-          aria-label={visible.name}
-          onMouseDown={(e) => {
-            if (e.target === e.currentTarget) setVisible(null);
-          }}
-        >
-          <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
-          <div className="relative w-full max-w-5xl rounded border border-accent/70 bg-surface-elev/95 shadow-xl">
-            <div className="flex items-center justify-between gap-3 border-b border-accent/70 px-5 py-4">
-              <h3 className="text-base sm:text-lg font-semibold">
-                {visible.name}
-              </h3>
-              <button
-                type="button"
-                onClick={() => setVisible(null)}
-                className="inline-flex h-9 w-9 items-center justify-center rounded-md border border-accent/70 bg-surface hover:bg-surface/70"
-                aria-label="Close"
-              >
-                <span className="text-lg leading-none">×</span>
-              </button>
-            </div>
+      <ProjectModal project={visible} onClose={() => setVisible(null)} />
 
-            <div className="clamp-[p,2,5] max-h-[70dvh] overflow-y-auto">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="flex justify-center items-center">
-                  <AppImage
-                    width={350}
-                    src={visible.image}
-                    alt={`${visible.name}`}
-                    preview={{ zIndex: 2000 }}
-                  />
-                </div>
-                <div className="space-y-3">
-                  <p className="text-muted">{visible.description}</p>
-                  <div className="h-px bg-accent/70" />
-                  <p>
-                    {" "}
-                    <span className="font-semibold mb-1">Role:</span>{" "}
-                    {visible.role}
-                  </p>
-                  <p className="text-muted">{visible.tech}</p>
-                  <div className="h-px bg-accent/70" />
-                  {visible?.link ? (
-                    <a
-                      href={visible.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 rounded bg-primary/60 px-5 py-3 text-sm font-medium hover:bg-primary/70"
-                    >
-                      <i className="pi pi-external-link text-xs" />
-                      View Project
-                    </a>
-                  ) : null}
-                </div>
-              </div>
+      <SectionHeading eyebrow="Selected work" label="Projects" />
 
-              {visible?.other_img && visible.other_img.length > 0 ? (
-                <div className="grid mt-6 grid-cols-1 sm:grid-cols-2 gap-4">
-                  {visible.other_img.map(
-                    (el: string | undefined, i: Key | null | undefined) => (
-                      <div
-                        key={i}
-                        className="rounded border border-accent/70 bg-surface p-2"
-                      >
-                        <AppImage
-                          src={el}
-                          alt={`${visible.name}-${i}`}
-                          className="img-fluid"
-                          preview={{ zIndex: 2000 }}
-                        />
-                      </div>
-                    ),
-                  )}
-                </div>
-              ) : null}
-            </div>
-          </div>
-        </div>
-      ) : null}
-
-      <div className="relative mb-6">
-        <div className="flex items-center gap-3">
-          <div className="h-px flex-1 bg-gradient-to-r from-transparent via-border to-transparent"></div>
-          <h2 className="text-sm font-semibold uppercase tracking-wider text-muted animate-fade-up">
-            My Work
-          </h2>
-          <div className="h-px flex-1 bg-gradient-to-r from-transparent via-border to-transparent"></div>
-        </div>
-      </div>
-
-      <div className="relative rounded bg-gradient-to-br from-surface via-surface-elev to-surface clamp-[p,2,6] shadow-lg hover:shadow-xl transition-all duration-300">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl opacity-0 hover:opacity-100 transition-opacity duration-300" />
+      <div className="relative rounded-xl border border-border bg-gradient-to-br from-surface via-surface-elev to-surface clamp-[p,2,6] shadow-lg hover:shadow-xl transition-all duration-300">
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/5 rounded-xl opacity-0 hover:opacity-100 transition-opacity duration-300" />
 
         <div className="relative">
-          <div className="mb-6 text-center">
-            <h3 className="text-2xl font-bold  mb-2 animate-fade-up">
-              Portfolio
-            </h3>
-            <p
-              className="text-muted animate-fade-up"
-              style={{ animationDelay: "60ms" }}
-            >
-              A selection of projects I've built and shipped.
-            </p>
-          </div>
+          <p className="mb-8 text-center text-muted">
+            A selection of projects I've built and shipped. Click any card for details.
+          </p>
 
           <div
             id="filter"
@@ -201,7 +69,7 @@ const Portfolio: React.FC<PortfolioProps> = ({ portfolio }) => {
                 key={i}
                 role="button"
                 tabIndex={0}
-                className={`group relative overflow-hidden rounded bg-gradient-to-br from-surface to-surface-elev p-0 shadow shadow-accent/50 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 focus-visible:outline-none animate-zoom-in`}
+                className="group relative overflow-hidden rounded-xl border border-border bg-surface-elev p-0 hover:border-primary/60 hover:shadow-lg hover:shadow-primary/10 hover:-translate-y-1 transition-all duration-300 focus-visible:outline-2 focus-visible:outline-primary animate-zoom-in"
                 style={{ animationDelay: `${i * 80}ms` }}
                 onClick={() => setVisible(item)}
                 onKeyDown={(e) => {

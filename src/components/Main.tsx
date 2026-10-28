@@ -20,6 +20,7 @@ const Main = () => {
       id="home_page"
       className="relative min-h-[85dvh] flex items-center py-16 lg:py-20"
     >
+      <div className="hero_grid pointer-events-none absolute inset-0 -z-10" aria-hidden />
       <div className="w-full grid lg:grid-cols-2 grid-cols-1 gap-16 px-4 lg:px-12">
         <motion.div
           className="flex items-center col-span-1 order-2 lg:order-1"
@@ -41,7 +42,7 @@ const Main = () => {
                 <p className="text-sm font-medium text-muted mb-2 uppercase tracking-wider">
                   Hello,
                 </p>
-                <h1 className="text-4xl lg:text-6xl font-bold mb-3 bg-gradient-to-r from-primary via-[#90e0ef] to-secondary inline-block text-transparent bg-clip-text animate-fade-up">
+                <h1 className="text-5xl lg:text-7xl font-bold tracking-tight mb-3 bg-gradient-to-r from-primary via-[#90e0ef] to-secondary inline-block text-transparent bg-clip-text animate-fade-up">
                   {fullName}
                 </h1>
                 <p

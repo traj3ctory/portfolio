@@ -39,3 +39,27 @@
 button {
   cursor: pointer;
 }
+
+.hero_grid {
+  background-image: radial-gradient(
+    color-mix(in srgb, var(--brand-accent) 28%, transparent) 1px,
+    transparent 1px
+  );
+  background-size: 28px 28px;
+  mask-image: radial-gradient(ellipse 70% 60% at 50% 40%, #000 30%, transparent 75%);
+}
+
+.modal_enter {
+  animation: modal_enter 180ms ease-out both;
+}
+
+@keyframes modal_enter {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.985);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}

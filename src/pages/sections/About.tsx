@@ -1,26 +1,13 @@
 import { Fade } from "react-awesome-reveal";
+import SectionHeading from "~/components/SectionHeading";
 import type { INotSure, schoolData, workData } from "~/types";
 
 type DetailRecord = Record<string, string>;
 
-function SectionHeading({ label }: { label: string }) {
-  return (
-    <div className="relative mb-6">
-      <div className="flex items-center gap-3">
-        <div className="h-px flex-1 bg-gradient-to-r from-transparent via-border to-transparent" />
-        <h2 className="text-sm font-semibold uppercase tracking-wider text-muted">
-          {label}
-        </h2>
-        <div className="h-px flex-1 bg-gradient-to-r from-transparent via-border to-transparent" />
-      </div>
-    </div>
-  );
-}
-
 export function ExperienceSection({ workXp }: { workXp: workData[] }) {
   return (
     <section id="experience" className="mb-16">
-      <SectionHeading label="Experience" />
+      <SectionHeading eyebrow="Career" label="Experience" />
       <div className="relative">
         <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-secondary/60 via-secondary/30 to-transparent md:-translate-x-1/2" />
 
@@ -49,8 +36,8 @@ export function ExperienceSection({ workXp }: { workXp: workData[] }) {
                       isRight ? "md:pl-8" : "md:pr-8"
                     }`}
                   >
-                    <div className="group relative rounded bg-gradient-to-br from-surface via-surface-elev to-surface p-5 shadow shadow-accent/50 hover:shadow-lg transition-all duration-300">
-                      <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 to-primary/5 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div className="group relative rounded-xl border border-border bg-gradient-to-br from-surface via-surface-elev to-surface p-5 shadow shadow-accent/50 hover:shadow-lg transition-all duration-300">
+                      <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 to-primary/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                       <div className="relative space-y-3">
                         <div className="flex items-start justify-between gap-3">
                           <div className="flex flex-col">
@@ -145,11 +132,11 @@ export function SkillsSection({ skills, detail }: INotSure) {
 
   return (
     <section id="skills" className="mb-16">
-      <SectionHeading label="Skills" />
+      <SectionHeading eyebrow="Toolbox" label="Skills" />
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div className="group relative rounded rounded-tl-xl bg-gradient-to-br from-surface via-surface-elev to-surface clamp-[p,2,6] shadow shadow-accent/50 hover:shadow-lg transition-all duration-300">
-          <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        <div className="group relative rounded-xl bg-gradient-to-br from-surface via-surface-elev to-surface clamp-[p,2,6] shadow shadow-accent/50 hover:shadow-lg transition-all duration-300">
+          <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           <div className="relative">
             <h3 className="text-xl font-bold  mb-4">Details</h3>
 
@@ -206,8 +193,8 @@ export function SkillsSection({ skills, detail }: INotSure) {
           </div>
         </div>
 
-        <div className="group relative rounded rounded-tr-xl bg-gradient-to-br from-surface via-surface-elev to-surface clamp-[p,2,6] shadow shadow-accent/50 hover:shadow-lg transition-all duration-300">
-          <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 to-primary/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        <div className="group relative rounded-xl bg-gradient-to-br from-surface via-surface-elev to-surface clamp-[p,2,6] shadow shadow-accent/50 hover:shadow-lg transition-all duration-300">
+          <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 to-primary/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           <div className="relative">
             <h3 className="text-xl font-bold mb-6">Skills</h3>
 
@@ -264,12 +251,12 @@ export function EducationSection({ school }: { school: schoolData[] }) {
 
   return (
     <section id="education" className="mb-16">
-      <SectionHeading label="Education" />
+      <SectionHeading eyebrow="Background" label="Education" />
 
       <div className="space-y-6">
         {degree ? (
-          <div className="group relative rounded bg-gradient-to-br from-surface via-surface-elev to-surface clamp-[p,2,6] shadow shadow-accent/50 hover:shadow-lg transition-all duration-300">
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/5 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div className="group relative rounded-xl border border-border bg-gradient-to-br from-surface via-surface-elev to-surface clamp-[p,2,6] shadow shadow-accent/50 hover:shadow-lg transition-all duration-300">
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             <div className="relative flex items-start gap-4">
               <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded bg-primary/10 border border-primary/20">
                 <i className="pi pi-graduation-cap text-primary text-xl" />
@@ -288,8 +275,8 @@ export function EducationSection({ school }: { school: schoolData[] }) {
         ) : null}
 
         {certifications.length > 0 ? (
-          <div className="group relative rounded bg-gradient-to-br from-surface via-surface-elev to-surface clamp-[p,2,6] shadow shadow-accent/50 hover:shadow-lg transition-all duration-300">
-            <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 to-primary/5 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div className="group relative rounded-xl border border-border bg-gradient-to-br from-surface via-surface-elev to-surface clamp-[p,2,6] shadow shadow-accent/50 hover:shadow-lg transition-all duration-300">
+            <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 to-primary/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             <div className="relative">
               <h3 className="text-sm font-semibold uppercase tracking-wider text-muted mb-4">
                 Certifications

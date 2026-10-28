@@ -4,6 +4,8 @@
   --color-accent: var(--brand-accent);
   --color-surface: var(--brand-surface);
   --color-muted: var(--brand-muted);
+  --color-surface-elev: var(--brand-surface-elev);
+  --color-border: var(--brand-border);
 }
 
 :root {
@@ -14,6 +16,8 @@
   --brand-accent: #60a5fa;
   --brand-surface: #1e2125;
   --brand-muted: #e7e7e7;
+  --brand-surface-elev: #262a31;
+  --brand-border: rgba(148, 163, 184, 0.22);
 }
 
 /* Light Theme with Blue Primary */
@@ -23,6 +27,8 @@
   --brand-accent: #337ad0;
   --brand-surface: #ffffff;
   --brand-muted: #64748b;
+  --brand-surface-elev: #f8fafc;
+  --brand-border: #dbe3ee;
 }
 
 /* Ocean Theme (Monochromatic Blue focus) */
@@ -32,6 +38,8 @@
   --brand-accent: #012a4a;
   --brand-surface: #013a63;
   --brand-muted: #a3cddc;
+  --brand-surface-elev: #014a7b;
+  --brand-border: rgba(144, 224, 239, 0.25);
 }
 
 /* Sunset (Blue accenting warm backgrounds) */
@@ -41,4 +49,6 @@
   --brand-accent: #2c0f0a;
   --brand-surface: #3d1a14;
   --brand-muted: #e8c9ba;
+  --brand-surface-elev: #4a221a;
+  --brand-border: rgba(232, 201, 186, 0.25);
 }

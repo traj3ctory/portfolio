@@ -12,6 +12,8 @@ interface FloatingItem {
   rotation: string;
 }
 
+const OPACITY_SCALE = 0.45;
+
 const floatingItems: FloatingItem[] = [
   // Section 1: Hero area (top 0% to 20%)
   { text: "</>", x: "6%", y: "4%", size: "text-6xl md:text-8xl font-black", speed: 0.15, opacity: 0.68, colorClass: "text-primary", rotation: "-rotate-12" },
@@ -47,7 +49,7 @@ const ParallaxItem: React.FC<{ item: FloatingItem; scrollY: MotionValue<number> 
         left: item.x,
         top: item.y,
         y: yTransform,
-        opacity: item.opacity,
+        opacity: item.opacity * OPACITY_SCALE,
         textShadow: "0 0 12px var(--brand-primary)",
       }}
     >

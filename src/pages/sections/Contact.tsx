@@ -1,4 +1,5 @@
 import emailjs from "@emailjs/browser";
+import SectionHeading from "~/components/SectionHeading";
 import { FormEvent, useRef, useState } from "react";
 
 type Notice = { type: "success" | "error"; message: string };
@@ -67,18 +68,10 @@ function Contact() {
 
   return (
     <section id="contact" className="my-16">
-      <div className="relative mb-6">
-        <div className="flex items-center gap-3">
-          <div className="h-px flex-1 bg-gradient-to-r from-transparent via-border to-transparent"></div>
-          <h2 className="text-sm font-semibold uppercase tracking-wider text-muted">
-            Get In Touch
-          </h2>
-          <div className="h-px flex-1 bg-gradient-to-r from-transparent via-border to-transparent"></div>
-        </div>
-      </div>
+      <SectionHeading eyebrow="Contact" label="Get in touch" />
 
-      <div className="group relative rounded-2xl p-6 bg-gradient-to-br from-surface via-surface-elev to-surface clamp-[p,2,6] shadow-lg hover:shadow-xl transition-all duration-300">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+      <div className="group relative rounded-xl border border-border p-6 bg-gradient-to-br from-surface via-surface-elev to-surface clamp-[p,2,6] shadow-lg hover:shadow-xl transition-all duration-300">
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
 
         <div className="relative">
           <div className="mb-6">

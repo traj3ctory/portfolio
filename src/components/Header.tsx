@@ -13,7 +13,8 @@ const Header = () => {
 
   const links = [
     { hash: "#about", label: "About" },
-    { hash: "#portfolio", label: "Portfolio" },
+    { hash: "#experience", label: "Experience" },
+    { hash: "#portfolio", label: "Projects" },
     { hash: "#contact", label: "Contact" },
   ];
 
@@ -36,12 +37,12 @@ const Header = () => {
           </a>
 
           <div className="ml-auto flex items-center gap-4">
-            <nav className="md:flex items-center gap-6 text-sm">
+            <nav className="flex items-center gap-6 text-sm">
               {links.map((link) => (
                 <a
                   key={link.hash}
                   href={link.hash}
-                  className={`hidden relative transition-colors hover:text-primary ${
+                  className={`hidden md:inline relative transition-colors hover:text-primary ${
                     url === link.hash
                       ? "text-primary font-semibold after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-full after:bg-primary"
                       : "text-muted"
